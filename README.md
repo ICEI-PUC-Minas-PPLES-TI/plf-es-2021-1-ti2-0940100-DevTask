@@ -1,17 +1,19 @@
-# Nome do projeto
+# DevTask
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+DevTask é uma plataforma de desenvolvedores *freelancers*, no modo *marketplace*. A missão é conectar pessoas — físicas e/ou jurídicas — interessadas em serviços de *software* com os profissionais autônomos. O contato entre os desenvolvedores e clientes é direto via chat ou e-mail, além do suporte técnico em caso de dúvidas ou problemas.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Clara Fonseca Campos
+* Joao Pedro Mayrink de Jesus
+* Jose Vitor da Silva Sousa
+* Marlene Vasconcelos Moraes de Oliveira
 
-## Professor
+## Professores
 
-* Nome completo do professor
+* Claudiney Vander Ramos
+* Hugo Bastos de Paula
+* Joyce Christina de Paiva Carvalho 
 
 ## Instruções de utilização
 
