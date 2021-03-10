@@ -4,11 +4,11 @@
 
 **Ana Clara Fonseca Campos, claracamposbh@hotmail.com**
 
-**Joao Pedro Mayrink de Jesus, marlenevmoliveira@gmail.com**
+**Joao Pedro Mayrink de Jesus, joaopmayrinkj@gmail.com**
 
 **Jose Vitor da Silva Sousa, jvitosousa@gmail.com**
 
-**Marlene Vasconcelos Moraes de Oliveira, pepemayrink@gmail.com**
+**Marlene Vasconcelos Moraes de Oliveira, marlenevmoliveira@gmail.com**
 
 ---
 
@@ -74,21 +74,21 @@ desenvolvimento do seu trabalho e, caso deseje, desta-que alguma contribuição 
 
  
 
-| <img src=".\imagens\persona1.png" alt="img width=250px" style="zoom:40%;"/> | **João Pedro Mayrink**                                       |                                                              |
+| <img src=".\imagens\persona1.png" alt="img width=120px" style="zoom:40%;"/> | **João Pedro Mayrink**                                       |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Idade:** 27  **Ocupação**:  Estudante de tecnologia.  **Formação Acadêmica:** Graduação incompleta. | **Redes:**  ●   Linkedin; <br> ●   Workana;                  |                                                              |
 | **Motivação:**  ●   Ingressar no mercado de trabalho.        | **Frustração:**  ●   vagas de estágio com requisitos  complexo | **Hobbies:**  ●   Ver séries. <br/> ●   Estudar programação. |
 
  
 
-| <img src=".\imagens\persona2.png" alt="img width=250px" style="zoom:40%;"/> | **Ana Clara Fonseca**                             |                                                      |
+| <img src=".\imagens\persona2.png" alt="img width=120px" style="zoom:40%;"/> | **Ana Clara Fonseca**                             |                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------- | ---------------------------------------------------- |
 | **Idade:** 20  anos  **Ocupação**: Desenvolvedor full-stack.  **Formação Acadêmica:**   Engenheira de Software | **Redes:**  ●   ProgamaThor;  ●   Workana;        |                                                      |
 | **Motivação:**  ●   Divulgação e renda extra.                | **Frustração:**  ●   Remuneração do seu trabalho. | **Hobbies:**  ●   Tocar violão;  ●   Andar de skate; |
 
  
 
-| <img src=".\imagens\persona3.png" alt="img width=250px" style="zoom:40%;"/> | **Jose Vitor da Silva Sousa**                          |                                                        |
+| <img src=".\imagens\persona3.png" alt="img width=120px" style="zoom:40%;"/> | **Jose Vitor da Silva Sousa**                          |                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ |
 | **Idade:** 45  anos  **Ocupação**: Gerente de Vendas  **Formação Acadêmica:** Cursando graduação | **Redes:**  ●   VintePila;  ●   Freelancer.com;        |                                                        |
 | **Motivação:**  ●   Montar um site para curso trader.        | **Frustração:**  ●   Falta de profissionais autônomos. | **Hobbies:**  ●   Cuidar dos pets.  ●   Jogar futebol; |
