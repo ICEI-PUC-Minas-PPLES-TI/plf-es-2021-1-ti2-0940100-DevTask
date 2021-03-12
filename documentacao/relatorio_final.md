@@ -127,7 +127,10 @@ _**Resumo**
 
 ### 3.2. Descrição Geral da proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+<p align="justify">A DevTask tem proposta de criar uma plataforma multilateral que visa conectar pessoas — físicas e/ou jurídicas — interessadas em serviços de <i>software</i> com os desenvolvedores iniciantes <i>freelancers</i> no modo <i>marketplace</i>. Nesse contexto, a plataforma é composta de desenvolvedores iniciantes e os clientes interessados, conectados através de apenas uma aplicação. O objetivo é intermediar a combinação entre o colaborador e o interessado. </p> 
+<p align="justify"> A equipe da DevTask se baseia em gerar valor aos envolvidos: para o desenvolvedor, adquirir conhecimentos e diversidade de portfólio para futuras oportunidades, além de gerar renda extra; para o cliente, um projeto personalizado, facilidade de contato e custos reduzidos.</p>
+
+
 
 ## 3.3. Processos
 
