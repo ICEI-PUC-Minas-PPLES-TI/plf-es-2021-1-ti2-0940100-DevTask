@@ -18,45 +18,52 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo*** <justify>DevTask é uma plataforma de desenvolvedores freelancers, no modo marketplace. A missão é conectar pessoas — físicas e/ou jurídicas — interessadas em serviços de software com os profissionais autônomos. O contato entre os desenvolvedores e clientes é direto via chat ou e-mail, além do suporte técnico em caso de dúvidas ou problemas.
+_**Resumo** 
+
+<p align="justify">A grande demanda de trabalho remoto, sobretudo, na área da Tecnologia da Informação, trouxe o aumento de oportunidades. Entretanto, profissionais com menos experiência não conseguem demonstrar suas habilidades para adquirir conhecimento na prática. Dessa forma, a equipe da DevTask pensou em uma plataforma de desenvolvedores <i>freelancers</i>, no modo <i>marketplace</i>. A missão é conectar pessoas — físicas e/ou jurídicas — interessadas em serviços de <i>software</i> com os profissionais autônomos. O contato entre os desenvolvedores e clientes é direto via chat ou e-mail, além do suporte técnico em caso de dúvidas ou problemas.</p>
 
 ---
 
 
+
 ## 1. Introdução
 
-​	A inserção das novas tecnologias e inovações trouxe um mercado que atualiza-se constantemente. O que demoravam décadas para haver uma mudança tecnológica significativa, atualmente acontece em meses. Nesse contexto, as empresas e corporativas sentiram-se na necessidade do investimento em tecnologias e profissionais especializados na área. 
+<p align="justify">A inserção das novas tecnologias e inovações trouxe um mercado que atualiza-se constantemente: o que demoravam décadas para haver uma mudança tecnológica significativa, atualmente acontece em meses. Nesse contexto, as empresas e corporativas sentiram-se na necessidade do investimento em tecnologias e profissionais especializados na área. </p>
+
+<p align="justify">A pandemia do Coronavírus (Covid-19) trouxe um quadro grave para o mercado de trabalho: quase 9 milhões de brasileiros ficaram desempregados no segundo trimestre de 2020 [1.4], devido ao isolamento social e fechamento do comércio presencial. Consequentemente, o modelo <i>home office</i> foi adotado pelas empresas [1.2] e a inserção de dispositivos tecnológicos, digitais e automatização de serviços tornou-se essencial. Para suprir a demanda mercadológica, nota-se o aumento de vagas na área de Tecnologia da Informação (TI) das oportunidades ofertadas.</p>
 
     1.1 Contextualização
 
-​		Em março de 2020, a pandemia do Coronavírus (Covid-19) intensificou a aceleração da inserção de dispositivos tecnológicos, digitais e automatização de serviços. O isolamento social dessa época, fez com que muitas empresas adotassem o modelo *home office*, além do aumento de vagas na área de tecnologia das oportunidades ofertadas. 
+<p align="justify">A área da TI tem sofrido crescente aumento de demandas de trabalhos e projetos para programadores e, consequentemente, a procura destes profissionais no mercado. A Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação (Brasscom) apontou que a procura de profissionais na área de TI é de 420 mil pessoas até 2024 e há formação de 46 mil profissionais no Brasil por ano [1.8].</p>
+<p align="justify">Nota-se, também, um número elevado de oferta de vagas dos cargos de Desenvolvedores: Programador e Desenvolvedor - 2,589 por milhão; Desenvolvedor Back-End - 1,466 por milhão; Desenvolvedor Front-End - 1,463 por milhão [1.3]. Apesar da alta procura dos empregadores, há exigência quanto ao cargo: somente a formação dos profissionais não é o suficiente para exercê-lo, o que exige experiência profissional.</p>
 
     1.2 Problema
 
-​	Em contrapartida, nota-se que estas são, majoritariamente, em cargos mais altos, como gerência, diretoria e desenvolvedores pleno e sênior, o que fazem outros níveis de profissionais, como estagiários e desenvolvedores júnior terem dificuldades de encontrar boas oportunidades ou oportunidades com nível de conhecimento exigido adequado para esses cargos. Consequentemente, os profissionais estagiários e desenvolvedores procuram outras alternativas para renda adicional, como o *freelancer*, que nem sempre é um mercado favorável para os iniciantes.
+<p align="justify">Cargos mais altos — como gerência, diretoria e desenvolvedores pleno e sênior — ocupam 76,8% da buscas das empresas [1.9], o que fazem outros níveis de profissionais, como estagiários e desenvolvedores júnior terem dificuldades de encontrar boas oportunidades ou oportunidades com nível de conhecimento exigido adequado para esses cargos. Desta maneira, os profissionais estagiários e desenvolvedores procuram outras alternativas para renda adicional, como o <i>freelancer</i>, que nem sempre é um mercado favorável para os iniciantes.</p>
 
     1.3 Objetivo geral
 
-​	Diante disso, o objetivo deste projeto é elaborar uma plataforma voltada para este público, e promover a conexão entre desenvolvedores que desejam participar de projetos de software e entidades que possuem demanda por serviços de *software*. Assim, os desenvolvedores participam com o atendimento a clientes diretamente e, consequentemente, adquirem conhecimento e diversidade de portfólio. 
+<p align="justify">A DevTask busca elaborar uma plataforma voltada para os desenvolvedores iniciantes, e promover a conexão entre eles, que desejam participar de projetos de <i>software</i>, e entidades, que possuem a demanda por esses serviços. </p>
 
         1.3.1 Objetivos específicos
 
-Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde você vai querer 
-concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+<p align="justify">A facilidade de oferta de trabalhos de <i>software</i> para os clientes, e a procura destes trabalhos para os desenvolvedores iniciantes, de maneira mais prática, rápida e unificada são objetivos específicos apresentados, além dos desenvolvedores adquirirem conhecimentos e diversidade de portfólio para futuras oportunidades.</p>
 
     1.4 Justificativas
 
-Mostre também as **justificativas** para o 
-desenvolvimento do seu trabalho e, caso deseje, desta-que alguma contribuição do trabalho.
+<p align="justify">O aumento da procura de recrutamento em oportunidades para Desenvolvedores e a falta de profissionais com a qualificação solicitada resulta em déficits de profissionais em ambas as partes.  Somente no site de vagas Catho, o aumento de oportunidades para o cargo de <i>Web Developer</i> teve o aumento de 107% entre março e agosto de 2020 em relação ao ano anterior, mesmo com a pandemia de COVID-19 [1.9].</p>
+
+<p align="justify">Por outro lado, pessoas físicas e jurídicas têm buscado o trabalho autônomo: em apenas 5 meses no ano de 2020, houve um aumento de mais de 7% de vagas de <i>freelancers</i>, enquanto as vagas formais tiveram queda de quase 10% no site Trampos.co [1.4]. Os motivos são os custos: <i>freelancers</i> são livres de burocracias trabalhistas [1.4] e contém independências de contratos [1.9]. </p>
+
 
 
 ## 2. Participantes do processo
 
-​	Os participantes do processo (também chamados de “*stakeholders*” são as partes interessadas no processo, independente do nível. Para abordar esse tópico, escolhemos a metodologia da Matriz de *Stakeholders*.
+<p align="justify">Os participantes do processo, também chamados de “<i>stakeholders</i>”, são as partes interessadas no processo, independente do nível de influência. Por isso, o mapeamento dos <i>stakeholders</i> é importante para o alinhamento de expectativas e conhecimento de cada nível, o que conduz para o sucesso do projeto [1.7]. Para abordar esse tópico, escolhemos a metodologia da Matriz de <i>Stakeholders.</i>.</p>
 
-**2.1. Matriz de \*Stakeholders\***
+### 2.1. Matriz de Stakeholders
 
-​	A matriz de *stakeholders* consiste no mapeamento de todas as partes interessadas na solução, organizadas por níveis de enfoque. De acordo com as discussões, foram listados na matriz abaixo os diferentes perfis das partes interessadas, pessoas e organizações direta ou indiretamente afetadas pelo projeto consideradas as chaves para a tomada de decisões do projeto. 
+<p align="justify">A matriz de <i>stakeholders</i> consiste no mapeamento de todas as partes interessadas na solução, organizadas por níveis de enfoque. De acordo com as discussões, foram listados na matriz abaixo os diferentes perfis das partes interessadas, pessoas e organizações direta ou indiretamente afetadas consideradas as chaves para a tomada de decisões do projeto [1.1].</p> 
 
  
 
@@ -66,36 +73,36 @@ desenvolvimento do seu trabalho e, caso deseje, desta-que alguma contribuição 
 
 **Figura 1 - Mapa de *Stakeholders***
 
-​	Ao centro da Figura, temos os dois perfis a serem atendidos, “Dev iniciante” e “Cliente de Software”. Já no segundo nível temos as “Empresas de software”, não sendo o foco da solução, mas que também se beneficiam do processo. Os outros perfis no arco mais externo são os que podem ter algum contato com a plataforma de forma indireta, podendo também ser a fonte da maioria dos utilizadores principais.
+<p align="justify">Ao centro da Figura, temos os dois perfis a serem atendidos, “Dev iniciante” e “Cliente de Software”. Já no segundo nível temos as “Empresas de software”, não sendo o foco da solução, mas que também se beneficiam do processo. Os outros perfis no arco mais externo são os que podem ter algum contato com a plataforma de forma indireta, podendo também ser a fonte da maioria dos utilizadores principais.</p>
 
- 
 
-**2.2. Personas**
 
- 
+### 2.2. Personas
 
 | <img src=".\imagens\persona1.png" alt="persona" width="120"/> | **João Pedro Mayrink**                                       |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Idade:** 27  **Ocupação**:  Estudante de tecnologia.  **Formação Acadêmica:** Graduação incompleta. | **Redes:**  ●   Linkedin; <br> ●   Workana;                  |                                                              |
-| **Motivação:**  ●   Ingressar no mercado de trabalho.        | **Frustração:**  ●   vagas de estágio com requisitos  complexo | **Hobbies:**  ●   Ver séries. <br/> ●   Estudar programação. |
+| **Idade:** 27  **Ocupação**:  Estudante de tecnologia.  <br/>**Formação Acadêmica:** Graduação incompleta. | **Redes:**  <br/>●   Linkedin <br>●   Workana                |                                                              |
+| **Motivação:** <br/> ●   Ingressar no mercado de trabalho.   | **Frustração:**  <br/>●   Vagas de estágio com requisitos  complexo | **Hobbies:** <br/> ●   Ver séries <br/> ●   Estudar programação |
 
  
 
-| <img src=".\imagens\persona2.png" alt="persona" width="120" /> | **Ana Clara Fonseca**                             |                                                      |
-| ------------------------------------------------------------ | ------------------------------------------------- | ---------------------------------------------------- |
-| **Idade:** 20  anos  **Ocupação**: Desenvolvedor full-stack.  **Formação Acadêmica:**   Engenheira de Software | **Redes:**  ●   ProgamaThor;  ●   Workana;        |                                                      |
-| **Motivação:**  ●   Divulgação e renda extra.                | **Frustração:**  ●   Remuneração do seu trabalho. | **Hobbies:**  ●   Tocar violão;  ●   Andar de skate; |
+| <img src=".\imagens\persona2.png" alt="persona" width="120" /> | **Ana Clara Fonseca**                                  |                                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------------- |
+| **Idade:** 20  anos  **Ocupação**: Desenvolvedor full-stack.  <br/>**Formação Acadêmica:**   Engenheira de Software | **Redes:** <br/> ●   ProgamaThor; <br/> ●   Workana;   |                                                             |
+| **Motivação:**<br/> ●   Divulgação e renda extra.            | **Frustração:** <br/> ●   Remuneração do seu trabalho. | **Hobbies:**  <br/>●   Tocar violão<br/> ●   Andar de skate |
 
  
 
-| <img src=".\imagens\persona3.png" alt="persona" width="120"/> | **Jose Vitor da Silva Sousa**                          |                                                        |
-| ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ |
-| **Idade:** 45  anos  **Ocupação**: Gerente de Vendas  **Formação Acadêmica:** Cursando graduação | **Redes:**  ●   VintePila;  ●   Freelancer.com;        |                                                        |
-| **Motivação:**  ●   Montar um site para curso trader.        | **Frustração:**  ●   Falta de profissionais autônomos. | **Hobbies:**  ●   Cuidar dos pets.  ●   Jogar futebol; |
+| <img src=".\imagens\persona3.png" alt="persona" width="120"/> | **Jose Vitor da Silva Sousa**                              |                                                              |
+| ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| **Idade:** 45  anos  **Ocupação**: Gerente de Vendas  <br/>**Formação Acadêmica:** Graduação incompleta. | **Redes:** <br/> ●   VintePila<br/> ●   Freelancer.com     |                                                              |
+| **Motivação:**  ●   Montar um site para curso trader.        | **Frustração:**  <br/>●   Falta de profissionais autônomos | **Hobbies:**  <br/>●   Cuidar dos pets<br/>●   Jogar futebol |
 
 
 
-**2.3 Histórias do usuário**
+### 2.3 História do usuário
+
+
 
 | Eu como …   [PERSONA]          | … quero/desejo …  [O QUE]                                | … para ....  [POR QUE]                       |
 | ------------------------------ | -------------------------------------------------------- | -------------------------------------------- |
@@ -109,11 +116,16 @@ desenvolvimento do seu trabalho e, caso deseje, desta-que alguma contribuição 
 
 ## 3. Modelagem do processo de negócio
 
-## 3.1. Análise da situação atual
+### 3.1. Análise da situação atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, _ **apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente** _, mesmo que não se utilize tecnologia computacional.
+<p align="justify">A DevTask trata-se de uma empresa fictícia, baseada na ideia de empresas reais como VintePila, 99Freelas, TopTotal, Escola do Legado Vip, entre outras. Desse modo, pode-se observar a situação atual dessas empresas: plataformas virtuais existentes no modelo <i>marketplace</i> voltadas para trabalhadores <i>freelancers</i>.</p>
+<p align="justify">Com o crescimento expoencial de vagas remotas, as plataformas de <i>freelancers</i> estão em momento favorável: a procura por vagas remotas com flexibilidade de horário e a autonomia em relação ao atendimento ao cliente fizeram 2,5 mil profissionais se cadastrarem como <i>freelancers</i> na plataforma GetNinjas[1.5]. Os motivos para esse acontecimento são oriundos da pandemia de COVID-19, que trouxe o desemprego por cerca de 9 milhões de brasileiros [1.4], dificuldade de recolocação no mercado de trabalho [1.5] e o aumento da procura por empregos relacionados a trabalhos remotos em 384% no Brasil no ano de 2020 [1.2].</p>
+<p align="justify">Apesar dos benefícios do trabalho <i>freelancer</i> pela sua flexibilidade, autonomia e livre da burocracia trabalhista, percebe-se alguns desafios desses profissionais: como não há renda fixa, benefícios trabalhistas e depende muito da demanda de quem procura os serviços, os profissionais  </p>
+<p align="justify">O crescimento de novas plataformas de <i>freelancers</i> torna o mercado extremamente competitivo, o que resulta em trazer a DevTask um diferencial, tanto nos seu público-alvo, quanto em seus serviços. Como a plataforma é voltada para o público de desenvolvedores iniciantes, a procura desses serviços será mais precisa em relação a plataformas que oferecem serviços variados. Além disso, a DevTask permite aos profissionais a oferecer os seus serviços através de anúncios gratuitos e ilimitados, com <i>feedback</i> humanizado e serviço  especializado nas tecnologias solicitadas e diretamente ao cliente. Vale salientar que todos os serviços foram pensados através do mapeamento de <i>stakeholders</i>, do capítulo anterior.</p>
 
-## 3.2. Descrição Geral da proposta
+
+
+### 3.2. Descrição Geral da proposta
 
 Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
 
@@ -215,24 +227,23 @@ Apresente aqui a conclusão do seu trabalho. Discussão dos resultados obtidos n
 
 # REFERÊNCIAS
 
-Como um projeto de software não requer revisão bibliográfica, a inclusão das referências não é obrigatória. No entanto, caso você deseje incluir referências relacionadas às tecnologias, padrões, ou metodologias que serão usadas no seu trabalho, relacione-as de acordo com a ABNT.
+**[1.1]** - FARIA, T. **Trabalhar como freelancer:** 7 sites para conseguir jobs como programador. Disponível em: <https://devpleno.com/trabalhar-como-freelancer-7-sites-para-conseguir-jobs-como-programador/>. Acesso em: 10 mar. 2021.
 
-Verifique no link abaixo como devem ser as referências no padrão ABNT:
+**[1.2]** -  FOLHA DIRIGIDA. **Número de vagas remotas cresceu 215% entre março e novembro.** Disponível em: <https://folhadirigida.com.br/mais/noticias/mercado/numero-de-vagas-remotas-cresceu-entre-marco-e-novembro>. Acesso em: 11 mar. 2021.
 
-http://www.pucminas.br/imagedb/documento/DOC\_DSC\_NOME\_ARQUI20160217102425.pdf
+**[1.3]** - KRIGER, D. **Mercado de TI no Brasil:** Panorama e oportunidades. Disponível em: <https://kenzie.com.br/blog/mercado-de-ti-no-brasil-panorama-e-oportunidades-2/>. Acesso 11 mar. 2021.
 
+**[1.4]** -  LIMA, M. **Trabalho como freelancer cresce e se consolida como opção de carreira.** Disponível em: <https://vocesa.abril.com.br/carreira/freelancer-cresce-em-meio-a-pandemia-e-se-consolida-como-opcao-de-carreira/>. Acesso em: 11 mar. 2021.
 
-**[1.1]** - _ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019. E-book. ISBN 9788543025001._
+**[1.5]** - MIRELLA, L. **Trabalho freelancer vira alternativa em meio à pandemia em Rio Preto.** Disponível em: <https://www.diariodaregiao.com.br/economia/2021/02/1223760-trabalho-freelancer-vira-alternativa-em-meio-a-pandemia-em-rio-preto.html>. Acesso em 12 mar. 2021.
 
-**[1.2]** - _COPPIN, Ben. **Inteligência artificial**. Rio de Janeiro, RJ: LTC, c2010. E-book. ISBN 978-85-216-2936-8._
+**[1.6]** - PR NEWSWIRE. **Conheça a mais nova plataforma gratuita para freelancers que veio transformar projetos em realidades.**  Disponível em: <https://atarde.uol.com.br/economia/pr-newswire/noticias/2159634-conheca-a-mais-nova-plataforma-gratuita-para-freelancers-que-veio-transformar-projetos-em-realidades>. Acesso em 12 mar. 2021.
 
-**[1.3]** - _CORMEN, Thomas H. et al. **Algoritmos: teoria e prática**. Rio de Janeiro, RJ: Elsevier, Campus, c2012. xvi, 926 p. ISBN 9788535236996._
+**[1.7]** - ROBSON CAMARGO. **Stakeholders:** entenda a grande importância deles no gerenciamento de projetos. Disponível em: <https://robsoncamargo.com.br/blog/O-que-sao-stakeholders-Saiba-tudo-sobre-eles-e-sua-importancia>. Acesso em: 10 mar. 2021.
 
-**[1.4]** - _SUTHERLAND, Jeffrey Victor. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. 2. ed. rev. São Paulo, SP: Leya, 2016. 236, [4] p. ISBN 9788544104514._
+**[1.8]** - TOPTAL. **Why Toptal?** Disponível em: <https://www.toptal.com/why>. Acesso em: 10 mar. 2021.
 
-**[1.5]** - _RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial**. Rio de Janeiro: Elsevier, c2013. xxi, 988 p. ISBN 9788535237016._
-
-
+**[1.9]** - VARELLA, C. **Emprego em alta para "devs".** Disponível em: <https://economia.uol.com.br/reportagens-especiais/mercado-de-trabalho-busca-desenvolvedores-ti/#cover>. Acesso em 11 mar. 2021
 
 # APÊNDICES
 
