@@ -154,6 +154,12 @@ Processo de contratação de serviço, onde o usuário solicita o serviço do de
 
 <img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
 
+### 3.3.3 Processo 4 – Cadastro Serviço
+
+Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgado na aplicação informando nome, descrição, habilidades e preço.
+
+<img src="imagens/process04.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
+
 
 
 ## 4. Projeto da Solução
