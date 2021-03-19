@@ -141,11 +141,11 @@ Processo de cadastro de usuário, onde ocorre a entrada dos dados pessoais e ver
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 
-### 3.3.2 Processo 2 – NOME DO PROCESSO
+### 3.3.2 Processo 2 – CADASTRO DESENVOLVEDOR
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+Processo de cadastramento de desencolvedor, onde ocorre o preenchimento do formulário com as informações pessoais e validação do cpf.
 
-![Exemplo de um Modelo BPMN do PROCESSO 2](imagens/call_process.png "Modelo BPMN do Processo 2.")
+<img src="imagens/process02.png" alt="Exemplo de um Modelo BPMN do PROCESSO 2" title="Modelo BPMN do Processo 2." style="zoom:100%;" />
 
 ## 4. Projeto da Solução
 
