@@ -141,11 +141,20 @@ Processo de cadastro de usuário, onde ocorre a entrada dos dados pessoais e ver
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 
-### 3.3.2 Processo 2 – CADASTRO DESENVOLVEDOR
 
-Processo de cadastramento de desencolvedor, onde ocorre o preenchimento do formulário com as informações pessoais e validação do cpf.
+### 3.3.2 Processo 2 – Cadastro de Desenvolvedor
+
+Processo de cadastramento de desenvolvedor, onde ocorre o preenchimento do formulário com as informações pessoais e validação do CPF.
 
 <img src="imagens/process02.png" alt="Exemplo de um Modelo BPMN do PROCESSO 2" title="Modelo BPMN do Processo 2." style="zoom:100%;" />
+
+### 3.3.3 Processo 3 – Contrato de Serviço
+
+Processo de contratação de serviço, onde o usuário solicita o serviço do desenvolvedor, contrata-o e, após a entrega, o usuário realiza a avaliação e pagamento pelo serviço.
+
+<img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
+
+
 
 ## 4. Projeto da Solução
 
