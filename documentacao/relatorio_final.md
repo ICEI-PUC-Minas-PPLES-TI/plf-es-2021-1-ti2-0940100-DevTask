@@ -134,11 +134,11 @@ _**Resumo**
 
 ## 3.3. Processos
 
-### 3.3.1 Processo 1 – NOME DO PROCESSO
+### 3.3.1 Processo 1 – Cadastro de Usuário
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN.
+Processo de cadastro de usuário, onde ocorre a entrada dos dados pessoais e verficação de pessoa física ou jurídica.
 
-![Exemplo de um Modelo BPMN do PROCESSO 1](imagens/process.png "Modelo BPMN do Processo 1.")
+<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 
 ### 3.3.2 Processo 2 – NOME DO PROCESSO
