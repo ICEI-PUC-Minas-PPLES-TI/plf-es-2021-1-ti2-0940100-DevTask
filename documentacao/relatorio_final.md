@@ -138,7 +138,7 @@ _**Resumo**
 
 Processo de cadastro de usuário, onde ocorre a entrada dos dados pessoais e verficação de pessoa física ou jurídica.
 
-<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
+<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1." style="zoom:300%">
 
 
 
