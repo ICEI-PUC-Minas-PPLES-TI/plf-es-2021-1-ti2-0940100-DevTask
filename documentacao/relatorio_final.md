@@ -166,25 +166,20 @@ Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgad
 
 ### 4.1. Detalhamento das atividades
 
-Descrever aqui cada uma das propriedades das atividades de cada um dos processos. Devem estar relacionadas com o modelo de processo apresentado anteriormente.
+#### Processo 1-Cadastro de Usuário
 
-#### Processo 1 – NOME DO PROCESSO
+#### Cadastrar
 
-**Nome da atividade 1**
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| [Nome do campo] | [Área de texto, Caixa de texto, Número, Data, Imagem, Seleção única, Múltipla escolha, Arquivo, Link, Tabela] |  |  |
-| ***Exemplo:***  |    |     |
-| login | Caixa de Texto | formato de e-mail |  |
-| senha | Caixa de Texto | mínimo de 8 caracteres |   |
-
-**Nome da atividade 2**
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| [Nome do campo] | [Área de texto, Caixa de texto, Número, Data, Imagem, Seleção única, Múltipla escolha, Arquivo, Link, Tabela] |  |  |
-|    |    |     |
+| **Campo** | **Tipo**       | **Restrições**           | **Valor default** |
+| --------- | -------------- | ------------------------ | ----------------- |
+| Nome      | Caixa de Texto | Mais de 3 caracteres     | NULL              |
+| Sobrenome | Caixa de Texto | Mais de 3 caracteres     | NULL              |
+| Email     | Caixa de Texto | formato de e-mail        | NULL              |
+| Senha     | Caixa de Texto | mínimo de 6 caracteres   | NULL              |
+| Cadastrar | Submit         | preenchimento dos campos | False             |
+| CPF/CNPJ  | Caixa de texto | Validação de CPF/CNPJ    | 000000            |
+| Telefone  | Caixa de Texto | Fomato Telefone          | NULL              |
+| Termos    | Check Box      | Estar setado             | FALSE             |
 
 #### Processo 2 – NOME DO PROCESSO
 
