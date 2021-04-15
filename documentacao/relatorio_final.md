@@ -168,7 +168,7 @@ Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgad
 
 Descrever aqui cada uma das propriedades das atividades de cada um dos processos. Devem estar relacionadas com o modelo de processo apresentado anteriormente.
 
-#### Processo 1-Cadastro de Usuário
+#### Processo 1 – Cadastro de Usuário
 
 #### Cadastrar
 
@@ -183,20 +183,20 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 | Telefone | Caixa de Texto | Fomato Telefone | NULL |
 | Termos | Check Box | Estar setado | FALSE |
 
-#### Processo 2- Cadastro de Desenvolvedor
+#### Processo 2 – Cadastro de Desenvolvedor
 
 #### Cadastrar
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
-| Portfolio | Link | Estar preenchido | NULL |
+| Portfólio | Link | Estar preenchido | NULL |
 | Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
 | Sobrenome | Caixa de Texto | Mais de 3 caracteres |NULL|
-| Email | Caixa de Texto | formato e-mail |NULL|
-| Senha | Caixa de Texto | minimo de 6 caracteres |NULL|
-| Cadastrar | Submit | preenchimento dos campos |False|
+| Email | Caixa de Texto | Formato e-mail |NULL|
+| Senha | Caixa de Texto | Mínimo de 6 caracteres |NULL|
+| Cadastrar | Submit | Preenchimento dos campos |False|
 | CPF | Caixa de texto | Validação CPF |000000|
-| Habilidades | Caixa de Texto | ter menos quq 60 caracteres |NULL|
+| Habilidades | Caixa de Texto | Ter menos que 60 caracteres |NULL|
 | Termos | Check box | estar setado |FALSE|
 
 #### Processo 3 – Contrato de Serviço
@@ -213,19 +213,30 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
 | Serviço | Área de texto | Estar preenchido | NULL |
-| Nome Serviço | Link | nenhuma |pagina do serviço|
+| Nome Serviço | Link | Nenhuma |página do serviço|
 
 ##### **Entrar em contato com DEV**
 
-| **Campo**  | **Tipo**      | **Restrições**   | **Valor default**    |
-| ---------- | ------------- | ---------------- | -------------------- |
-| Hbilidades | Área de texto | nenhuma          | habilidades do dev   |
-| Preço      | Área de texto | estar preenchido | valor do serviço     |
-| Reputação  | Área de texto | nenhuma          | reputação Dev        |
-| Descrição  | Área de texto | Estar preenchido | descrição do serviço |
-| Contato    | Área de texto | formato Email    | email do dev         |
+| **Campo**   | **Tipo**      | **Restrições**   | **Valor default**    |
+| ----------- | ------------- | ---------------- | -------------------- |
+| Habilidades | Área de texto | Nenhuma          | Habilidades do dev   |
+| Preço       | Área de texto | estar preenchido | Valor do serviço     |
+| Reputação   | Área de texto | Nenhuma          | Reputação Dev        |
+| Descrição   | Área de texto | Estar preenchido | Descrição do serviço |
+| Contato     | Área de texto | Formato e-mail   | E-mail do dev        |
 
-#### 
+#### **Processo 4 – Cadastrar serviço**
+
+##### **Cadastrar**
+
+| **Campo**       | **Tipo**       | **Restrições**                          | **Valor default** |
+| --------------- | -------------- | --------------------------------------- | ----------------- |
+| Nome do Serviço | Caixa de Texto | Ter no mínimo 10 caracteres e maximo 20 | NULL              |
+| Habilidades     | Campo de Texto | Nenhuma                                 | NULL              |
+| Preço           | Campo de Texto | Estar preenchido                        | NULL              |
+| Reputação       | Campo de Texto | Nenhuma                                 | NULL              |
+| Descrição       | Campo de Texto | Estar preenchido                        | NULL              |
+| Contato         | Campo de Texto | Formato e-mail                          | E-mail do dev     |
 
 ### 4.2. Tecnologias
 
