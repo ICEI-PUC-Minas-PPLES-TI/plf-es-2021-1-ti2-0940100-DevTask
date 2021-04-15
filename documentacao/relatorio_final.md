@@ -199,6 +199,32 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 | Habilidades | Caixa de Texto | ter menos quq 60 caracteres |NULL|
 | Termos | Check box | estar setado |FALSE|
 
+#### Processo 3 – Contrato de Serviço
+
+**Buscar serviço**
+
+| **Campo** | **Tipo** | **Restrições** | **Valor default** |
+| --- | --- | --- | --- |
+| Busca | Caixa de texto | nenhuma | NULL |
+| Buscar | submit | preenchimento do campo busca |FALSE|
+
+**Escolher Serviço**
+
+| **Campo** | **Tipo** | **Restrições** | **Valor default** |
+| --- | --- | --- | --- |
+| Serviço | Área de texto | Estar preenchido | NULL |
+| Nome Serviço | Link | nenhuma |pagina do serviço|
+
+##### **Entrar em contato com DEV**
+
+| **Campo**  | **Tipo**      | **Restrições**   | **Valor default**    |
+| ---------- | ------------- | ---------------- | -------------------- |
+| Hbilidades | Área de texto | nenhuma          | habilidades do dev   |
+| Preço      | Área de texto | estar preenchido | valor do serviço     |
+| Reputação  | Área de texto | nenhuma          | reputação Dev        |
+| Descrição  | Área de texto | Estar preenchido | descrição do serviço |
+| Contato    | Área de texto | formato Email    | email do dev         |
+
 #### 
 
 ### 4.2. Tecnologias
