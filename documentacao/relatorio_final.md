@@ -138,7 +138,7 @@ _**Resumo**
 
 Processo de cadastro de usuário, onde ocorre a entrada dos dados pessoais e verficação de pessoa física ou jurídica.
 
-<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1." style="zoom:300%">
+<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 
 
@@ -154,7 +154,7 @@ Processo de contratação de serviço, onde o usuário solicita o serviço do de
 
 <img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
 
-### 3.3.3 Processo 4 – Cadastro Serviço
+### 3.3.4 Processo 4 – Cadastro Serviço
 
 Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgado na aplicação informando nome, descrição, habilidades e preço.
 
@@ -166,36 +166,40 @@ Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgad
 
 ### 4.1. Detalhamento das atividades
 
+Descrever aqui cada uma das propriedades das atividades de cada um dos processos. Devem estar relacionadas com o modelo de processo apresentado anteriormente.
+
 #### Processo 1-Cadastro de Usuário
 
 #### Cadastrar
 
-| **Campo** | **Tipo**       | **Restrições**           | **Valor default** |
-| --------- | -------------- | ------------------------ | ----------------- |
-| Nome      | Caixa de Texto | Mais de 3 caracteres     | NULL              |
-| Sobrenome | Caixa de Texto | Mais de 3 caracteres     | NULL              |
-| Email     | Caixa de Texto | formato de e-mail        | NULL              |
-| Senha     | Caixa de Texto | mínimo de 6 caracteres   | NULL              |
-| Cadastrar | Submit         | preenchimento dos campos | False             |
-| CPF/CNPJ  | Caixa de texto | Validação de CPF/CNPJ    | 000000            |
-| Telefone  | Caixa de Texto | Fomato Telefone          | NULL              |
-| Termos    | Check Box      | Estar setado             | FALSE             |
+| **Campo** | **Tipo** | **Restrições** | **Valor default** |
+| --- | --- | --- | --- |
+| Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
+| Sobrenome | Caixa de Texto | Mais de 3 caracteres |NULL|
+| Email | Caixa de Texto | formato de e-mail | NULL |
+| Senha | Caixa de Texto | mínimo de 6 caracteres | NULL |
+| Cadastrar | Submit | preenchimento dos campos | False |
+| CPF/CNPJ | Caixa de texto | Validação de CPF/CNPJ | 000000 |
+| Telefone | Caixa de Texto | Fomato Telefone | NULL |
+| Termos | Check Box | Estar setado | FALSE |
 
-#### Processo 2 – NOME DO PROCESSO
+#### Processo 2- Cadastro de Desenvolvedor
 
-**Nome da atividade 1**
+#### Cadastrar
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
-| [Nome do campo] | [Área de texto, Caixa de texto, Número, Data, Imagem, Seleção única, Múltipla escolha, Arquivo, Link, Tabela] |  |  |
-|    |    |     |
+| Portfolio | Link | Estar preenchido | NULL |
+| Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
+| Sobrenome | Caixa de Texto | Mais de 3 caracteres |NULL|
+| Email | Caixa de Texto | formato e-mail |NULL|
+| Senha | Caixa de Texto | minimo de 6 caracteres |NULL|
+| Cadastrar | Submit | preenchimento dos campos |False|
+| CPF | Caixa de texto | Validação CPF |000000|
+| Habilidades | Caixa de Texto | ter menos quq 60 caracteres |NULL|
+| Termos | Check box | estar setado |FALSE|
 
-**Nome da atividade 2**
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| [Nome do campo] | [Área de texto, Caixa de texto, Número, Data, Imagem, Seleção única, Múltipla escolha, Arquivo, Link, Tabela] |  |  |
-|    |    |     |
+#### 
 
 ### 4.2. Tecnologias
 
