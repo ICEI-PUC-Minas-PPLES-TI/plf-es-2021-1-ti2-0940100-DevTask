@@ -188,7 +188,7 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
-| Portfólio | Link | Estar preenchido | NULL |
+| Portfólio | Link | Preenchimento total | NULL |
 | Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
 | Sobrenome | Caixa de Texto | Mais de 3 caracteres |NULL|
 | Email | Caixa de Texto | Formato e-mail |NULL|
@@ -196,7 +196,7 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 | Cadastrar | Submit | Preenchimento dos campos |False|
 | CPF | Caixa de texto | Validação CPF |000000|
 | Habilidades | Caixa de Texto | Ter menos que 60 caracteres |NULL|
-| Termos | Check box | estar setado |FALSE|
+| Termos | Check box | Estar setado |FALSE|
 
 #### Processo 3 – Contrato de Serviço
 
@@ -211,18 +211,18 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
-| Serviço | Área de texto | Estar preenchido | NULL |
+| Serviço | Área de texto | Preenchimento total | NULL |
 | Nome Serviço | Link | Nenhuma |página do serviço|
 
 ##### **Entrar em contato com DEV**
 
-| **Campo**   | **Tipo**      | **Restrições**   | **Valor default**    |
-| ----------- | ------------- | ---------------- | -------------------- |
-| Habilidades | Área de texto | Nenhuma          | Habilidades do dev   |
-| Preço       | Área de texto | estar preenchido | Valor do serviço     |
-| Reputação   | Área de texto | Nenhuma          | Reputação Dev        |
-| Descrição   | Área de texto | Estar preenchido | Descrição do serviço |
-| Contato     | Área de texto | Formato e-mail   | E-mail do dev        |
+| **Campo**   | **Tipo**      | **Restrições**      | **Valor default**    |
+| ----------- | ------------- | ------------------- | -------------------- |
+| Habilidades | Área de texto | Nenhuma             | Habilidades do dev   |
+| Preço       | Área de texto | Preenchimento total | Valor do serviço     |
+| Reputação   | Área de texto | Nenhuma             | Reputação Dev        |
+| Descrição   | Área de texto | Preenchimento total | Descrição do serviço |
+| Contato     | Área de texto | Formato e-mail      | E-mail do dev        |
 
 #### **Processo 4 – Cadastrar serviço**
 
@@ -230,11 +230,11 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 
 | **Campo**       | **Tipo**       | **Restrições**                          | **Valor default** |
 | --------------- | -------------- | --------------------------------------- | ----------------- |
-| Nome do Serviço | Caixa de Texto | Ter no mínimo 10 caracteres e maximo 20 | NULL              |
+| Nome do Serviço | Caixa de Texto | Ter no mínimo 10 caracteres e máximo 20 | NULL              |
 | Habilidades     | Campo de Texto | Nenhuma                                 | NULL              |
-| Preço           | Campo de Texto | Estar preenchido                        | NULL              |
+| Preço           | Campo de Texto | Preenchimento total                     | NULL              |
 | Reputação       | Campo de Texto | Nenhuma                                 | NULL              |
-| Descrição       | Campo de Texto | Estar preenchido                        | NULL              |
+| Descrição       | Campo de Texto | Preenchimento total                     | NULL              |
 | Contato         | Campo de Texto | Formato e-mail                          | E-mail do dev     |
 
 ### 4.2. Tecnologias
@@ -248,10 +248,13 @@ O projeto emprega tecnologias de alto nível, voltadas para uma melhor performan
 | JavaScript            | Express               | DBeaver               |
 | Bootstrap             | Sequelize             |                       |
 | ReactJS               | JWT                   |                       |
-| --------------------- | --------------------- | ------------------    |
-| **IDE**               | Visual Studio Code                            |
-| **Code Formatter**    | Prettier                                      |
-| **Tester de API**     | Postman                                       |
+
+| **IDE**            | **Code Formatter** | **Tester de API** |
+| ------------------ | ------------------ | ----------------- |
+| Visual Studio Code | Prettier           | Postman           |
+
+
+
 
 
 ## 5. Modelagem de dados
