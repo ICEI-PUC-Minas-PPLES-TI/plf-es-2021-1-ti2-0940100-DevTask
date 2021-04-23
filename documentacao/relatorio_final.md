@@ -239,7 +239,20 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 
 ### 4.2. Tecnologias
 
-Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas. Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+O projeto emprega tecnologias de alto nível, voltadas para uma melhor performance e experiência do usuário. Além disso, adequamos o projeto para possibilitar um desenvolvimento de software mais suave, e optamos por metodologias que facilitassem o desenvolvimento colaborativo e a integração de todos os componentes do grupo. A listagem das tecnologias pode ser vista na tabela abaixo, que relaciona as áreas de desenvolvimento com as tecnologias envolvidas.
+
+| **Front-End**         | **Back-End**          | **BD**                |
+| -----------------     | -----------------     | --------------        |
+| HTML                  | JavaScript            | PostresQL             |
+| CSS                   | Node.js               | PGAdmin 4             |
+| JavaScript            | Express               | DBeaver               |
+| Bootstrap             | Sequelize             |                       |
+| ReactJS               | JWT                   |                       |
+| --------------------- | --------------------- | ------------------    |
+| **IDE**               | Visual Studio Code                            |
+| **Code Formatter**    | Prettier                                      |
+| **Tester de API**     | Postman                                       |
+
 
 ## 5. Modelagem de dados
 
