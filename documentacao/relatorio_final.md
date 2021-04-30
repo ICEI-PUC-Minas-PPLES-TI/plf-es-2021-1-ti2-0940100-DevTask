@@ -18,7 +18,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo** 
+**Resumo** 
 
 <p align="justify">A grande demanda de trabalho remoto, sobretudo, na área da Tecnologia da Informação, trouxe o aumento de oportunidades. Entretanto, profissionais com menos experiência não conseguem demonstrar suas habilidades para adquirir conhecimento na prática. Dessa forma, a equipe da DevTask pensou em uma plataforma de desenvolvedores <i>freelancers</i>, no modo <i>marketplace</i>. A missão é conectar pessoas — físicas e/ou jurídicas — interessadas em serviços de <i>software</i> com os profissionais autônomos. O contato entre os desenvolvedores e clientes é direto via chat ou e-mail, além do suporte técnico em caso de dúvidas ou problemas.</p>
 
@@ -43,7 +43,7 @@ _**Resumo**
 
     1.3 Objetivo geral
 
-<p align="justify">A DevTask busca elaborar uma plataforma voltada para os desenvolvedores iniciantes, e promover a conexão entre eles, que desejam participar de projetos de <i>software</i>, e entidades, que possuem a demanda por esses serviços. </p>
+<p align="justify">A DevTask busca elaborar uma plataforma voltada para os desenvolvedores iniciantes, a fim de progredir seus conhecimentos na área, adquirir experiências e que desejam participar de projetos de <i>software</i> solicitado por seus clientes, que possuem a demanda por esses serviços. </p>
 
         1.3.1 Objetivos específicos
 
@@ -59,11 +59,11 @@ _**Resumo**
 
 ## 2. Participantes do processo
 
-<p align="justify">Os participantes do processo, também chamados de “<i>stakeholders</i>”, são as partes interessadas no processo, independente do nível de influência. Por isso, o mapeamento dos <i>stakeholders</i> é importante para o alinhamento de expectativas e conhecimento de cada nível, o que conduz para o sucesso do projeto [1.7]. Para abordar esse tópico, escolhemos a metodologia da Matriz de <i>Stakeholders.</i>.</p>
+<p align="justify">Os participantes do processo, também chamados de “<i>stakeholders</i>”, são as partes interessadas, independente do nível de influência. Por isso, o mapeamento dos <i>stakeholders</i> é importante para o alinhamento de expectativas e conhecimento de cada nível, o que conduz para o sucesso do projeto [1.7]. Para abordar esse tópico, escolhemos a metodologia da Matriz de <i>Stakeholders.</i>.</p>
 
 ### 2.1. Matriz de Stakeholders
 
-<p align="justify">A matriz de <i>stakeholders</i> consiste no mapeamento de todas as partes interessadas na solução, organizadas por níveis de enfoque. De acordo com as discussões, foram listados na matriz abaixo os diferentes perfis das partes interessadas, pessoas e organizações direta ou indiretamente afetadas consideradas as chaves para a tomada de decisões do projeto [1.1].</p> 
+<p align="justify">A Matriz de <i>stakeholders</i> consiste no mapeamento de todas as partes interessadas na solução, organizadas por níveis de enfoque. De acordo com as discussões, foram listados na matriz abaixo os diferentes perfis das partes interessadas, pessoas e organizações direta ou indiretamente afetadas consideradas as chaves para a tomada de decisões do projeto [1.1].</p> 
 
  
 
@@ -73,7 +73,7 @@ _**Resumo**
 
 **Figura 1 - Mapa de *Stakeholders***
 
-<p align="justify">Ao centro da Figura, temos os dois perfis a serem atendidos, “Dev iniciante” e “Cliente de Software”. Já no segundo nível temos as “Empresas de software”, não sendo o foco da solução, mas que também se beneficiam do processo. Os outros perfis no arco mais externo são os que podem ter algum contato com a plataforma de forma indireta, podendo também ser a fonte da maioria dos utilizadores principais.</p>
+<p align="justify">Ao centro da Figura, temos os dois perfis a serem atendidos, “Dev iniciante” e “Cliente de Software”. Já no segundo nível temos as “Empresas de software”, não sendo o foco da solução, mas que também se beneficiam do processo. E os outros perfis no arco mais externo são os que podem ter algum contato com a plataforma de forma indireta, podendo também ser a fonte da maioria dos utilizadores principais.</p>
 
 
 
@@ -96,7 +96,7 @@ _**Resumo**
 | <img src=".\imagens\persona3.png" alt="persona" width="120"/> | **Jose Vitor da Silva Sousa**                              |                                                              |
 | ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | **Idade:** 45  anos  **Ocupação**: Gerente de Vendas  <br/>**Formação Acadêmica:** Graduação incompleta. | **Redes:** <br/> ●   VintePila<br/> ●   Freelancer.com     |                                                              |
-| **Motivação:**  ●   Montar um site para curso trader.        | **Frustração:**  <br/>●   Falta de profissionais autônomos | **Hobbies:**  <br/>●   Cuidar dos pets<br/>●   Jogar futebol |
+| **Motivação:**  ●   Montar um site para curso *trader*.      | **Frustração:**  <br/>●   Falta de profissionais autônomos | **Hobbies:**  <br/>●   Cuidar dos pets<br/>●   Jogar futebol |
 
 
 
@@ -104,13 +104,13 @@ _**Resumo**
 
 
 
-| Eu como …   [PERSONA]          | … quero/desejo …  [O QUE]                                | … para ....  [POR QUE]                       |
-| ------------------------------ | -------------------------------------------------------- | -------------------------------------------- |
-| Eu como estudante.             | Quero uma oportunidade  de aprimorar minhas habilidades. | Para ser remunerado.                         |
-| Eu como desenvolvedor  junior. | Preciso de trabalhos  externos ao meu.                   | Para ter uma renda  extra.                   |
-| Eu como estudante.             | Quero divulgar minhas  habilidades.                      | Para achar um estágio.                       |
-| Eu como empresa de  software.  | Desejo buscar  funcionários.                             | Para achar novos  talentos.                  |
-| Eu como cliente.               | Desejo achar um  profissional.                           | Desenvolver uma  aplicação para meu negócio. |
+| Eu como …   [PERSONA]          | … quero/desejo …  [O QUE]                               | … para ....  [POR QUE]                      |
+| ------------------------------ | ------------------------------------------------------- | ------------------------------------------- |
+| Eu como estudante.             | Quero uma oportunidade de aprimorar minhas habilidades. | Para ser remunerado.                        |
+| Eu como desenvolvedor  júnior. | Preciso de trabalhos externos ao meu.                   | Para ter uma renda  extra.                  |
+| Eu como estudante.             | Quero divulgar minhas  habilidades.                     | Para achar um estágio.                      |
+| Eu como empresa de  software.  | Desejo buscar  funcionários.                            | Para achar novos  talentos.                 |
+| Eu como cliente.               | Desejo achar um profissional.                           | Desenvolver uma aplicação para meu negócio. |
 
 
 
@@ -133,9 +133,11 @@ _**Resumo**
 
 ## 3.3. Processos
 
+A plataforma será composta de quatro processos para atingir seus objetivos e entregar seus resultados com êxito, descritos a seguir.
+
 ### 3.3.1 Processo 1 – Cadastro de Cliente
 
-Processo de cadastro de cliente, onde ocorre a entrada dos dados pessoais e verficação de pessoa física ou jurídica.
+Processo de cadastro de cliente trata-se da entrada dos dados pessoais do usuário cliente, verificação de pessoa física ou jurídica e conformidade com os termos de uso.
 
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
@@ -143,19 +145,19 @@ Processo de cadastro de cliente, onde ocorre a entrada dos dados pessoais e verf
 
 ### 3.3.2 Processo 2 – Cadastro de Desenvolvedor
 
-Processo de cadastramento de desenvolvedor, onde ocorre o preenchimento do formulário com as informações pessoais e validação do CPF.
+Processo de cadastramento de desenvolvedor ocorre o preenchimento do formulário com as informações pessoais e portifólio, validação do CPF e conformidade com os termos de uso.
 
 <img src="imagens/process02.png" alt="Exemplo de um Modelo BPMN do PROCESSO 2" title="Modelo BPMN do Processo 2." style="zoom:100%;" />
 
 ### 3.3.3 Processo 3 – Contrato de Serviço
 
-Processo de contratação de serviço, onde o usuário solicita o serviço do desenvolvedor, contrata-o e, após a entrega, o usuário realiza a avaliação e pagamento pelo serviço.
+Após o cadastramento, ocorre o Processo de contrato de serviço, onde o cliente realiza a busca pelo serviço e, no momento em que o encontra, entra em contato com o desenvolvedor,  solicitando o serviço do desenvolvedor, contrata-o e, após a entrega, o usuário realiza a avaliação e pagamento pelo serviço.
 
 <img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
 
 ### 3.3.4 Processo 4 – Cadastro Serviço
 
-Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgado na aplicação informando nome, descrição, habilidades e preço.
+O Processo Cadastro Serviço trata-se do cadastro que o desenvolvedor vai realizar para um novo serviço a fim de ser divulgado na aplicação informando nome, descrição, habilidades e preço.
 
 <img src="imagens/process04.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
 
@@ -165,11 +167,11 @@ Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgad
 
 ### 4.1. Detalhamento das atividades
 
-Descrever aqui cada uma das propriedades das atividades de cada um dos processos. Devem estar relacionadas com o modelo de processo apresentado anteriormente.
+Apresenta-se detalhadamente os campos a serem preenchidos para a realização das etapas de cada processo, apresentados a seguir.
 
 #### Processo 1 – Cadastro de Usuário
 
-#### Cadastrar
+#### Cadastro
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
@@ -184,7 +186,7 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 
 #### Processo 2 – Cadastro de Desenvolvedor
 
-#### Cadastrar
+#### Cadastro
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
@@ -239,7 +241,7 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 
 ### 4.2. Tecnologias
 
-O projeto emprega tecnologias de alto nível, voltadas para uma melhor performance e experiência do usuário. Além disso, adequamos o projeto para possibilitar um desenvolvimento de software mais suave, e optamos por metodologias que facilitassem o desenvolvimento colaborativo e a integração de todos os componentes do grupo. A listagem das tecnologias pode ser vista na tabela abaixo, que relaciona as áreas de desenvolvimento com as tecnologias envolvidas.
+<p align="justify">O projeto emprega tecnologias de alto nível, voltadas para uma melhor performance e experiência do usuário. Além disso, adequamos o projeto para possibilitar um desenvolvimento de software mais suave, e optamos por metodologias que facilitassem o desenvolvimento colaborativo e a integração de todos os componentes do grupo. A listagem das tecnologias pode ser vista na tabela abaixo, que relaciona as áreas de desenvolvimento com as tecnologias envolvidas.</p>
 
 | **Front-End**         | **Back-End**          | **BD**                |
 | -----------------     | -----------------     | --------------        |
@@ -259,13 +261,21 @@ O projeto emprega tecnologias de alto nível, voltadas para uma melhor performan
 
 ## 5. Modelagem de dados
 
-Apresente o modelo de dados. Defina o dicionário de dados com os respectivos formatos e significados.
+<p align="justify"> A Modelagem de dados foram representadas entre serviço, cliente e desenvolvedor, onde o cliente pode solicitar muitos serviços, assim como o desenvolvedor pode receber inúmeros serviços para execução. Sendo assim, a relação é de muitos para muitos. Tanto o cliente como o desenvolvedor possuem uma ID exclusivas como chave primária. A seguir, apresenta-se o Diagrama de Entidade-Relacionamento lógico e conceitual, para melhor compreensão dos relacionamentos.</p>
 
 ### 5.1. Diagrama de Entidade-Relacionamento
 
-Apresente aqui o Diagrama de Entidade-Relacionamento (DER) que contemple todos conceitos e atributos apresentados item anterior. Deve contemplar também o controle de acesso de usuários de acordo com os papeis definidos nos modelos do processo de negócio.
 
-![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER.png "Diagrama de Entidade Relacionamento de Exemplo")
+
+![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER - lógico.png "Diagrama de Entidade Relacionamento de Exemplo")
+
+Diagrama de Entidade e Relacionamento Lógico
+
+![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER - conceitual.png "Diagrama de Entidade Relacionamento de Exemplo")
+
+Diagrama conceitual, baseado no Diagrama lógico
+
+
 
 
 ## 6. Indicadores de desempenho
@@ -325,7 +335,6 @@ Dos artefatos;
 Da apresentação final;
 
 Do vídeo de apresentação.
-
 
 
 
