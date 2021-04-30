@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import api from '@devtask/axios-config'
+import LoginModal from './components/login-modal/loginModal'
 
 // import { Container } from './styles';
 
@@ -10,7 +11,11 @@ const App: React.FC = () => {
     })
   }, [])
 
-  return <h1>Hello World</h1>
+  return (
+    <div className="container">
+      <LoginModal />
+    </div>
+  )
 }
 
 export default App
