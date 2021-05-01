@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
-import api from '@devtask/axios-config'
-import LoginModal from './components/login-modal/loginModal'
-
-// import { Container } from './styles';
+import api from './services/api'
+import LoginModule from './pages/login/LoginModule'
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -13,7 +11,7 @@ const App: React.FC = () => {
 
   return (
     <div className="container">
-      <LoginModal />
+      <LoginModule />
     </div>
   )
 }

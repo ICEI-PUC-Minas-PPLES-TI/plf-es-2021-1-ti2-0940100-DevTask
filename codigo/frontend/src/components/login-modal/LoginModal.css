@@ -1,11 +1,29 @@
 .LoginModal {
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
     border-radius: 20px;
-    display: block;
-    background-color: aqua;
+    background-color: white;
 }
 
-form {
-    background-color: aquamarine;
+.LoginModal button {
+    width: 100%;
+    height: 3rem;
+    margin: 20px 0;
+    padding: 10px 30px;
+
+    color: white;
+    background-color: var(--primaryColor);
+
+    font-size: 18px;
+    border: none;
+    border-radius: 16px;
+}
+
+p, a, label {
+    font-size: 14px;
+}
+
+a {
+    color: var(--primaryColor);
 }
