@@ -1,0 +1,11 @@
+.LoginModal {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: block;
+    background-color: aqua;
+}
+
+form {
+    background-color: aquamarine;
+}
