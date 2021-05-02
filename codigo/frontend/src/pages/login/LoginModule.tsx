@@ -1,7 +1,8 @@
 import { Box, Container, Grid } from '@material-ui/core'
 import React, { Component } from 'react'
 import BackButton from '../../components/back-button/BackButton'
-import LoginHeader from '../../components/login-header/LoginHeader'
+import BackgroundForms from '../../components/background-forms/BackgroundForms'
+import HeaderForms from '../../components/header-forms/HeaderForms'
 import LoginModal from '../../components/login-modal/LoginModal'
 import './LoginModule.css'
 
@@ -9,10 +10,10 @@ export class LoginModule extends Component {
     render() {
         return (
             <Box className="LoginModule">
-                <img className="background-img" src="../../assets/background-img.svg" alt="Background"/>
-                <Grid container >
+                <BackgroundForms />
+                <Grid container style={{ zIndex: 1}}>
                     <Grid item xs={12}>
-                        <LoginHeader />
+                        <HeaderForms />
                     </Grid>
                     <Container maxWidth="sm">
                     <LoginModal />
