@@ -1,6 +1,6 @@
-import { Container, Grid, InputAdornment, TextField } from '@material-ui/core'
+import { Grid, InputAdornment, Link, TextField } from '@material-ui/core'
 import { Email, LockOpen } from '@material-ui/icons'
-import React, { Component } from 'react'
+import { Component } from 'react'
 import './LoginModal.css'
 
 class LoginModal extends Component {
@@ -50,7 +50,7 @@ class LoginModal extends Component {
                 </form>
                 </Grid>
                 <Grid item xs={12}>
-                    <p>Ainda não possui uma conta? <a href="register">Cadastre-se</a></p>
+                    <p>Ainda não possui uma conta? <p className="link"><Link href="/register" color="inherit">Cadastre-se</Link></p></p>
                 </Grid>
             </Grid>
         )
