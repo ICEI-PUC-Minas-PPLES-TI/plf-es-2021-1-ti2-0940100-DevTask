@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import api from './services/api'
-import LoginModule from './pages/login/LoginModule'
+import Routes from './services/routes'
+
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -9,11 +10,7 @@ const App: React.FC = () => {
     })
   }, [])
 
-  return (
-    <div className="container">
-      <LoginModule />
-    </div>
-  )
+  return <Routes />
 }
 
 export default App
