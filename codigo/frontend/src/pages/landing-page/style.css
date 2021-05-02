@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+html{
+    max-height: 100vh;
+    width: 100vw;
+}
+
+body {
+
+    background-image: linear-gradient(130.02deg, #FF5C00 0.66%, #B600D8 83.32%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+    padding-top: 60px;
+}
+
+h1{
+    font: normal 800 65px Poppins;
+    margin: 31px auto 31px 3px;
+    line-height: 109%;
+}
+
+h2{
+    font: normal bold 20px Poppins;
+}
+
+p{
+    font: normal normal 25px Roboto;
+    line-height: 109%;
+}
+ 
+button {
+    color:white;
+}
+
+/* Barra de navegação */
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    top: 0px;
+    margin: 40px;
+    width: 100%;
+}
+
+.navegacao{
+    display: flex;
+    text-decoration: none;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    font: normal 500 14px Roboto;
+    padding: 10px;
+    color:white;
+}
+
+.cadastro{
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 41px;
+    padding: 10px 20px;
+    margin: 0 40px 0 40px;
+}
+
+.login{
+    background: #FF9F0A;
+    border-radius: 30px;
+    padding: 10px 20px; 
+    outline: none;
+    border:none;
+}
+
+/* Landing page 1 */
+
+.page1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+.text{
+    width: 40%;
+    max-width: 500px;
+}
+
+.image{
+    width: 40%;
+    max-width: 500px;
+}
+
+.button-text{
+    margin:40px 31px auto 0;
+}
+
+.dev{
+    
+    padding: 10px 30px;
+    width: 200px;
+    height: 56px;
+    font: normal bold 18px Poppins;
+    background: #FF9F0A;
+    border-radius: 30px;
+    outline: none;
+    border:none;
+    float: center; 
+    vertical-align: middle;
+}
+
+.client{
+
+    padding: 10px 30px;
+    width: 200px;
+    height: 56px;
+    font: normal bold 18px Poppins;
+    background: #BF5AF2;
+    border-radius: 30px;
+    /*outline: none;*/
+    border:none;
+}
+
+/* Landing page 2 */
+
