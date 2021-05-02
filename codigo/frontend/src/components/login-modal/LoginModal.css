@@ -18,6 +18,8 @@
     font-size: 18px;
     border: none;
     border-radius: 16px;
+
+    cursor: pointer;
 }
 
 p, label {
