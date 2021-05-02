@@ -1,0 +1,19 @@
+.LandingPageModule {
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    padding: 300px;
+    color: white;
+    
+    background: linear-gradient(128.75deg, #FF5C00 0%, #B600D8 77.96%);
+}
+
+.LandingPageModule .background-img {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
