@@ -84,17 +84,21 @@ ul li{
     max-width: 800px;
 }
 
-.button-text {
+.register-anchors {
     display: flex;
     align-items: center;
 }
 
-.button-text button {
+.register-anchors a {
     width: 200px;
     margin: 20px;
     padding: 14px 24px;
+
     font: normal bold 18px Poppins;
+    color: white;
     line-height: 18px;
+    text-align: center;
+    
     border: none;
     border-radius: 30px;
 }

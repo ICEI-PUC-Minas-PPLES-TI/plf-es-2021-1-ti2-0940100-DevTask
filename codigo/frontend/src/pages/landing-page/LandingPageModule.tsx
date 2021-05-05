@@ -1,4 +1,3 @@
-import { Link } from '@material-ui/core'
 import React, { Component } from 'react'
 import imgPage1 from '../../assets/landing-img1.svg'
 import logo from '../../assets/devtask-logo.svg'
@@ -29,10 +28,10 @@ export class LandingPageModule extends Component {
                             <h1>Experiência alinhada ao conhecimento!</h1>
                         </hgroup>
                         <p>Anuncie seus trabalhos e encontre clientes de forma simples e rápida.</p>
-                        <div className="button-text">
-                            <button id="sou-dev">Sou Desenvolvedor</button>
-                            <button id="busco-dev">Busco Desenvolvedores</button>
-                        </div>  
+                        <div className="register-anchors">
+                            <a id="sou-dev" href="/register?type=sou-dev">Sou Desenvolvedor</a>
+                            <a id="busco-dev" href="/register?type=busco-dev">Busco Desenvolvedores</a>
+                        </div>
                     </div>
                     <img className="image" src={ imgPage1 } alt="Desenvolvedor" />
                 </div>
