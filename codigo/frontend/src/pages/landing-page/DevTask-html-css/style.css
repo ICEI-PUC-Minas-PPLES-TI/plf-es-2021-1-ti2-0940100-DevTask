@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: box-content;
 }
 
 body{
@@ -28,6 +29,7 @@ body{
 h1{
     font: normal 800 65px Poppins;
     line-height: 109%;
+    margin: 35px 0;
 }
 
 h2{
@@ -68,22 +70,21 @@ ul li{
 }
 
 .cadastro{
-    font: normal 600 14px Poppins;
     border: 1px solid #F8F8F8;
+    font: normal 600 14px Poppins;
     background-color: transparent;
     border-radius: 41px;
     padding: 10px 20px;
-    margin: 0 40px;
-    cursor: pointer;
+    margin: 0 20px;
 }
 
 .login{
     background: #FF9F0A;
+    font: normal 600 14px Poppins;
     border-radius: 30px;
     padding: 12px 24px; 
     outline: none;
     border:none;
-    cursor: pointer;
 }
 
 /* Página 1 */
@@ -158,4 +159,3 @@ ul li{
 .text2 p{
     line-height: 160%;
 }
-
