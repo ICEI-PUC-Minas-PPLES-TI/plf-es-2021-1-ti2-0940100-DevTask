@@ -102,7 +102,8 @@ ul li{
 }
 
 .text p {
-    font-size: 24px;
+    font-size: 24px;    
+    line-height: 160%;
 }
 
 .image {
@@ -151,11 +152,19 @@ ul li{
     padding: 200px 100px 0;
 }
 
-.text2 {
+.text {
     width: 50%;
     max-width: 600px;
 }
 
-.text2 p{
-    line-height: 160%;
+/* Página 3 */
+
+.page3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 200px 100px 0;
 }
+
+
