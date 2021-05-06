@@ -41,10 +41,44 @@ p {
     font: normal 25px Roboto;
     line-height: 109%;
 }
+
+.image {
+    width: 100%;
+    max-width: 800px;
+}
  
 button {
     color:white;
     cursor: pointer;
+}
+
+.menu-phone{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    h1{
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 17px;
+        margin: 14px 0 40px 0; 
+        line-height: 29px;
+    }
+
+    .image{
+        display: flex;
+        width: 100%;
+        max-width: 700px; 
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Barra de navegação */
@@ -126,6 +160,38 @@ ul li{
     border-radius: 30px;
 }
 
+.bottom-image{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .page1 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 150px 45px 0;
+    }
+    .text1 {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .text1 p{
+        line-height: 18px;
+    }
+
+    .button-text button {
+        font-size: 13px;
+        padding: 10px 24px;
+        margin: 0 37px 0 0;
+        line-height: 13px;
+    }
+    
+    /*.bottom-image{
+        
+    }*/
+
+}
+
 /* Botões */
 
 #soudev {
@@ -157,6 +223,34 @@ ul li{
     max-width: 600px;
 }
 
+@media (max-width: 1024px) {
+    .page2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 150px 43px 0;
+    }
+    .page2 .text {
+        width: 53%;
+    }
+
+    .text p{
+        font-size: 18px;
+    }
+
+    #github {
+        width: 200px;
+        font-size: 13px;
+        padding: 15px 8px;
+        margin: 0 37px 0 0;
+        line-height: 13px;
+    }
+    
+    /*.bottom-image{
+        
+    }*/
+
+}
+
 /* Página 3 */
 
 .page3 {
@@ -165,6 +259,29 @@ ul li{
     justify-content: space-between;
     width: 100%;
     padding: 200px 100px 0;
+}
+
+@media (max-width: 1024px) {
+    .page3 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 150px 43px 0;
+    }
+
+    .page3 .text {
+        width: 58%;
+    }
+
+    .text p{
+        font-size: 18px;
+    }
+
+    .page3 .image{
+        margin: 31px;
+        width: 625.63px;
+        height: 588px;
+    }
+
 }
 
 
