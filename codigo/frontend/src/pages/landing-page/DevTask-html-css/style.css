@@ -170,7 +170,7 @@ ul li{
 
 @media screen and (max-width: 767px) {
     .menu{
-        padding: 15px;
+        padding: 13px;
 
     }
     .logo{
@@ -183,12 +183,13 @@ ul li{
     }
 
     .login {
+        width: 53px;
+        height: 28px;
         border: 1px solid #F8F8F8;
         font: normal 600 12px Poppins;
         background-color: transparent;
         border-radius: 41px;
-        padding: 10px;
-        justify-content: end;
+        padding: 2px;
     }
 
     .menu-phone{
@@ -285,10 +286,10 @@ ul li{
     }
     .button-text button {
         width: 125px;
-        height: 40px;
-        padding: 3px 10px;
+        height: 45px;
+        padding: 5px 10px 5px 10px;
         margin: auto;
-        font: normal normal 12px Poppins;
+        font: normal 600 12px Poppins;
         text-align: center;
     }
 
@@ -321,11 +322,11 @@ ul li{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 200px 100px 0;
+    padding: 100px 80px 0;
 }
 
 .text {
-    width: 50%;
+    width: 60%;
     max-width: 600px;
 }
 
@@ -362,6 +363,7 @@ ul li{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        margin: 0px;
         padding: 100px 22px 0;
     }
 
@@ -398,7 +400,7 @@ ul li{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 200px 100px 0;
+    padding: 200px 40px 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
