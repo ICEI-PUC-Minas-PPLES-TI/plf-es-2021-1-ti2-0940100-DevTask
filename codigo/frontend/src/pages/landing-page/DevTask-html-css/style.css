@@ -273,6 +273,7 @@ ul li{
 
 @media screen and (max-width: 767px) {
     .page1 {
+        margin: 0;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
