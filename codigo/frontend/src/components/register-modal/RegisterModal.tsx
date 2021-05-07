@@ -21,6 +21,7 @@ function selectAccountType(e: any) {
 
 export default class RegisterModal extends Component {
   state = {
+    userType: '',
     name: '',
     cpfCnpj: 0,
     phone: 0,
@@ -49,10 +50,18 @@ export default class RegisterModal extends Component {
     }
   }
 
-  handleSubmit = (event: { preventDefault: () => void }) => {
+  handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault();
 
+    const userTypeElement = document.querySelector('.active')?.id
+
+    const userType = (userTypeElement === "btn-sou-dev") ? 'dev' : 'client'
+
+    console.log("userType: ", userType)
+
+
     const user = {
+      userType: userType,
       name: this.state.name,
       cpfCnpj: this.state.cpfCnpj,
       phone: this.state.phone,
@@ -60,11 +69,23 @@ export default class RegisterModal extends Component {
       password: this.state.password
     };
 
-    const register = () => axios.post(`${API}/register`, user)
-      .then((res: { data: any }) => {
-        console.log(res);
-        console.log(res.data);
-      })
+    console.log("user: ", user);
+
+    try {
+      await axios.post(`${API}/register`, user)
+        .then(res => {
+          console.log(res);
+          console.log(res.data);
+        })
+    } catch (e) {
+      console.log(e)
+      window.location.href = "/dashboard";
+    }
+  }
+
+  async componentDidMount() {
+    const res = await axios.get('/');
+    console.log(res);
   }
 
 
@@ -78,7 +99,7 @@ export default class RegisterModal extends Component {
     return (
       <Grid container className="RegisterModal">
         <Grid item xs={12}>
-          <form autoComplete="off" onSubmit={this.handleSubmit}>
+          <form method="post" autoComplete="off" onSubmit={this.handleSubmit}>
             <Grid item xs={12}>
               <h2>Cadastre-se</h2>
             </Grid>
@@ -126,7 +147,7 @@ export default class RegisterModal extends Component {
                 margin={'normal'}
                 label="CPF/CNPJ"
                 variant="outlined"
-                type="number"
+                type="text"
                 onChange={this.handleChange}
                 required
                 InputProps={{
