@@ -1,8 +1,8 @@
-const { devField } = require('../models')
+const { DevField } = require('../models')
 
 module.exports = {
-  list: (query) => devField.findAndCountAll(query),
-  getById: (id) => devField.findByPk(id),
-  get: (query) => devField.findOne(query),
-  create: (params) => devField.create(params)
+  list: (query) => DevField.findAndCountAll(query),
+  getById: (id) => DevField.findByPk(id),
+  get: (query) => DevField.findOne(query),
+  create: (params) => DevField.create(params)
 }

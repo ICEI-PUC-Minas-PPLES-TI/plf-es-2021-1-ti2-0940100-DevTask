@@ -1,8 +1,8 @@
 const { Model, DataTypes, Sequelize } = require('sequelize')
 const config = require('../config/database/database')
 
-class devField extends Model {}
-devField.init(
+class DevField extends Model {}
+DevField.init(
   {
     name: DataTypes.STRING
   },
@@ -13,4 +13,4 @@ devField.init(
   }
 )
 
-module.exports = devField
+module.exports = DevField

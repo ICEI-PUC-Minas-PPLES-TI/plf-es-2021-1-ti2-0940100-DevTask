@@ -1,7 +1,7 @@
-const dotenv = require('dotenv');
-const path = require('path');
+const dotenv = require('dotenv')
+const path = require('path')
 
-dotenv.config({ path: path.join(__dirname, '../../../.env') });
+dotenv.config({ path: path.join(__dirname, '../../../.env') })
 
 module.exports = {
   username: process.env.DB_USER,
@@ -11,6 +11,6 @@ module.exports = {
   dialect: 'postgres',
   define: {
     timestamps: true,
-    underscored: true,
-  },
-};
+    underscored: true
+  }
+}
