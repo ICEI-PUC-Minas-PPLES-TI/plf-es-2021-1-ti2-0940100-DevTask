@@ -31,12 +31,6 @@ h2 {
   font: bold 20px Poppins;
 }
 
-p {
-  margin: 30px 0;
-  font: normal 25px Roboto;
-  line-height: 109%;
-}
-
 button {
   color: white;
   cursor: pointer;
@@ -121,8 +115,10 @@ ul li {
 }
 
 .text p {
-  font-size: 24px;
   line-height: 160%;
+  margin: 30px 0;
+  font: normal 24px Roboto;
+  line-height: 109%;
 }
 
 .image {
