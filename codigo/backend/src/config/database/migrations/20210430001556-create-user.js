@@ -8,6 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      user_type: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
       name: {
         allowNull: false,
         type: Sequelize.STRING
@@ -18,19 +22,17 @@ module.exports = {
       },
       phone: {
         allowNull: false,
-        type: Sequelize.STRING(14)
+        type: Sequelize.STRING(14),
+        unique: true
       },
       email: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true
       },
       password: {
         allowNull: false,
         type: Sequelize.STRING
-      },
-      description: {
-        allowNull: true,
-        type: Sequelize.TEXT
       },
       admin: {
         allowNull: false,
