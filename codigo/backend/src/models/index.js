@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize')
 const config = require('../config/database/database')
 const User = require('./user')
+const devField = require('./devfield')
 
 const sequelize = new Sequelize(
   config.database,
@@ -11,5 +12,6 @@ const sequelize = new Sequelize(
 
 module.exports = {
   sequelize,
-  User
+  User,
+  devField
 }
