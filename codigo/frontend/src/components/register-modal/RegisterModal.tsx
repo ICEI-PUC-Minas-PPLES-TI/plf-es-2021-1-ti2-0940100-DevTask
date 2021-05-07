@@ -1,5 +1,8 @@
 import { Grid, InputAdornment, Link, TextField } from '@material-ui/core'
 import { CreditCard, Email, LockOpen, Person, Phone } from '@material-ui/icons'
+import axios from 'axios'
+import { Component } from 'react'
+import API from '../../services/api'
 import './RegisterModal.css'
 
 function selectAccountType(e: any) {
@@ -16,17 +19,66 @@ function selectAccountType(e: any) {
   }
 }
 
-function RegisterModal () {
-  const urlParams = new URLSearchParams(window.location.search)
-  const accountType = urlParams.get('type') ? urlParams.get('type') : null
+export default class RegisterModal extends Component {
+  state = {
+    name: '',
+    cpfCnpj: 0,
+    phone: 0,
+    email: '',
+    password: '',
+  }
 
-  const souDevActive = (accountType === 'sou-dev') ? 'active' : ''
-  const buscoDevActive = (accountType === 'busco-dev') ? 'active' : ''
+  handleChange = (event: { target: { name: any; value: any } }) => {
+    switch (event.target.name) {
+      case 'name':
+        this.setState({ name: event.target.value });
+        break;
+      case 'cpf_cnpj':
+        this.setState({ cpfCnpj: event.target.value });
+        break;
+      case 'phone':
+        this.setState({ phone: event.target.value });
+        break;
+      case 'email':
+        this.setState({ email: event.target.value });
+        break;
+      case 'password':
+        this.setState({ password: event.target.value });
+        break;
 
+    }
+  }
+
+  handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+
+    const user = {
+      name: this.state.name,
+      cpfCnpj: this.state.cpfCnpj,
+      phone: this.state.phone,
+      email: this.state.email,
+      password: this.state.password
+    };
+
+    const register = () => axios.post(`${API}/register`, user)
+      .then((res: { data: any }) => {
+        console.log(res);
+        console.log(res.data);
+      })
+  }
+
+
+  urlParams = new URLSearchParams(window.location.search)
+  accountType = this.urlParams.get('type') ? this.urlParams.get('type') : null
+
+  souDevActive = (this.accountType === 'sou-dev') ? 'active' : ''
+  buscoDevActive = (this.accountType === 'busco-dev') ? 'active' : ''
+
+  render() {
     return (
       <Grid container className="RegisterModal">
         <Grid item xs={12}>
-          <form autoComplete="off">
+          <form autoComplete="off" onSubmit={this.handleSubmit}>
             <Grid item xs={12}>
               <h2>Cadastre-se</h2>
             </Grid>
@@ -34,27 +86,29 @@ function RegisterModal () {
               <button
                 id="btn-sou-dev"
                 type="button"
-                className={souDevActive}
+                className={this.souDevActive}
                 onClick={selectAccountType}
               >
                 Sou desenvolvedor
-              </button>
+                </button>
               <button
                 id="btn-busco-dev"
                 type="button"
-                className={buscoDevActive}
+                className={this.buscoDevActive}
                 onClick={selectAccountType}
               >
                 Busco desenvolvedores
-              </button>
+                </button>
             </div>
             <Grid item xs={12}>
               <TextField
+                name="name"
                 fullWidth
                 margin={'normal'}
                 label="Nome"
                 variant="outlined"
                 type="text"
+                onChange={this.handleChange}
                 required
                 InputProps={{
                   startAdornment: (
@@ -67,11 +121,13 @@ function RegisterModal () {
             </Grid>
             <Grid item xs={12}>
               <TextField
+                name="cpf_cnpj"
                 fullWidth
                 margin={'normal'}
                 label="CPF/CNPJ"
                 variant="outlined"
                 type="number"
+                onChange={this.handleChange}
                 required
                 InputProps={{
                   startAdornment: (
@@ -84,11 +140,13 @@ function RegisterModal () {
             </Grid>
             <Grid item xs={12}>
               <TextField
+                name="phone"
                 fullWidth
                 margin={'normal'}
                 label="Telefone"
                 variant="outlined"
                 type="text"
+                onChange={this.handleChange}
                 required
                 InputProps={{
                   startAdornment: (
@@ -101,11 +159,13 @@ function RegisterModal () {
             </Grid>
             <Grid item xs={12}>
               <TextField
+                name="email"
                 fullWidth
                 margin={'normal'}
                 label="Email"
                 variant="outlined"
                 type="text"
+                onChange={this.handleChange}
                 required
                 InputProps={{
                   startAdornment: (
@@ -118,11 +178,13 @@ function RegisterModal () {
             </Grid>
             <Grid item xs={12}>
               <TextField
+                name="password"
                 fullWidth
                 margin={'normal'}
                 label="Senha"
                 variant="outlined"
                 type="password"
+                onChange={this.handleChange}
                 required
                 InputProps={{
                   startAdornment: (
@@ -136,7 +198,7 @@ function RegisterModal () {
             <Grid item xs={12}>
               <button id="btn-cadastrar" type="submit">
                 Cadastrar
-              </button>
+                </button>
             </Grid>
           </form>
         </Grid>
@@ -146,12 +208,12 @@ function RegisterModal () {
             <p className="link">
               <Link href="/login" color="inherit">
                 Acesse aqui
-              </Link>
+                </Link>
             </p>
           </p>
         </Grid>
       </Grid>
     )
-}
+  }
 
-export default RegisterModal
+}
