@@ -1,4 +1,3 @@
-/* eslint-disable no-throw-literal */
 const yup = require('yup')
 const { devFieldRepository } = require('../../repositories')
 
