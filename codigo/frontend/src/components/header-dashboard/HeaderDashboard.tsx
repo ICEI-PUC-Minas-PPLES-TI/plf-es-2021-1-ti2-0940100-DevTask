@@ -9,8 +9,9 @@ export default function HeaderDashboard() {
         <header>
             <img src={logo} alt="DevTask Logo" />
             <div className="searchField">
-                <Search />
-                <input type="text" placeholder="Pesquisar" />
+                <input className="ipt" type="text" required />
+                <div className="icon"><Search /></div>
+                <label className="label">Search</label>
             </div>
             <Avatar>TA</Avatar>
         </header>
