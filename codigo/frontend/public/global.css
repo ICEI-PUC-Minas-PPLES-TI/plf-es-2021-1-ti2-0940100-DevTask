@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-    --purple-primary:#B600D8;
-    --purple-hover: #8E00A8;
-    --purple-active: #C922E8;
-    /*
+  --purple-primary: #b600d8;
+  --purple-hover: #8e00a8;
+  --purple-active: #c922e8;
+  /*
     --pink-primary:#FF718C;
     --pink-hover: #EA4363;
     --pink-activate: #FF9AAD;
@@ -13,66 +13,146 @@
     --hotpink-hover: #E51A41;
     --hotpink-active: #FF5475;
     */
-    --lilas-primary: #BF5AF2;
-    --lilas-hover: #B435F4;
-    --lilas-active: #C976F2;
-    /*
+  --lilas-primary: #bf5af2;
+  --lilas-hover: #b435f4;
+  --lilas-active: #c976f2;
+  /*
     --orange-primary: #FF5C00;
     --orange-hover: #FF5C00;
     --orange-active: #FF7E36;
     */
-    --yellow-primary: #FF9F0A;
-    --yellow-hover: #E88D00;
-    --yellow-active: #FFB84A;
+  --yellow-primary: #ff9f0a;
+  --yellow-hover: #e88d00;
+  --yellow-active: #ffb84a;
 
-    --off-white:#ffffff;
-    --inputbackgroud: #F2F4FF;
-    --line: #C6C8D7;
-    --placeholder: #A4A5AD;
-    --label: #6B6D7D;
-    --text-title:#0F0F12;
+  --off-white: #ffffff;
+  --inputbackgroud: #f2f4ff;
+  --line: #c6c8d7;
+  --placeholder: #a4a5ad;
+  --label: #6b6d7d;
+  --text-title: #0f0f12;
 
-    --danger-primary:#FF453A;
-    --danger-hover: #F42417;
-    --danger-active: #FF6057;
-    
-    --sucess-primary: #32D74B;
-    --sucess-hover: #14BC2D;
-    --sucess-active: #58EE6F;
+  --danger-primary: #ff453a;
+  --danger-hover: #f42417;
+  --danger-active: #ff6057;
 
-    --warning-primary: #FFD60A;;
-    --warning-hover: #E2BC00;
-    --warning-active: #FFE45E;
-    
-    --ff-primary: 'Roboto', sans-serif;
-    --ff-accent: 'Poppins', sans-serif;
+  --sucess-primary: #32d74b;
+  --sucess-hover: #14bc2d;
+  --sucess-active: #58ee6f;
 
-    --bg-primary: linear-gradient(130.02deg, #FF5C00 0.66%, #B600D8 83.32%);
-    --bg-accent: linear-gradient(130.02deg, #0A84FF 0.66%, #0016E0 83.32%);
-    --bg-basic:  linear-gradient(166.29deg, #590069 0%, #AD0441 90.19%);   
+  --warning-primary: #ffd60a;
+  --warning-hover: #e2bc00;
+  --warning-active: #ffe45e;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Poppins", sans-serif;
+
+  --bg-primary: linear-gradient(130.02deg, #ff5c00 0.66%, #b600d8 83.32%);
+  --bg-accent: linear-gradient(130.02deg, #0a84ff 0.66%, #0016e0 83.32%);
+  --bg-basic: linear-gradient(166.29deg, #590069 0%, #ad0441 90.19%);
 }
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
+.line {
+  background-color: var(--line);
+}
+
+/* Titles */
+.section-title,
+.section-subtitle {
+  font-size: 32px;
+  font-family: var(--ff-accent);
+  line-height: 34px;
+  color: var(--text-title);
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-weight: 600;
+}
+
+.content-title {
+  font-size: 24px;
+  font-weight: 600;
+}
 
 /* Buttons */
 
-.btn{
-    border-radius: 41px;
-    padding: 10px 20px;
-    cursor: pointer;
+.btn {
+  border-radius: 41px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 /* Images */
-.img-responsive{
-    max-width: 100%;
-    width:auto;
+.img-responsive {
+  max-width: 100%;
+  width: auto;
+}
+
+/* Inputs */
+.ipt {
+  font-size: 16px;
+  color: #14142b;
+  background: #eff0f6;
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  display: block;
+}
+
+.ipt:focus {
+  outline: none;
+}
+
+.ipt-icon-left {
+  padding: 22px 16px 10px 44px;
+}
+
+/* Icons */
+.icon {
+  font-size: 18px;
+  top: 16px;
+  left: 16px;
+  color: #6e7191;
+}
+.icon,
+.label {
+  position: absolute;
+}
+
+/* Labels */
+.label {
+  color: #a0a3bd;
+  font-size: 16px;
+  top: 16px;
+  left: 16px;
+
+  font-weight: normal;
+  pointer-events: none;
+
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.l-right {
+  left: 44px;
+}
+.ipt:focus ~ .label,
+.ipt:valid ~ .label {
+  color: #6e7191;
+  top: 4px;
+  font-size: 14px;
 }
