@@ -9,11 +9,13 @@ export default function HeaderDashboard() {
         <header>
             <img src={logo} alt="DevTask Logo" />
             <div className="searchField">
-                <input className="ipt" type="text" required />
+                <input className="ipt ipt-icon-left" type="text" required />
                 <div className="icon"><Search /></div>
-                <label className="label">Search</label>
+                <label className="label l-right">Pesquisar</label>
             </div>
-            <Avatar>TA</Avatar>
+            <div className="profile-icon">
+                <Avatar>TA</Avatar>
+            </div>
         </header>
     )
 }
