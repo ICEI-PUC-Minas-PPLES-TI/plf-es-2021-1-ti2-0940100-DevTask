@@ -217,7 +217,7 @@ export default class RegisterModal extends Component {
               />
             </Grid>
             <Grid item xs={12}>
-              <button id="btn-cadastrar" type="submit">
+              <button className="btn-submit" type="submit">
                 Cadastrar
                 </button>
             </Grid>

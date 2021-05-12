@@ -5,26 +5,8 @@ header {
   padding: 20px;
 }
 
-.searchField {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin: 16px 10%;
-  background-color: var(--light-grey);
-  border-radius: 16px;
-}
-
-.searchField input {
-  width: 100%;
-}
-
-.searchField input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-.searchField label,
-.searchField .icon {
-  z-index: 5;
+.ipt-field input {
+  margin-bottom: 0;
 }
 
 .profile-icon {
