@@ -1,9 +1,10 @@
 /* eslint-disable no-throw-literal */
 const { StatusCodes } = require('http-status-codes')
 const yup = require('yup')
-const { usersRepository } = require('../../repositories')
+const { usersRepository, ClientRepository } = require('../../repositories')
 const { messages } = require('../../utils')
 const { Op } = require('sequelize')
+const clientRepository = require('../../repositories/client.repository')
 
 module.exports.register = async (req) => {
   const schema = yup.object().shape({
@@ -46,7 +47,10 @@ module.exports.register = async (req) => {
     ...validated,
     admin: role
   })
-  console.log(userCreated.firstName)
+
+  if ( validated.userType === "client" ) {
+    await clientRepository.create({ userId: userCreated.getDataValue('id')})
+  }
 
   return {
     id: userCreated.getDataValue('id'),
