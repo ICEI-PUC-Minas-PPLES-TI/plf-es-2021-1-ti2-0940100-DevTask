@@ -3,6 +3,7 @@ header,
 section {
   padding: 4rem 0;
 }
+
 @media (min-width: 600px) {
   header,
   section {
@@ -60,8 +61,7 @@ section {
 
 .text {
   display: block;
-  padding: 100px 30px;
-  width: 90%;
+  padding: 90px 24px 12px;
 }
 
 @media (min-width: 600px) {
@@ -70,7 +70,7 @@ section {
   }
 
   .text {
-    padding: 100px 45px;
+    padding: 150px 45px 20px;
   }
 }
 
@@ -103,23 +103,66 @@ p {
 }
 
 /* Buttons */
-
 .button-text {
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
   text-align: center;
-  justify-content: space-evenly;
   margin-top: 17px;
+}
+
+.btn {
+  width: 112px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-login {
+  border: 1px solid #f8f8f8;
+  background-color: transparent;
+}
+
+.btn-imdev,
+.btn-searchdev {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  line-height: 12px;
+  margin-right: 50px;
+  padding: 8px 10px;
+  font: normal 600 12px var(--ff-accent);
 }
 
 @media (min-width: 600px) {
   .button-text {
-    align-items: flex-start;
-    justify-content: flex-start;
+    margin-top: 40px;
+    align-items: left;
+  }
+
+  .btn {
+    width: 200px;
+    height: 56px;
+    justify-content: space-between;
+    text-align: center;
+    font: normal bold 18px var(--ff-accent);
+  }
+
+  .btn-imdev,
+  .btn-searchdev,
+  .btn-github {
+    margin-top: 40px;
   }
 
   .btn-searchdev {
     margin-left: 10px;
+  }
+
+  .btn-register,
+  .btn-login {
+    font: normal 600 14px var(--ff-accent);
+  }
+
+  .btn-login {
+    border: none;
   }
 }
 
@@ -165,24 +208,29 @@ p {
 }
 
 /* Images */
+
+.image {
+  margin: 0 auto;
+}
+
 .img-reponsive {
-  width: 65%;
+  position: relative;
+  max-width: 90%;
   display: block;
-  top: -20;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
 
 .bottom-image {
   width: 100%;
-  margin-top: -60px;
+  margin-top: -250px;
 }
 
 @media (min-width: 600px) {
   .img-reponsive {
     flex-wrap: wrap;
-    width: 90%;
-    margin-top: -10px;
+    width: 100%;
   }
 }
 
@@ -239,9 +287,5 @@ p {
 
   .logo {
     float: left;
-  }
-
-  .btn-menu {
-    display: none;
   }
 }
