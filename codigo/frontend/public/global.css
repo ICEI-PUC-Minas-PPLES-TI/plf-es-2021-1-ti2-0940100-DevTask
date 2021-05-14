@@ -27,6 +27,7 @@
 
   --off-white: #ffffff;
   --inputbackgroud: #f2f4ff;
+  --light-grey: #eff0f6;
   --line: #c6c8d7;
   --placeholder: #a4a5ad;
   --label: #6b6d7d;
@@ -127,7 +128,7 @@ a {
 .ipt {
   font-size: 16px;
   color: #14142b;
-  background: #eff0f6;
+  background: var(--light-grey);
   border: none;
   border-radius: 16px;
   padding: 16px;
@@ -142,7 +143,7 @@ a {
 .ipt-btn {
   font-size: 16px;
   color: #6e7191;
-  background: #eff0f6;
+  background: var(--light-grey);
   text-align: left;
   border-radius: 16px;
   padding: 16px 16px 16px 16px;
