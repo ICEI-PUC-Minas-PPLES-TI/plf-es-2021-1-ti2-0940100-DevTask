@@ -27,8 +27,8 @@ export default class LandingPageModule extends Component {
                         <div className="split">
                             <div className="text">
                                 <hgroup>
-                                    <h2>#2 TOP BEST DEV PLATAFORM</h2>
-                                    <h1>Experiência alinhada ao conhecimento!</h1>
+                                    <h2 className="h2-landing-page">#2 TOP BEST DEV PLATAFORM</h2>
+                                    <h1 className="h1-landing-page">Experiência alinhada ao conhecimento!</h1>
                                 </hgroup>
                                 <p>Anuncie seus trabalhos e encontre clientes de forma simples e rápida.</p>
                                 <div className="button-text">
