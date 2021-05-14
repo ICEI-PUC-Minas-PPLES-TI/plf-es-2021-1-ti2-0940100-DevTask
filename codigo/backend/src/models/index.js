@@ -47,6 +47,7 @@ module.exports = {
   sequelize,
   User,
   DevField,
+  Dev,
   Client,
   Skills,
   Certificate

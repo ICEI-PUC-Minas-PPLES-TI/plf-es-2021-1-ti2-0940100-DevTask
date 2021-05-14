@@ -26,7 +26,7 @@ module.exports.signin = async (email, password) => {
   const payload = {
     id: user.id,
     email: user.email,
-    isAdmin: user.isAdmin
+    admin: user.admin
   }
 
   const sign = promisify(jwt.sign)

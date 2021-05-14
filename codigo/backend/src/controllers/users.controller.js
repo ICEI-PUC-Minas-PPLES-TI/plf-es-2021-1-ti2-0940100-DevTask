@@ -24,9 +24,9 @@ module.exports = {
         .json(error.messages)
     }
   },
-  register: async (req, res) => {
+  create: async (req, res) => {
     try {
-      const response = await usersService.register(req)
+      const response = await usersService.create(req)
       return res.status(StatusCodes.CREATED).json(response)
     } catch (error) {
       console.error(error)

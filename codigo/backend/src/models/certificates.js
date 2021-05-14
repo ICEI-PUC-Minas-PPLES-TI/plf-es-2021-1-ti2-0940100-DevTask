@@ -12,7 +12,6 @@ Certificate.init(
     sequelize: new Sequelize(config),
     modelName: 'Certificate',
     tableName: 'certificates',
-    paranoid: true
   }
 )
 

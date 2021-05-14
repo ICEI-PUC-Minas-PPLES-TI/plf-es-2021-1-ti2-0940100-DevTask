@@ -1,24 +1,34 @@
 /* eslint-disable no-throw-literal */
 const { StatusCodes } = require('http-status-codes')
-const { usersRepository } = require('../../repositories')
+const { usersRepository, clientRepository } = require('../../repositories')
 const { messages } = require('../../utils')
 
 module.exports.get = async (id) => {
-  const user = await usersRepository.get({
+  const client = await clientRepository.get({
     attributes: {
-      exclude: ['admin', 'createdAt', 'updatedAt', 'deletedAt']
+      exclude: ['createdAt', 'updatedAt', 'deletedAt']
     },
     where: {
       id
     }
   })
+  const userId = client.getDataValue('userId')
+  const user = await usersRepository.get({
+    attributes: {
+      exclude: ['admin', 'createdAt', 'updatedAt', 'deletedAt']
+    },
+    where: {
+      id: userId
+    }
+  })
 
-  if (!user) {
+  if (!client || !user) {
     throw {
       status: StatusCodes.NOT_FOUND,
       message: messages.notFound('user')
     }
   }
+  const clientFullData = { ...client.dataValues, ...user.dataValues }
 
-  return user
+  return clientFullData
 }
