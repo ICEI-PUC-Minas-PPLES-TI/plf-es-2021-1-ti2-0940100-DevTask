@@ -5,7 +5,7 @@ export class BackButton extends Component {
     render() {
         return (
             <div className="BackButton">
-                <span><a href="/">Voltar</a></span>
+                <a href="/"><span>Voltar</span></a>
             </div>
         )
     }

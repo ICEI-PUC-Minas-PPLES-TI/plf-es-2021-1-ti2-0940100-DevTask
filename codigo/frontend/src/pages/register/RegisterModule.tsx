@@ -1,4 +1,3 @@
-import { Box, Container, Grid } from '@material-ui/core'
 import { Component } from 'react'
 import BackButton from '../../components/back-button/BackButton'
 import BackgroundForms from '../../components/background-forms/BackgroundForms'
@@ -10,18 +9,14 @@ import './RegisterModule.css'
 export default class RegisterModule extends Component {
     render() {
         return (
-            <Box className="RegisterModule">
+            <div className="RegisterModule">
                 <BackgroundForms />
-                <Grid container style={{ zIndex: 1 }} >
-                    <Grid item xs={12}>
-                        <HeaderForms />
-                    </Grid>
-                    <Container maxWidth="sm">
-                        <RegisterModal />
-                    </Container>
-                    <Grid item xs={12}><BackButton /></Grid>
-                </Grid>
-            </Box>
+                <div style={{ width: "100%", zIndex: 1 }} >
+                    <HeaderForms />
+                    <RegisterModal />
+                    <BackButton />
+                </div>
+            </div>
         )
     }
 }
