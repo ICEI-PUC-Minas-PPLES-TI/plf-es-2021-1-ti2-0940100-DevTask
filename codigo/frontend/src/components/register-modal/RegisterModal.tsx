@@ -72,7 +72,7 @@ export default class RegisterModal extends Component {
     console.log("user: ", user);
 
     try {
-      await axios.post(`${API}/register`, user)
+      await axios.post(`${API}/users/register`, user)
         .then(res => {
           console.log(res);
           console.log(res.data);
