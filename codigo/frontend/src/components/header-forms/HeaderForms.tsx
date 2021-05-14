@@ -5,8 +5,8 @@ import './HeaderForms.css'
 export class HeaderForms extends Component {
     render() {
         return (
-            <header>
-                <img src={logo} alt="DevTask Logo"/>
+            <header className="header">
+                <a href="/"><img src={logo} alt="DevTask Logo" /></a>
             </header>
         )
     }
