@@ -11,7 +11,6 @@ Skills.init(
     sequelize: new Sequelize(config),
     modelName: 'Skills',
     tableName: 'skills',
-    paranoid: true
   }
 )
 

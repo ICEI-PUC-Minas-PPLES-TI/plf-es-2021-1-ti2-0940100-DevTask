@@ -6,7 +6,7 @@ const { messages } = require('../../utils')
 const { Op } = require('sequelize')
 const clientRepository = require('../../repositories/client.repository')
 
-module.exports.register = async (req) => {
+module.exports.create = async (req) => {
   const schema = yup.object().shape({
     userType: yup.string().equals(['dev', 'client']).required(),
     name: yup.string().required(),
@@ -34,7 +34,7 @@ module.exports.register = async (req) => {
   if (user) {
     throw {
       status: StatusCodes.CONFLICT,
-      message: messages.alreadyExists('email or phone')
+      message: messages.alreadyExists('email-or-phone')
     }
   }
 
@@ -42,6 +42,7 @@ module.exports.register = async (req) => {
   if (req.session && req.session.isAdmin) {
     role = true
   }
+
 
   const userCreated = await usersRepository.create({
     ...validated,
