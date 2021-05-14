@@ -12,11 +12,14 @@ module.exports.get = async (id) => {
       id
     }
   })
+  const userId = client.getDataValue('userId')
   const user = await usersRepository.get({
     attributes: {
       exclude: ['admin', 'createdAt', 'updatedAt', 'deletedAt']
     },
-    where: `${client.getDataValue('userId')}`
+    where: {
+      id: userId
+    }
   })
 
   if (!client || !user) {
@@ -25,6 +28,7 @@ module.exports.get = async (id) => {
       message: messages.notFound('user')
     }
   }
+  const clientFullData = { ...client.dataValues, ...user.dataValues }
 
-  return client + user
+  return clientFullData
 }
