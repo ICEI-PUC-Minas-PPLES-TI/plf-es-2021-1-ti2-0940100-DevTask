@@ -16,6 +16,14 @@ module.exports = {
           key: 'id'
         }
       },
+      dev_field_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'dev_field',
+          key: 'id'
+        }
+      },
       bio: {
         type: Sequelize.TEXT
       },

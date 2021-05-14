@@ -1,6 +1,7 @@
 module.exports.messages = {
   notFound: (resource) => `${resource}-not-found`,
   alreadyExists: (param) => `${param}-already-registered`,
+  sucess: (param) => `${param}-sucessfully`,
   invalidFields: 'invalid-fields',
   invalidPassword: 'invalid-password',
   expiredToken: 'expired-token',

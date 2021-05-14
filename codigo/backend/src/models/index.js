@@ -9,23 +9,32 @@ const Dev = require('./dev')
 
 // ONE TO ONE RELATIONSHIP
 User.hasOne(Client, {
-  onDelete: 'RESTRICT',
-  onUpdate: 'RESTRICT'
+  onDelete: 'CASCADE',
+  onUpdate: 'CASCADE'
 })
 Client.belongsTo(User)
 
 User.hasOne(Dev, {
-  onDelete: 'RESTRICT',
-  onUpdate: 'RESTRICT'
+  onDelete: 'CASCADE',
+  onUpdate: 'CASCADE'
 })
 Dev.belongsTo(User)
 
 // ONE TO MANY RELATIONSHIP
-DevField.hasMany(Dev)
+DevField.hasMany(Dev, {
+  onDelete: 'CASCADE',
+  onUpdate: 'CASCADE'
+})
 Dev.belongsTo(DevField)
 
-Dev.hasMany(Skills)
-Dev.hasMany(Certificate)
+Dev.hasMany(Skills), {
+  onDelete: 'CASCADE',
+  onUpdate: 'CASCADE'
+}
+Dev.hasMany(Certificate), {
+  onDelete: 'CASCADE',
+  onUpdate: 'CASCADE'
+}
 
 const sequelize = new Sequelize(
   config.database,
