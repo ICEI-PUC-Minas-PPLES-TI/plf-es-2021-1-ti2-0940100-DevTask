@@ -29,8 +29,9 @@ export default class LoginModal extends Component {
         password: yup.string().min(8).required()
     })
 
-    handleSubmit = (values: any) => {
-        console.log(values);
+    handleSubmit = async (values: any) => {
+        console.log("handleSubmit -> values", values);
+        await login(values);
     }
 
     render() {
@@ -38,11 +39,11 @@ export default class LoginModal extends Component {
             <Grid container className="LoginModal">
                 <Grid item xs={12}>
                     <Formik
-                        initialValues={{}}
+                        initialValues={{ email: '', password: '' }}
                         onSubmit={this.handleSubmit}
                         validationSchema={this.validations}
                     >
-                        <Form method="post">
+                        <Form >
                             <Grid item xs={12}>
                                 <h2>Login</h2>
                             </Grid>
@@ -53,8 +54,8 @@ export default class LoginModal extends Component {
                                     margin={"normal"}
                                     label="Email"
                                     variant="outlined"
-                                    type="mail"
-                                    onChange={this.handleChange}
+                                    type="email"
+                                    // onChange={this.handleChange}
                                     required
                                     InputProps={{
                                         startAdornment: (
@@ -76,7 +77,7 @@ export default class LoginModal extends Component {
                                     label="Senha"
                                     variant="outlined"
                                     type="password"
-                                    onChange={this.handleChange}
+                                    // onChange={this.handleChange}
                                     required
                                     InputProps={{
                                         startAdornment: (
@@ -91,7 +92,7 @@ export default class LoginModal extends Component {
                                 />
                             </Grid>
                             <Grid item xs={12}>
-                                <button type="submit">Entrar</button>
+                                <button className="btn-submit" type="submit">Entrar</button>
                             </Grid>
                         </Form>
                     </Formik>
