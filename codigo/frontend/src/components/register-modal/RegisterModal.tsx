@@ -72,14 +72,11 @@ export default class RegisterModal extends Component {
     console.log("user: ", user);
 
     try {
-      await axios.post(`${API}/users/register`, user)
-        .then(res => {
-          console.log(res);
-          console.log(res.data);
-        })
+      const response = await axios.post(`${API}/users/register`, user)
+      console.log('handleSubmit -> response', response);
     } catch (e) {
       console.log(e)
-      window.location.href = "/dashboard";
+      window.location.href = "/register-continue";
     }
   }
 
@@ -217,8 +214,8 @@ export default class RegisterModal extends Component {
               />
             </Grid>
             <Grid item xs={12}>
-              <button className="btn-submit" type="button">
-                <Link color="inherit" href="/register-continue">Cadastrar</Link>
+              <button className="btn-submit" type="submit">
+                Cadastrar
               </button>
             </Grid>
           </form>
