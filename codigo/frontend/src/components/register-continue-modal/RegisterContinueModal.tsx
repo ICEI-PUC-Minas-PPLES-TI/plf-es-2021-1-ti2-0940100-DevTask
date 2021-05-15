@@ -1,6 +1,7 @@
 import { Menu, MenuItem } from '@material-ui/core';
 import { Add, GitHub, LinkedIn, Public } from '@material-ui/icons';
 import React, { Component } from 'react'
+import AbilityItem from '../ability-item/AbilityItem';
 
 import './RegisterContinueModal.css'
 
@@ -17,9 +18,11 @@ export function DropdownMenu() {
 
     return (
         <div className="RegisterContinueModal">
-            <button type="button" onClick={handleClick}>
-                Área de desenvolvimento
-            </button>
+            <div className="ipt-field">
+                <button className="ipt-btn dashed" style={{ width: "100%" }} type="button" onClick={handleClick}>
+                    Área de desenvolvimento
+                </button>
+            </div>
             <Menu
                 id="simple-menu"
                 anchorEl={anchorEl}
@@ -52,7 +55,7 @@ export class RegisterContinueModal extends Component {
                     <DropdownMenu />
 
                     <p>Conte-nos sobre você</p>
-                    <textarea placeholder="Conte-nos sobre você" className="ipt" rows={3} name="story" required></textarea>
+                    <textarea placeholder="Conte-nos sobre você" className="ipt-txt-area" rows={3} name="story" required></textarea>
 
                     <p>Adicione suas redes sociais</p>
                     <div className="ipt-field">
@@ -77,6 +80,7 @@ export class RegisterContinueModal extends Component {
                         <input className="ipt-btn dashed ipt-icon-left" type="button" value="Adicionar habilidades" />
                         <div className="icon"><Add /></div>
                     </div>
+                    <AbilityItem />
                     <h3 className="content-title">Certificados</h3>
                     <hr className="line" />
                     <p>Adicione seus certificados</p>

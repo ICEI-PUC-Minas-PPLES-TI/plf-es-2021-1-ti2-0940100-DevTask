@@ -125,7 +125,8 @@ a {
 }
 
 /* Inputs */
-.ipt {
+.ipt,
+.ipt-txt-area {
   font-size: 16px;
   color: #14142b;
   background: var(--light-grey);
@@ -149,6 +150,11 @@ a {
   padding: 16px 16px 16px 16px;
   display: block;
   outline: none;
+  cursor: pointer;
+}
+
+.ipt-txt-area {
+  width: 100%;
 }
 
 .ipt-field {
@@ -170,6 +176,50 @@ a {
 
 .ipt-icon-left {
   padding: 22px 16px 10px 44px;
+}
+
+/*  RANGE   */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--purple-primary);
+  cursor: pointer;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 240px;
+  height: 24px;
+  border-radius: 16px;
+  background: var(--light-grey); /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--purple-primary);
+  clip-path: circle(50%);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--purple-primary);
+  cursor: pointer;
 }
 
 /* Icons */
