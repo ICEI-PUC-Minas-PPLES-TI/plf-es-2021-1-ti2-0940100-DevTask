@@ -133,29 +133,29 @@ _**Resumo**
 
 ## 3.3. Processos
 
-### 3.3.1 Processo 1 – Cadastro de Cliente
+### 3.3.1 Processo 1 – Login
 
-Processo de cadastro de cliente, onde ocorre a entrada dos dados pessoais e verficação de pessoa física ou jurídica.
+Processo de entrar com suas credenciais na plataforma
 
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 
 
-### 3.3.2 Processo 2 – Cadastro de Desenvolvedor
+### 3.3.2 Processo 2 – Cadastro de Usuario
 
-Processo de cadastramento de desenvolvedor, onde ocorre o preenchimento do formulário com as informações pessoais e validação do CPF.
+Processo de cadastramento de usuario
 
 <img src="imagens/process02.png" alt="Exemplo de um Modelo BPMN do PROCESSO 2" title="Modelo BPMN do Processo 2." style="zoom:100%;" />
 
-### 3.3.3 Processo 3 – Contrato de Serviço
+### 3.3.3 Processo 3 – Continuação de Cadastro 
 
-Processo de contratação de serviço, onde o usuário solicita o serviço do desenvolvedor, contrata-o e, após a entrega, o usuário realiza a avaliação e pagamento pelo serviço.
+Processo de continuação de cadastro onde é possivel dar mais informações sobre sua conta
 
 <img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
 
-### 3.3.4 Processo 4 – Cadastro Serviço
+### 3.3.4 Processo 4 – Serviço
 
-Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgado na aplicação informando nome, descrição, habilidades e preço.
+Processo em que o desenvolvedor vai cadastrar um serviço para ser divulgado na aplicação informando nome, descrição, habilidades e preço.
 
 <img src="imagens/process04.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
 
@@ -167,9 +167,9 @@ Processo em que o desenvolvedor vai cadastrar um novo serviço para ser divulgad
 
 Descrever aqui cada uma das propriedades das atividades de cada um dos processos. Devem estar relacionadas com o modelo de processo apresentado anteriormente.
 
-#### Processo 1 – Cadastro de Usuário
+#### Processo 1 – Login
 
-#### Cadastrar
+#### Login
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
@@ -182,23 +182,42 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 | Telefone | Caixa de Texto | Fomato Telefone | NULL |
 | Termos | Check Box | Estar setado | FALSE |
 
-#### Processo 2 – Cadastro de Desenvolvedor
+#### Processo 2 – Cadastro de Usuario
 
 #### Cadastrar
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
-| Portfólio | Link | Preenchimento total | NULL |
-| Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
-| Sobrenome | Caixa de Texto | Mais de 3 caracteres |NULL|
-| Email | Caixa de Texto | Formato e-mail |NULL|
-| Senha | Caixa de Texto | Mínimo de 6 caracteres |NULL|
-| Cadastrar | Submit | Preenchimento dos campos |False|
-| CPF | Caixa de texto | Validação CPF |000000|
-| Habilidades | Caixa de Texto | Ter menos que 60 caracteres |NULL|
-| Termos | Check box | Estar setado |FALSE|
+| Nome | String | Obrigatorio | NULL |
+| Email | String, email | Formato e-mail, obrigatorio ||
+| Senha | String | Mínimo de 8 caracteres, obrigatorio | |
+| CPF | Caixa de texto | Validação CPF, obrigatorio |000000|
 
-#### Processo 3 – Contrato de Serviço
+#### Processo 3 – Continuação de cadastro
+
+| **Campo** | **Tipo** | **Restrições** | **Valor default** |
+| --- | --- | --- | --- |
+| Bio | String |  Opcional | NULL |
+| Website | String, link |  Opcional | NULL |
+| Linkedin | String, link |  Opcional | NULL |
+| GitHub | String, link |  Opcional | NULL |
+| Habilidades | String |  Opcional | NULL |
+| Habilidades_lvl | String |  Obrigatorio | NULL |
+
+
+#### **Processo 4 – Serviço**
+
+##### **Cadastrar**
+
+| **Campo**       | **Tipo**       | **Restrições**                          | **Valor default** |
+| --------------- | -------------- | --------------------------------------- | ----------------- |
+| Nome do Serviço | Caixa de Texto | Ter no mínimo 10 caracteres e máximo 20 | NULL              |
+| Habilidades     | Campo de Texto | Nenhuma                                 | NULL              |
+| Preço           | Campo de Texto | Preenchimento total                     | NULL              |
+| Reputação       | Campo de Texto | Nenhuma                                 | NULL              |
+| Descrição       | Campo de Texto | Preenchimento total                     | NULL              |
+| Contato         | Campo de Texto | Formato e-mail                          | E-mail do dev     |
+
 
 **Buscar serviço**
 
@@ -223,19 +242,6 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 | Reputação   | Área de texto | Nenhuma             | Reputação Dev        |
 | Descrição   | Área de texto | Preenchimento total | Descrição do serviço |
 | Contato     | Área de texto | Formato e-mail      | E-mail do dev        |
-
-#### **Processo 4 – Cadastrar serviço**
-
-##### **Cadastrar**
-
-| **Campo**       | **Tipo**       | **Restrições**                          | **Valor default** |
-| --------------- | -------------- | --------------------------------------- | ----------------- |
-| Nome do Serviço | Caixa de Texto | Ter no mínimo 10 caracteres e máximo 20 | NULL              |
-| Habilidades     | Campo de Texto | Nenhuma                                 | NULL              |
-| Preço           | Campo de Texto | Preenchimento total                     | NULL              |
-| Reputação       | Campo de Texto | Nenhuma                                 | NULL              |
-| Descrição       | Campo de Texto | Preenchimento total                     | NULL              |
-| Contato         | Campo de Texto | Formato e-mail                          | E-mail do dev     |
 
 ### 4.2. Tecnologias
 
