@@ -133,33 +133,34 @@ _**Resumo**
 
 ## 3.3. Processos
 
-### 3.3.1 Processo 1 – Login
+### 3.3.1 Processo 1 – Login e Autenticação
 
 Processo de entrar com suas credenciais na plataforma
 
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 
+### 3.3.2 Processo 2 – Cadastro de Desenvolvedor
 
-### 3.3.2 Processo 2 – Cadastro de Usuario
-
-Processo de cadastramento de usuario
+Processo de cadastramento de desenvolvedor
 
 <img src="imagens/process02.png" alt="Exemplo de um Modelo BPMN do PROCESSO 2" title="Modelo BPMN do Processo 2." style="zoom:100%;" />
 
-### 3.3.3 Processo 3 – Continuação de Cadastro 
+### 3.3.3 Processo 3 –  Cadastro de Portifolio do Desenvolvedor
 
-Processo de continuação de cadastro onde é possivel dar mais informações sobre sua conta
 
 <img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
 
-### 3.3.4 Processo 4 – Serviço
 
-Processo em que o desenvolvedor vai cadastrar um serviço para ser divulgado na aplicação informando nome, descrição, habilidades e preço.
-
-<img src="imagens/process04.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
+### 3.3.4 Processo 4 – Cadastro de Empresas
 
 
+<img src="imagens/process05.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 5." style="zoom:100%;" />
+
+### 3.3.4 Processo 5 – Cadastro de Oportunidades de trabalhos
+
+
+<img src="imagens/process06.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 6." style="zoom:100%;" />
 
 ## 4. Projeto da Solução
 
@@ -167,81 +168,26 @@ Processo em que o desenvolvedor vai cadastrar um serviço para ser divulgado na 
 
 Descrever aqui cada uma das propriedades das atividades de cada um dos processos. Devem estar relacionadas com o modelo de processo apresentado anteriormente.
 
-#### Processo 1 – Login
+#### Processo 1 – Login e Autenticação
 
 #### Login
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
 | Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
-| Sobrenome | Caixa de Texto | Mais de 3 caracteres |NULL|
 | Email | Caixa de Texto | formato de e-mail | NULL |
 | Senha | Caixa de Texto | mínimo de 6 caracteres | NULL |
-| Cadastrar | Submit | preenchimento dos campos | False |
-| CPF/CNPJ | Caixa de texto | Validação de CPF/CNPJ | 000000 |
-| Telefone | Caixa de Texto | Fomato Telefone | NULL |
 | Termos | Check Box | Estar setado | FALSE |
 
-#### Processo 2 – Cadastro de Usuario
+#### Processo 2 – Cadastro de Desenvolvedor
 
-#### Cadastrar
+#### Processo 3 – Cadastro de Portifolio
 
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| Nome | String | Obrigatorio | NULL |
-| Email | String, email | Formato e-mail, obrigatorio ||
-| Senha | String | Mínimo de 8 caracteres, obrigatorio | |
-| CPF | Caixa de texto | Validação CPF, obrigatorio |000000|
+#### **Processo 4 – Cadastro de Empresas**
 
-#### Processo 3 – Continuação de cadastro
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| Bio | String |  Opcional | NULL |
-| Website | String, link |  Opcional | NULL |
-| Linkedin | String, link |  Opcional | NULL |
-| GitHub | String, link |  Opcional | NULL |
-| Habilidades | String |  Opcional | NULL |
-| Habilidades_lvl | String |  Obrigatorio | NULL |
+### **Processo 5 – Cadastro de Oportunidades de trabalhos**
 
 
-#### **Processo 4 – Serviço**
-
-##### **Cadastrar**
-
-| **Campo**       | **Tipo**       | **Restrições**                          | **Valor default** |
-| --------------- | -------------- | --------------------------------------- | ----------------- |
-| Nome do Serviço | Caixa de Texto | Ter no mínimo 10 caracteres e máximo 20 | NULL              |
-| Habilidades     | Campo de Texto | Nenhuma                                 | NULL              |
-| Preço           | Campo de Texto | Preenchimento total                     | NULL              |
-| Reputação       | Campo de Texto | Nenhuma                                 | NULL              |
-| Descrição       | Campo de Texto | Preenchimento total                     | NULL              |
-| Contato         | Campo de Texto | Formato e-mail                          | E-mail do dev     |
-
-
-**Buscar serviço**
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| Busca | Caixa de texto | nenhuma | NULL |
-| Buscar | submit | preenchimento do campo busca |FALSE|
-
-**Escolher Serviço**
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| Serviço | Área de texto | Preenchimento total | NULL |
-| Nome Serviço | Link | Nenhuma |página do serviço|
-
-##### **Entrar em contato com DEV**
-
-| **Campo**   | **Tipo**      | **Restrições**      | **Valor default**    |
-| ----------- | ------------- | ------------------- | -------------------- |
-| Habilidades | Área de texto | Nenhuma             | Habilidades do dev   |
-| Preço       | Área de texto | Preenchimento total | Valor do serviço     |
-| Reputação   | Área de texto | Nenhuma             | Reputação Dev        |
-| Descrição   | Área de texto | Preenchimento total | Descrição do serviço |
-| Contato     | Área de texto | Formato e-mail      | E-mail do dev        |
 
 ### 4.2. Tecnologias
 
