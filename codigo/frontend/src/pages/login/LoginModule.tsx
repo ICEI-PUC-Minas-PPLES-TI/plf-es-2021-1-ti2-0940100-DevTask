@@ -11,7 +11,7 @@ export class LoginModule extends Component {
         return (
             <Box className="LoginModule">
                 <BackgroundForms />
-                <Grid container style={{ zIndex: 1}}>
+                <Grid container className="elements" style={{ zIndex: 1 }}>
                     <Grid item xs={12}>
                         <HeaderForms />
                     </Grid>

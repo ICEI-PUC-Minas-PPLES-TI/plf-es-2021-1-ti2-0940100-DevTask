@@ -1,4 +1,4 @@
-import { Grid, InputAdornment, Link, TextField } from '@material-ui/core'
+import { Grid, InputAdornment, Link } from '@material-ui/core'
 import { Email, LockOpen } from '@material-ui/icons'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import * as yup from 'yup'
@@ -50,12 +50,14 @@ export default class LoginModal extends Component {
                             <Grid item xs={12}>
                                 <Field
                                     name="email"
+                                    placeholder="Email"
                                     fullWidth
                                     margin={"normal"}
                                     label="Email"
                                     variant="outlined"
                                     type="email"
                                     // onChange={this.handleChange}
+                                    className="ipt"
                                     required
                                     InputProps={{
                                         startAdornment: (
@@ -72,12 +74,14 @@ export default class LoginModal extends Component {
                             <Grid item xs={12}>
                                 <Field
                                     name="password"
+                                    placeholder="Password"
                                     fullWidth
                                     margin={"normal"}
                                     label="Senha"
                                     variant="outlined"
                                     type="password"
                                     // onChange={this.handleChange}
+                                    className="ipt"
                                     required
                                     InputProps={{
                                         startAdornment: (

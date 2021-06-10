@@ -6,28 +6,16 @@
   background-color: white;
 }
 
-.LoginModal button {
-  width: 100%;
-  height: 3rem;
-  margin: 20px 0;
-  padding: 10px 30px;
-
-  color: white;
-  background-color: var(--primaryColor);
-
-  font-size: 18px;
-  border: none;
-  border-radius: 16px;
-
-  cursor: pointer;
+.LoginModal h2 {
+  margin-bottom: 16px;
 }
 
-p,
-label {
+.LoginModal p,
+.LoginModal label {
   font-size: 14px;
 }
 
 p.link {
   display: inline;
-  color: var(--primaryColor);
+  color: var(--purple-primary);
 }
