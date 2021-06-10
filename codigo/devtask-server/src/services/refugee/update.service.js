@@ -1,5 +1,6 @@
 const yup = require('yup')
 const { StatusCodes } = require('http-status-codes')
+const { User } = require('../../models')
 const { messages } = require('../../utils')
 const { refugeesRepository } = require('../../repositories')
 
@@ -42,19 +43,14 @@ module.exports.update = async (id, body) => {
 
   const refugeeUpdated = await refugeesRepository.update(refugee)
 
-  return {
-    id: refugeeUpdated.id,
-    userId: refugeeUpdated.userId,
-    title: refugeeUpdated.bio,
-    bio: refugeeUpdated.bio,
-    location: refugeeUpdated.location,
-    languages: refugeeUpdated.languages,
-    contact: refugeeUpdated.contact,
-    job_modality: refugeeUpdated.job_modality,
-    work_experiences: refugeeUpdated.work_experiences,
-    website: refugeeUpdated.website,
-    linkedin: refugeeUpdated.linkedin,
-    facebook: refugeeUpdated.facebook,
-    instagram: refugeeUpdated.instagram
-  }
+  return await refugeesRepository.getAll({
+    where: {
+      id: refugeeUpdated.id
+    },
+    attributes: { exclude: ['deletedAt', 'UserId'] },
+    include: [{
+      model: User,
+      attributes: ['id', 'fullName', 'firstName', 'email']
+    }]
+  })
 }

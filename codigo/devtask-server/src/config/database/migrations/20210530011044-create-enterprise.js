@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('devs', {
+    await queryInterface.createTable('enterprises', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -18,28 +18,18 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
       },
-      title: {
+      cnpj: {
+        allowNull: false,
+        unique: true,
         type: Sequelize.STRING
       },
       bio: {
-        type: Sequelize.STRING
-      },
-      location: {
-        type: Sequelize.STRING
-      },
-      languages: {
-        type: Sequelize.STRING(11)
+        type: Sequelize.STRING(500)
       },
       contact: {
         type: Sequelize.STRING
       },
       website: {
-        type: Sequelize.STRING
-      },
-      linkedin: {
-        type: Sequelize.STRING
-      },
-      github: {
         type: Sequelize.STRING
       },
       created_at: {
@@ -57,6 +47,6 @@ module.exports = {
     })
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('devs')
+    await queryInterface.dropTable('enterprises')
   }
 }

@@ -1,13 +1,19 @@
 const usersRepository = require('./user.repository')
-const devsRepository = require('./dev.repository')
+const refugeesRepository = require('./refugee.repository')
 const resetTokenRepository = require('./resettoken.repository')
 const categoriesRepository = require('./category.repository')
 const projectsRepository = require('./project.repository')
+const enterprisesRepository = require('./enterprise.repository')
+const jobsRepository = require('./job.repository')
+const imagesRepository = require('./image.repository')
 
 module.exports = {
   usersRepository,
-  devsRepository,
+  refugeesRepository,
   resetTokenRepository,
   categoriesRepository,
-  projectsRepository
+  projectsRepository,
+  enterprisesRepository,
+  jobsRepository,
+  imagesRepository
 }

@@ -4,16 +4,24 @@ const config = require('../config/database/sequelize')
 class Project extends Model {}
 Project.init(
   {
-    devId: {
+    userId: {
       type: DataTypes.INTEGER,
-      field: 'dev_id'
+      field: 'user_id'
+    },
+    refugeeId: {
+      type: DataTypes.INTEGER,
+      field: 'refugee_id'
     },
     categoryId: {
       type: DataTypes.INTEGER,
       field: 'category_id'
     },
+    imageId: {
+      type: DataTypes.INTEGER,
+      field: 'image_id'
+    },
     title: DataTypes.STRING,
-    description: DataTypes.STRING
+    description: DataTypes.STRING(500)
   },
   {
     sequelize: new Sequelize(config),

@@ -8,11 +8,21 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      dev_id: {
+      user_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: 'devs',
+          model: 'users',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
+      },
+      refugee_id: {
+        type: Sequelize.DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'refugees',
           key: 'id'
         },
         onUpdate: 'CASCADE',
@@ -29,6 +39,7 @@ module.exports = {
         onDelete: 'CASCADE'
       },
       title: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       description: {

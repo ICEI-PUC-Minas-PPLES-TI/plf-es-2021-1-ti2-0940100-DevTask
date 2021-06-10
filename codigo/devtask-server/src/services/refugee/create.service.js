@@ -1,11 +1,11 @@
 const yup = require('yup')
 const { createUser } = require('../user/create.service')
 const { refugeesRepository } = require('../../repositories')
+const { User } = require('../../models')
 const { StatusCodes } = require('http-status-codes')
 const { messages } = require('../../utils')
 
 module.exports.create = async (body) => {
-  const user = await createUser(body, 1)
   const regexUrl = {
     regex: /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
     msg: 'Enter'
@@ -29,6 +29,8 @@ module.exports.create = async (body) => {
     stripUnknown: true
   })
 
+  const user = await createUser(body, 1)
+
   const refugee = await refugeesRepository.get(
     {
       userId: user.id
@@ -47,22 +49,14 @@ module.exports.create = async (body) => {
     ...validated
   })
 
-  return {
-    id: refugeeCreated.id,
-    userId: refugeeCreated.userId,
-    fullName: user.fullName,
-    firstName: user.firstName,
-    email: user.email,
-    title: refugeeCreated.bio,
-    bio: refugeeCreated.bio,
-    location: refugeeCreated.location,
-    languages: refugeeCreated.languages,
-    contact: refugeeCreated.contact,
-    job_modality: refugeeCreated.job_modality,
-    work_experiences: refugeeCreated.work_experiences,
-    website: refugeeCreated.website,
-    linkedin: refugeeCreated.linkedin,
-    facebook: refugeeCreated.facebook,
-    instagram: refugeeCreated.instagram
-  }
+  return await refugeesRepository.getAll({
+    where: {
+      id: refugeeCreated.id
+    },
+    attributes: { exclude: ['deletedAt', 'UserId'] },
+    include: [{
+      model: User,
+      attributes: ['id', 'fullName', 'firstName', 'email']
+    }]
+  })
 }
