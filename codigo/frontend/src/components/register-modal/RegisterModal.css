@@ -33,15 +33,15 @@
   background-color: var(--purple-primary);
 }
 
-p,
-label {
+.RegisterModal p,
+.RegisterModal label {
   font-size: 14px;
 }
 
-p {
+.modal-footer {
   color: var(--text-title);
 }
 
-p.link {
+.link {
   color: var(--purple-primary);
 }

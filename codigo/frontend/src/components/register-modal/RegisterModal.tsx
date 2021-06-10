@@ -221,7 +221,7 @@ export default class RegisterModal extends Component {
           </form>
         </Grid>
         <Grid item xs={12}>
-          <p>
+          <p className="modal-footer">
             Já tem uma conta?{' '}
             <p className="link">
               <Link href="/login" color="inherit">
