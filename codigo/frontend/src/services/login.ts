@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import API from "./api";
 
 export default async function login(props: { email: string | null | undefined; password: string | null | undefined; }): Promise<any> {
