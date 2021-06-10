@@ -3,8 +3,8 @@
 
 :root {
   --purple-primary: #b600d8;
-  --purple-hover: #8e00a8;
-  --purple-active: #c922e8;
+  --purple-hover: #c922e8;
+  --purple-active: #8e00a8;
   /*
     --pink-primary:#FF718C;
     --pink-hover: #EA4363;
@@ -116,6 +116,16 @@ a {
   border-radius: 16px;
 
   cursor: pointer;
+
+  transition: all 150ms ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: var(--purple-hover);
+}
+
+.btn-submit:active {
+  background-color: var(--purple-active);
 }
 
 /* Images */
@@ -127,6 +137,7 @@ a {
 /* Inputs */
 .ipt,
 .ipt-txt-area {
+  width: 100%;
   font-size: 16px;
   color: #14142b;
   background: var(--light-grey);

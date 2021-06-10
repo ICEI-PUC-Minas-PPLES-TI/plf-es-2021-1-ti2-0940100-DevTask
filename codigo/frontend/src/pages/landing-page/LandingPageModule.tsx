@@ -11,7 +11,7 @@ export default class LandingPageModule extends Component {
             <>
                 <header className="header">
                     <a className="logo" href="/"><img src={logo} alt="DevTask logo" /></a>
-                    <a className="btn-menu"><i className="fas fa-bars"></i></a>
+                    <span className="btn-menu"><i className="fas fa-bars"></i></span>
                     <nav className="menu">
                         <ul className="nav-list">
                             <li><a className="nav-link" href="#devtask">O DevTask</a></li>
@@ -32,14 +32,14 @@ export default class LandingPageModule extends Component {
                                 </hgroup>
                                 <p>Anuncie seus trabalhos e encontre clientes de forma simples e rápida.</p>
                                 <div className="button-text">
-                                    <a className="btn btn-imdev" href="#" role="button">Sou Desenvolvedor</a>
-                                    <a className="btn btn-searchdev" href="#" role="button">Busco Desenvolvedores</a>
+                                    <a className="btn btn-imdev" href="/register?type=sou-dev" role="button">Sou Desenvolvedor</a>
+                                    <a className="btn btn-searchdev" href="/register?type=busco-dev" role="button">Busco Desenvolvedores</a>
                                 </div>
                             </div>
 
                             <div className="image">
                                 <img src={imgPage1} className="img-reponsive img-boydesktop" alt="happy boy in desktop" />
-                                <img src="img/bottom-mobile.svg" className="bottom-image" />
+                                <img src="img/bottom-mobile.svg" className="bottom-image" alt="bottom-mobile" />
                             </div>
                         </div>
                     </div>
@@ -55,12 +55,12 @@ export default class LandingPageModule extends Component {
                                 </hgroup>
                                 <p>A DevTask é a plataforma que conecta os desenvolvedores em começo de carreira com novas oportunidades, para dar aquele match com os clientes e um up na sua experiência.</p>
                                 <div className="button-text">
-                                    <a className="btn btn-github" href="https://github.com/ICEI-PUC-Minas-PPLES-TI/DevTask" target="_blank">Repositório no GitHub</a>
+                                    <a className="btn btn-github" href="https://github.com/ICEI-PUC-Minas-PPLES-TI/DevTask" target="_blank" rel="noreferrer">Repositório no GitHub</a>
                                 </div>
                             </div>
                             <div className="image">
                                 <img src={imgPage2} className="img-reponsive img-boytablet" alt="boy using tablet" />
-                                <img src="./img/bottom-mobile.svg" className="bottom-image" />
+                                <img src="./img/bottom-mobile.svg" className="bottom-image" alt="bottom-mobile" />
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export default class LandingPageModule extends Component {
                                 </hgroup>
                                 <p>Somos uma das melhores plataformas de desenvolvedores e trabalhamos para você desenvolver seus talentos e autonomia no trabalho em qualquer lugar do mundo.</p>
                                 <div className="button-text">
-                                    <a className="btn btn-github" href="https://github.com/ICEI-PUC-Minas-PPLES-TI/DevTask" target="_blank">Repositório no GitHub</a>
+                                    <a className="btn btn-github" href="https://github.com/ICEI-PUC-Minas-PPLES-TI/DevTask" target="_blank" rel="noreferrer">Repositório no GitHub</a>
                                 </div>
                             </div>
                             <div className="image">

@@ -22,6 +22,7 @@ section {
 .container {
   margin: 0 auto;
   min-width: (90%, 70.5rem);
+  padding: 2%;
 }
 
 .split {
@@ -82,13 +83,15 @@ hgroup,
 }
 
 .h1-landing-page {
-  font-size: 38px;
+  font-size: 64px;
+  font-weight: bolder;
   padding: 15px 0;
   line-height: 109%;
 }
 
 .h2-landing-page {
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 p,
