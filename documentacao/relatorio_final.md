@@ -162,20 +162,6 @@ Apresenta-se detalhadamente os campos a serem preenchidos para a realização da
 #### Processo 4 – Cadastro de Portifolio
 #### Processo 5 – Cadastro de Oportunidades de trabalhos
 
-=======
-#### Cadastro
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-
-#### Processo 3 – Contrato de Serviço
-
-#### **Processo 4 – Cadastro de Empresas**
-
-### **Processo 5 – Cadastro de Oportunidades de trabalhos**
-
-
-
 ### 4.2. Tecnologias
 
 <p align="justify">O projeto emprega tecnologias de alto nível, voltadas para uma melhor performance e experiência do usuário. Além disso, adequamos o projeto para possibilitar um desenvolvimento de software mais suave, e optamos por metodologias que facilitassem o desenvolvimento colaborativo e a integração de todos os componentes do grupo. A listagem das tecnologias pode ser vista na tabela abaixo, que relaciona as áreas de desenvolvimento com as tecnologias envolvidas.</p>
