@@ -106,12 +106,11 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 | Eu como …   [PERSONA]          | … quero/desejo …  [O QUE]                               | … para ....  [POR QUE]                      |
 | ------------------------------ | ------------------------------------------------------- | ------------------------------------------- |
-| Eu como estudante.             | Quero uma oportunidade de aprimorar minhas habilidades. | Para ser remunerado.                        |
+| Eu como estudante.             | Quero uma oportunidade de participar de uma projeto.    | Para aprimorar minhas habilidades.          |
 | Eu como desenvolvedor  júnior. | Preciso de trabalhos externos ao meu.                   | Para ter uma renda  extra.                  |
 | Eu como estudante.             | Quero divulgar minhas  habilidades.                     | Para achar um estágio.                      |
-| Eu como empresa de  software.  | Desejo buscar  funcionários.                            | Para achar novos  talentos.                 |
+| Eu como empresa de  software.  | Desejo buscar  funcionários.                            | Para aumentar minha equipe.                 |
 | Eu como cliente.               | Desejo achar um profissional.                           | Desenvolver uma aplicação para meu negócio. |
-
 
 
 ## 3. Modelagem do processo de negócio
@@ -133,54 +132,24 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ## 3.3. Processos
 
-<<<<<<< HEAD
-### 3.3.1 Processo 1 – Login e Autenticação
-
-Processo de entrar com suas credenciais na plataforma
-=======
 A plataforma será composta de quatro processos para atingir seus objetivos e entregar seus resultados com êxito, descritos a seguir.
 
-### 3.3.1 Processo 1 – Cadastro de Cliente
+### 3.3.1 Processo 1 – Login e Autenticação
+<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
-Processo de cadastro de cliente trata-se da entrada dos dados pessoais do usuário cliente, verificação de pessoa física ou jurídica e conformidade com os termos de uso.
->>>>>>> develop
-
+### 3.3.1 Processo 2 – Cadastro de Cliente
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 
-### 3.3.2 Processo 2 – Cadastro de Desenvolvedor
+### 3.3.2 Processo 3 – Cadastro de Desenvolvedor
+<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
-<<<<<<< HEAD
-Processo de cadastramento de desenvolvedor
-=======
-Processo de cadastramento de desenvolvedor ocorre o preenchimento do formulário com as informações pessoais e portifólio, validação do CPF e conformidade com os termos de uso.
->>>>>>> develop
+### 3.3.3 Processo 4 –  Cadastro de Portifolio do Desenvolvedor
+<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
-<img src="imagens/process02.png" alt="Exemplo de um Modelo BPMN do PROCESSO 2" title="Modelo BPMN do Processo 2." style="zoom:100%;" />
-
-### 3.3.3 Processo 3 –  Cadastro de Portifolio do Desenvolvedor
-
-<<<<<<< HEAD
-=======
-Após o cadastramento, ocorre o Processo de contrato de serviço, onde o cliente realiza a busca pelo serviço e, no momento em que o encontra, entra em contato com o desenvolvedor,  solicitando o serviço do desenvolvedor, contrata-o e, após a entrega, o usuário realiza a avaliação e pagamento pelo serviço.
->>>>>>> develop
-
-<img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3." style="zoom:100%;" />
-
-
-<<<<<<< HEAD
-### 3.3.4 Processo 4 – Cadastro de Empresas
-
-
-<img src="imagens/process05.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 5." style="zoom:100%;" />
-=======
-O Processo Cadastro Serviço trata-se do cadastro que o desenvolvedor vai realizar para um novo serviço a fim de ser divulgado na aplicação informando nome, descrição, habilidades e preço.
->>>>>>> develop
 
 ### 3.3.4 Processo 5 – Cadastro de Oportunidades de trabalhos
-
-
-<img src="imagens/process06.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 6." style="zoom:100%;" />
+<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 ## 4. Projeto da Solução
 
@@ -189,41 +158,18 @@ O Processo Cadastro Serviço trata-se do cadastro que o desenvolvedor vai realiz
 Apresenta-se detalhadamente os campos a serem preenchidos para a realização das etapas de cada processo, apresentados a seguir.
 
 #### Processo 1 – Login e Autenticação
-
-<<<<<<< HEAD
-#### Login
-=======
-#### Cadastro
->>>>>>> develop
-
-| **Campo** | **Tipo** | **Restrições** | **Valor default** |
-| --- | --- | --- | --- |
-| Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
-| Email | Caixa de Texto | formato de e-mail | NULL |
-| Senha | Caixa de Texto | mínimo de 6 caracteres | NULL |
-| Termos | Check Box | Estar setado | FALSE |
-
 #### Processo 2 – Cadastro de Desenvolvedor
-
-<<<<<<< HEAD
 #### Processo 3 – Cadastro de Portifolio
+#### Processo 4 – Cadastro de Cliente
+#### Processo 5 – Cadastro de Oportunidades de trabalhos
+
 =======
 #### Cadastro
 
 | **Campo** | **Tipo** | **Restrições** | **Valor default** |
 | --- | --- | --- | --- |
-| Portfólio | Link | Preenchimento total | NULL |
-| Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
-| Sobrenome | Caixa de Texto | Mais de 3 caracteres |NULL|
-| Email | Caixa de Texto | Formato e-mail |NULL|
-| Senha | Caixa de Texto | Mínimo de 6 caracteres |NULL|
-| Cadastrar | Submit | Preenchimento dos campos |False|
-| CPF | Caixa de texto | Validação CPF |000000|
-| Habilidades | Caixa de Texto | Ter menos que 60 caracteres |NULL|
-| Termos | Check box | Estar setado |FALSE|
 
 #### Processo 3 – Contrato de Serviço
->>>>>>> develop
 
 #### **Processo 4 – Cadastro de Empresas**
 
