@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import imgPage1 from '../../assets/landing-img1.svg'
-import imgPage2 from '../../assets/landing-img2.svg'
-import imgPage3 from '../../assets/landing-img3.svg'
+// import imgPage2 from '../../assets/landing-img2.svg'
+// import imgPage3 from '../../assets/landing-img3.svg'
 import logo from '../../assets/devtask-logo.svg'
 import './LandingPageModule.css'
 
