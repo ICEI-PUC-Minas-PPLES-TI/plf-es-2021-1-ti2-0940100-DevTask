@@ -14,8 +14,8 @@ export default class LandingPageModule extends Component {
                     <span className="btn-menu"><i className="fas fa-bars"></i></span>
                     <nav className="menu">
                         <ul className="nav-list">
-                            <li><a className="nav-link" href="#devtask">O DevTask</a></li>
-                            <li><a className="nav-link" href="#aboutUs">Sobre Nós</a></li>
+                            {/* <li><a className="nav-link" href="#devtask">O DevTask</a></li> */}
+                            {/* <li><a className="nav-link" href="#aboutUs">Sobre Nós</a></li> */}
                             <li><a className="nav-link btn btn-register" href="/register" role="button">Cadastro</a></li>
                             <li><a className="nav-link btn btn-login" href="/login">Login</a></li>
                         </ul>
@@ -45,7 +45,7 @@ export default class LandingPageModule extends Component {
                     </div>
                 </section>
 
-                <section className="bg-accent">
+                {/* <section className="bg-accent">
                     <div className="container" id="devtask">
                         <div className="split" >
                             <div className="text">
@@ -64,9 +64,9 @@ export default class LandingPageModule extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
-                <section className="bg-basic">
+                {/* <section className="bg-basic">
                     <div className="container" id="aboutUs">
                         <div className="split">
                             <div className="text">
@@ -84,7 +84,7 @@ export default class LandingPageModule extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <script src="https://kit.fontawesome.com/634629ce87.js" crossOrigin="anonymous"></script>
             </>
         )
