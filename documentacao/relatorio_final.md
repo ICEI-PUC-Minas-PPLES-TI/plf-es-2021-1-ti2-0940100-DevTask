@@ -140,7 +140,6 @@ A plataforma será composta de quatro processos para atingir seus objetivos e en
 ### 3.3.1 Processo 2 – Cadastro de Cliente
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
-
 ### 3.3.2 Processo 3 – Cadastro de Desenvolvedor
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
@@ -159,8 +158,8 @@ Apresenta-se detalhadamente os campos a serem preenchidos para a realização da
 
 #### Processo 1 – Login e Autenticação
 #### Processo 2 – Cadastro de Desenvolvedor
-#### Processo 3 – Cadastro de Portifolio
-#### Processo 4 – Cadastro de Cliente
+#### Processo 3 – Cadastro de Cliente
+#### Processo 4 – Cadastro de Portifolio
 #### Processo 5 – Cadastro de Oportunidades de trabalhos
 
 =======
