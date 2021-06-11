@@ -1,5 +1,5 @@
 const usersRepository = require('./user.repository')
-const refugeesRepository = require('./refugee.repository')
+const devsRepository = require('./dev.repository')
 const resetTokenRepository = require('./resettoken.repository')
 const categoriesRepository = require('./category.repository')
 const projectsRepository = require('./project.repository')
@@ -9,7 +9,7 @@ const imagesRepository = require('./image.repository')
 
 module.exports = {
   usersRepository,
-  refugeesRepository,
+  devsRepository,
   resetTokenRepository,
   categoriesRepository,
   projectsRepository,

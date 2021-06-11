@@ -1,10 +1,10 @@
 const { StatusCodes } = require('http-status-codes')
-const { refugeeService } = require('../services')
+const { devService } = require('../services')
 
 module.exports = {
   create: async (req, res) => {
     try {
-      const response = await refugeeService.create(req.body)
+      const response = await devService.create(req.body)
       return res.status(StatusCodes.CREATED).json(response)
     } catch (error) {
       console.error(error)
@@ -19,7 +19,7 @@ module.exports = {
   },
   list: async (req, res) => {
     try {
-      const response = await refugeeService.list(req.query)
+      const response = await devService.list(req.query)
 
       if (!response || response.data.length === 0) {
         return res.status(StatusCodes.NO_CONTENT).end()
@@ -35,7 +35,7 @@ module.exports = {
   },
   get: async (req, res) => {
     try {
-      const response = await refugeeService.get(req.params.userId)
+      const response = await devService.get(req.params.userId)
       return res.status(StatusCodes.OK).json(response)
     } catch (error) {
       console.error(error)
@@ -46,7 +46,7 @@ module.exports = {
   },
   update: async (req, res) => {
     try {
-      const response = await refugeeService.update(req.user.id, req.body)
+      const response = await devService.update(req.user.id, req.body)
       return res.status(StatusCodes.OK).json(response)
     } catch (error) {
       console.error(error)
@@ -61,7 +61,7 @@ module.exports = {
   },
   delete: async (req, res) => {
     try {
-      const response = await refugeeService.deleteOne(req.user.id)
+      const response = await devService.deleteOne(req.user.id)
       return res.status(StatusCodes.NO_CONTENT).json(response)
     } catch (error) {
       console.error(error)

@@ -1,6 +1,6 @@
 const authService = require('./auth')
 const userService = require('./user')
-const refugeeService = require('./refugee')
+const devService = require('./dev')
 const categoryService = require('./category')
 const projectService = require('./project')
 const enterpriseService = require('./enterprise')
@@ -10,7 +10,7 @@ const imageService = require('./image')
 module.exports = {
   authService,
   userService,
-  refugeeService,
+  devService,
   categoryService,
   projectService,
   enterpriseService,

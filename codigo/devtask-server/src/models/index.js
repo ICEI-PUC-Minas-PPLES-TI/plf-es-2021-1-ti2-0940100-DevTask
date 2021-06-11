@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 const config = require('../config/database/sequelize')
 const User = require('./user')
 const Role = require('./role')
-const Refugee = require('./refugee')
+const Dev = require('./dev')
 const ResetToken = require('./resettoken')
 const Category = require('./category')
 const Project = require('./project')
@@ -13,16 +13,16 @@ const Image = require('./image')
 Role.hasMany(User)
 User.hasOne(Role)
 
-User.hasOne(Refugee)
+User.hasOne(Dev)
 User.hasOne(Enterprise)
-Refugee.belongsTo(User)
+Dev.belongsTo(User)
 Enterprise.belongsTo(User)
 
 User.hasMany(Project)
-Refugee.hasMany(Project)
+Dev.hasMany(Project)
 Project.belongsTo(User)
 Project.belongsTo(Category)
-Project.belongsTo(Refugee)
+Project.belongsTo(Dev)
 
 User.hasMany(Job)
 Enterprise.hasMany(Job)
@@ -43,7 +43,7 @@ module.exports = {
   sequelize,
   User,
   Role,
-  Refugee,
+  Dev,
   ResetToken,
   Category,
   Project,
