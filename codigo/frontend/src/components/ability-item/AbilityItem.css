@@ -1,0 +1,14 @@
+.AbilityItem {
+  width: 100%;
+}
+
+.ability-label {
+  color: var(--label);
+  width: 100%;
+}
+
+.ability-info {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}

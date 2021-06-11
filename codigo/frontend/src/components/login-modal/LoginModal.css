@@ -1,0 +1,21 @@
+.LoginModal {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.LoginModal h2 {
+  margin-bottom: 16px;
+}
+
+.LoginModal p,
+.LoginModal label {
+  font-size: 14px;
+}
+
+p.link {
+  display: inline;
+  color: var(--purple-primary);
+}
