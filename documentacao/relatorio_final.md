@@ -264,7 +264,7 @@ Diagrama de Entidade e Relacionamento Conceitual
 
 Diagrama de Entidade e Relacionamento Lógico
 
-![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER - lógico.png "Diagrama de Entidade Relacionamento Lógico")
+<img src=".\imagens\DER - lógico.png" alt="Diagrama de Entidade Relacionamento Lógico" width="120"/>
 
 
 ## 6. Indicadores de desempenho
