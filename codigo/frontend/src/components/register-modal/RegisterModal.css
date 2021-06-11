@@ -1,0 +1,47 @@
+.RegisterModal {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  margin: 100px auto 24px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.btns-tipo-de-conta button {
+  max-width: 180px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin: 20px 10px 20px 0;
+  padding: 5px 20px;
+  border: none;
+
+  color: var(--label);
+  background-color: var(--light-grey);
+  cursor: pointer;
+
+  transition: all 100ms;
+}
+
+.btns-tipo-de-conta button:hover {
+  color: white;
+  background-color: var(--purple-active);
+}
+
+.btns-tipo-de-conta button.active {
+  color: white;
+  background-color: var(--purple-primary);
+}
+
+.RegisterModal p,
+.RegisterModal label {
+  font-size: 14px;
+}
+
+.modal-footer {
+  color: var(--text-title);
+}
+
+.link {
+  color: var(--purple-primary);
+}

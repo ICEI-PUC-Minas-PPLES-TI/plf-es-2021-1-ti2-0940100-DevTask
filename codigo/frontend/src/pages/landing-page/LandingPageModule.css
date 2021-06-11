@@ -1,0 +1,294 @@
+/* Structure */
+header,
+section {
+  padding: 4rem 0;
+}
+
+@media (min-width: 600px) {
+  header,
+  section {
+    padding: 7rem 0;
+  }
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: (90%, 70.5rem);
+  padding: 2%;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2px;
+  }
+}
+
+/* Backgrounds color*/
+
+.bg-primary {
+  background: var(--bg-primary), no-repeat;
+}
+
+.bg-accent {
+  background: var(--bg-accent), no-repeat;
+}
+
+.bg-basic {
+  background: var(--bg-basic), no-repeat;
+}
+
+/* Text */
+
+.text {
+  display: block;
+  padding: 90px 24px 12px;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    padding: 30px;
+  }
+
+  .text {
+    padding: 150px 45px 20px;
+  }
+}
+
+hgroup,
+.btn {
+  font-family: var(--ff-accent);
+  line-height: 30px;
+  color: var(--off-white);
+}
+
+.h1-landing-page {
+  font-size: 64px;
+  font-weight: bolder;
+  padding: 15px 0;
+  line-height: 109%;
+}
+
+.h2-landing-page {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+p,
+.nav-link {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  color: var(--off-white);
+}
+
+p {
+  font-size: 25px;
+}
+
+/* Buttons */
+.button-text {
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.btn {
+  width: 112px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-login {
+  border: 1px solid #f8f8f8;
+  background-color: transparent;
+}
+
+.btn-imdev,
+.btn-searchdev {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  line-height: 12px;
+  margin-right: 50px;
+  padding: 8px 10px;
+  font: normal 600 12px var(--ff-accent);
+}
+
+@media (min-width: 600px) {
+  .button-text {
+    margin-top: 40px;
+    align-items: left;
+  }
+
+  .btn {
+    width: 200px;
+    height: 56px;
+    justify-content: space-between;
+    text-align: center;
+    font: normal bold 18px var(--ff-accent);
+  }
+
+  .btn-imdev,
+  .btn-searchdev,
+  .btn-github {
+    margin-top: 40px;
+  }
+
+  .btn-searchdev {
+    margin-left: 10px;
+  }
+
+  .btn-register,
+  .btn-login {
+    font: normal 600 14px var(--ff-accent);
+  }
+
+  .btn-login {
+    border: none;
+  }
+}
+
+.btn-menu {
+  float: right;
+  color: white;
+  background: transparent;
+}
+
+.btn-register {
+  border: 1px solid #f8f8f8;
+  background-color: transparent;
+}
+
+.btn-login,
+.btn-imdev,
+.btn-github {
+  background-color: var(--yellow-primary);
+}
+
+.btn-login:hover,
+.btn-imdev:hover,
+.btn-github:hover {
+  background-color: var(--yellow-hover);
+}
+
+.btn-login:active,
+.btn-imdev:active,
+.btn-github:active {
+  background-color: var(--yellow-active);
+}
+
+.btn-searchdev {
+  background-color: var(--lilas-primary);
+}
+
+.btn-searchdev:hover {
+  background-color: var(--lilas-hover);
+}
+
+.btn-searchdev:active {
+  background-color: var(--lilas-active);
+}
+
+/* Images */
+
+.image {
+  margin: 0 auto;
+}
+
+.img-reponsive {
+  position: relative;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-image {
+  width: 100%;
+  margin-top: -250px;
+}
+
+@media (min-width: 600px) {
+  .img-reponsive {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bottom-image {
+    display: none;
+  }
+}
+
+/* Menu */
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 15px 18px;
+}
+
+.logo {
+  float: left;
+}
+
+.nav-list {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    float: right;
+    align-items: center;
+    margin: 0;
+  }
+
+  .nav-link {
+    margin: 10px;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .logo {
+    float: left;
+  }
+}

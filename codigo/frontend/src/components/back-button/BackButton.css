@@ -1,0 +1,17 @@
+.BackButton {
+  margin-left: 48px;
+  margin-bottom: 24px;
+}
+
+.BackButton a {
+  color: white;
+}
+
+.BackButton a span {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 30px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 20px;
+}

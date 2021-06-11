@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --purple-primary: #b600d8;
+  --purple-hover: #c922e8;
+  --purple-active: #8e00a8;
+  /*
+    --pink-primary:#FF718C;
+    --pink-hover: #EA4363;
+    --pink-activate: #FF9AAD;
+    --hotpink-primary:#FF2D55;
+    --hotpink-hover: #E51A41;
+    --hotpink-active: #FF5475;
+    */
+  --lilas-primary: #bf5af2;
+  --lilas-hover: #b435f4;
+  --lilas-active: #c976f2;
+  /*
+    --orange-primary: #FF5C00;
+    --orange-hover: #FF5C00;
+    --orange-active: #FF7E36;
+    */
+  --yellow-primary: #ff9f0a;
+  --yellow-hover: #e88d00;
+  --yellow-active: #ffb84a;
+
+  --off-white: #ffffff;
+  --inputbackgroud: #f2f4ff;
+  --light-grey: #eff0f6;
+  --line: #c6c8d7;
+  --placeholder: #a4a5ad;
+  --label: #6b6d7d;
+  --text-title: #0f0f12;
+
+  --danger-primary: #ff453a;
+  --danger-hover: #f42417;
+  --danger-active: #ff6057;
+
+  --sucess-primary: #32d74b;
+  --sucess-hover: #14bc2d;
+  --sucess-active: #58ee6f;
+
+  --warning-primary: #ffd60a;
+  --warning-hover: #e2bc00;
+  --warning-active: #ffe45e;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Poppins", sans-serif;
+
+  --bg-primary: linear-gradient(130.02deg, #ff5c00 0.66%, #b600d8 83.32%);
+  --bg-accent: linear-gradient(130.02deg, #0a84ff 0.66%, #0016e0 83.32%);
+  --bg-basic: linear-gradient(166.29deg, #590069 0%, #ad0441 90.19%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line {
+  background-color: var(--line);
+}
+
+.dashed {
+  border: 1.8px #a0a3bd dashed;
+}
+
+/* Titles */
+.section-title,
+.section-subtitle {
+  font-size: 32px;
+  font-family: var(--ff-accent);
+  line-height: 34px;
+  color: var(--text-title);
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-weight: 600;
+}
+
+.content-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 36px;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 41px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 3rem;
+  margin: 20px 0;
+  padding: 10px 30px;
+
+  color: white;
+  background-color: var(--purple-primary);
+
+  font-size: 18px;
+  border: none;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition: all 150ms ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: var(--purple-hover);
+}
+
+.btn-submit:active {
+  background-color: var(--purple-active);
+}
+
+/* Images */
+.img-responsive {
+  max-width: 100%;
+  width: auto;
+}
+
+/* Inputs */
+.ipt,
+.ipt-txt-area {
+  width: 100%;
+  font-size: 16px;
+  color: #14142b;
+  background: var(--light-grey);
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.ipt:focus {
+  outline: none;
+}
+
+.ipt-btn {
+  font-size: 16px;
+  color: #6e7191;
+  background: var(--light-grey);
+  text-align: left;
+  border-radius: 16px;
+  padding: 16px 16px 16px 16px;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+
+.ipt-txt-area {
+  width: 100%;
+}
+
+.ipt-field {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 16px 10%;
+  border-radius: 16px;
+}
+
+.ipt-field input {
+  width: 100%;
+}
+
+.ipt-field label,
+.ipt-field .icon {
+  z-index: 5;
+}
+
+.ipt-icon-left {
+  padding: 22px 16px 10px 44px;
+}
+
+/*  RANGE   */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--purple-primary);
+  cursor: pointer;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 240px;
+  height: 24px;
+  border-radius: 16px;
+  background: var(--light-grey); /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--purple-primary);
+  clip-path: circle(50%);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--purple-primary);
+  cursor: pointer;
+}
+
+/* Icons */
+.icon {
+  font-size: 18px;
+  top: 16px;
+  left: 16px;
+  color: #6e7191;
+}
+.icon,
+.label {
+  position: absolute;
+}
+
+/* Labels */
+.label {
+  color: #a0a3bd;
+  font-size: 16px;
+  top: 16px;
+  left: 16px;
+
+  font-weight: normal;
+  pointer-events: none;
+
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.l-right {
+  left: 44px;
+}
+.ipt:focus ~ .label,
+.ipt:valid ~ .label {
+  color: #6e7191;
+  top: 4px;
+  font-size: 14px;
+}

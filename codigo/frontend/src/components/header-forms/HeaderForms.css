@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  padding: 32px;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+.header a {
+  pointer-events: all;
+}
