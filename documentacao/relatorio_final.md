@@ -177,7 +177,6 @@ Descrever aqui cada uma das propriedades das atividades de cada um dos processos
 | Nome | Caixa de Texto | Mais de 3 caracteres | NULL |
 | Email | Caixa de Texto | formato de e-mail | NULL |
 | Senha | Caixa de Texto | mínimo de 6 caracteres | NULL |
-| Termos | Check Box | Estar setado | FALSE |
 
 #### Processo 2 – Cadastro de Desenvolvedor
 
@@ -217,7 +216,7 @@ Apresente o modelo de dados. Defina o dicionário de dados com os respectivos fo
 
 Apresente aqui o Diagrama de Entidade-Relacionamento (DER) que contemple todos conceitos e atributos apresentados item anterior. Deve contemplar também o controle de acesso de usuários de acordo com os papeis definidos nos modelos do processo de negócio.
 
-![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER.png "Diagrama de Entidade Relacionamento de Exemplo")
+![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER-lógico.png "DER Lógico")
 
 
 ## 6. Indicadores de desempenho
