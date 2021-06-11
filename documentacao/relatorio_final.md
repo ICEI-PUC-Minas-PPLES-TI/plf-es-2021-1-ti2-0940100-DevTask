@@ -257,17 +257,14 @@ Apresenta-se detalhadamente os campos a serem preenchidos para a realização da
 
 ### 5.1. Diagrama de Entidade-Relacionamento
 
+Diagrama de Entidade e Relacionamento Conceitual
 
+![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER-conceitual.png "Diagrama de Entidade Relacionamento Conceitual")
 
-![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER - lógico.png "Diagrama de Entidade Relacionamento de Exemplo")
 
 Diagrama de Entidade e Relacionamento Lógico
 
-![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER - conceitual.png "Diagrama de Entidade Relacionamento de Exemplo")
-
-Diagrama conceitual, baseado no Diagrama lógico
-
-
+![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER-lógico.png "Diagrama de Entidade Relacionamento Lógico")
 
 
 ## 6. Indicadores de desempenho
