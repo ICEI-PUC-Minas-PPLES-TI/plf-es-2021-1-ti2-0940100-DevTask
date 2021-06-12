@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import logo from '../../assets/devtask-logo.svg'
-import './HeaderForms.css'
+import './HeaderForms.scss'
 
 export class HeaderForms extends Component {
     render() {
