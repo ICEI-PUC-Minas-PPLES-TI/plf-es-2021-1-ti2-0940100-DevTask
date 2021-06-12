@@ -5,9 +5,12 @@
   position: fixed;
   z-index: 0;
   top: 0;
-}
 
-.BackgroundForms img {
-  width: 100%;
-  height: 100vh;
+  img {
+    height: 100vh;
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
 }
