@@ -1,0 +1,39 @@
+.LoginModule {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .elements {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    .login-modal {
+      display: flex;
+      justify-content: center !important;
+      max-height: 360px;
+      margin: auto 2%;
+      @media (min-width: 768px) {
+        margin: auto;
+      }
+    }
+
+    .back-button {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      margin: 48px auto;
+
+      @media (min-width: 768px) {
+        margin: 48px 10%;
+        justify-content: initial;
+      }
+    }
+  }
+}
