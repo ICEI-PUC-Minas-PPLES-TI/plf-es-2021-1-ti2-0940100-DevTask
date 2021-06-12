@@ -6,10 +6,6 @@
 
 **Joao Pedro Mayrink de Jesus, joaopmayrinkj@gmail.com**
 
-**Jose Vitor da Silva Sousa, jvitosousa@gmail.com**
-
-**Marlene Vasconcelos Moraes de Oliveira, marlenevmoliveira@gmail.com**
-
 ---
 
 _Curso de Engenharia de Software, Unidade Praça da Liberdade_
