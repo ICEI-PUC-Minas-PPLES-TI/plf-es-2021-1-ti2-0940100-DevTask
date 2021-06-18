@@ -1,0 +1,90 @@
+.ProfileUserData {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+
+  .profile-img-container {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .profile-img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .infos {
+    width: 80%;
+    > * {
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 18px !important;
+      color: var(--text-title);
+    }
+    p {
+      color: var(--label);
+      font-size: 14px;
+    }
+    .social-networks {
+      width: 100%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        li {
+          margin: 5px;
+          a {
+            color: var(--label);
+            padding: 10px;
+            margin: 0 30%;
+          }
+        }
+      }
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+
+      color: var(--off-white);
+      font-weight: bold;
+      background-color: var(--yellow-primary);
+      border: none;
+      border-radius: 10px;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--yellow-hover);
+      }
+      &:active {
+        background-color: var(--yellow-active);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 480px;
+    margin: 0 24px;
+    // justify-content: space-between;
+    .profile-img-container {
+      max-width: 70%;
+      margin: 0 auto 20px;
+    }
+    .infos {
+      width: 90%;
+      margin: 0 auto;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

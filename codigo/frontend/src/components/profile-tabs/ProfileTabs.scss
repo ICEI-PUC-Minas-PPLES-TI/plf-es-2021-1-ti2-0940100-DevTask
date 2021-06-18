@@ -1,0 +1,20 @@
+.ProfileTabs {
+  width: 100%;
+  .profile-tabs-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    color: var(--label);
+    .active {
+      color: var(--purple-primary);
+    }
+  }
+  .sections {
+    padding: 24px;
+  }
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
