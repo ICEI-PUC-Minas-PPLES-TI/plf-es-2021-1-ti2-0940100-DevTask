@@ -1,0 +1,31 @@
+.ProfileTabs {
+  width: 100%;
+  .profile-tabs-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    li {
+      margin-right: 10%;
+      > * {
+        padding: 10px;
+        border: none;
+        background-color: transparent;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--label);
+        cursor: pointer;
+      }
+      .active {
+        color: var(--purple-primary);
+      }
+    }
+  }
+  .sections {
+    padding: 24px;
+    color: var(--label) !important;
+  }
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
