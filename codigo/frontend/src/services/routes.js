@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import LandingPageModule from "../pages/landing-page/LandingPageModule";
 import LoginModule from "../pages/login/LoginModule";
+import ProfileModule from "../pages/profile/ProfileModule";
 import RegisterContinueModule from "../pages/register-continue/RegisterContinueModule";
 import RegisterModule from "../pages/register/RegisterModule";
 import { isAuthenticated } from "./auth";
@@ -29,6 +30,8 @@ const Routes = () => (
       <PrivateRoute
         path="/register-continue"
         component={() => <RegisterContinueModule />}
+      />
+      <PrivateRoute path="/profile" component={() => <ProfileModule />}
       />
     </Switch>
   </BrowserRouter>

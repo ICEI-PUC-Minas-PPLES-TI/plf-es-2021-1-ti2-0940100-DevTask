@@ -76,7 +76,7 @@ export default class RegisterModal extends Component {
       console.log('handleSubmit -> response', response);
     } catch (e) {
       console.log(e)
-      window.location.href = "/register-continue";
+      window.location.href = "/profile";
     }
   }
 

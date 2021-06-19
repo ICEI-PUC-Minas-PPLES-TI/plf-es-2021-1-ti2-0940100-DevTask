@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import backgroundImage from '../../assets/background-img.svg'
 
-import './BackgroundForms.css'
+import './BackgroundForms.scss'
 
 class BackgroundForms extends Component {
     render() {
