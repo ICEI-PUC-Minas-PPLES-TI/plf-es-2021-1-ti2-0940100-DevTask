@@ -35,7 +35,7 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-      <main>
+      <main className="main-home">
         <div className="container">
           <div className="subtitle">#2 top Best DEV PLATAFORM</div>
           <div className="title">Experiência alinhada ao conhecimento!</div>

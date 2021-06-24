@@ -46,7 +46,7 @@
     display: inline;
   }
 }
-main {
+.main-home {
     display: grid;
 }
 .container {
@@ -135,7 +135,7 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-    main {
+    .main-home {
         margin: 2em 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
