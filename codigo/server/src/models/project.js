@@ -8,9 +8,9 @@ Project.init(
       type: DataTypes.INTEGER,
       field: 'user_id'
     },
-    refugeeId: {
+    devId: {
       type: DataTypes.INTEGER,
-      field: 'refugee_id'
+      field: 'dev_id'
     },
     categoryId: {
       type: DataTypes.INTEGER,

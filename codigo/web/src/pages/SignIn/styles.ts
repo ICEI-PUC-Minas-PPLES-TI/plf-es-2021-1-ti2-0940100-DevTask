@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import backgroundImage from '../../assets/images/Strip-Patterns.png';
+import backgroundImage from '../../assets/images/login.png';
 
 export const Wrapper = styled.div`
-  background-image: url(${backgroundImage}),
-    linear-gradient(128.75deg, #ff5c00 0%, #b600d8 77.96%);
+  background-image: url(${backgroundImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 `;
 
 export const Container = styled.div`
@@ -24,9 +22,11 @@ export const Container = styled.div`
 export const Card = styled.main`
   width: 100%;
   max-width: 640px;
-  margin-top: 7em;
+
+  margin-top: 12rem;
+
   background: var(--white);
-  box-shadow: 10px 40px 50px -20px rgb(0 0 0 / 25%);
+  box-shadow: 10px 40px 50px -20px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   padding: 4rem;
 
@@ -40,9 +40,9 @@ export const Card = styled.main`
 `;
 
 export const Title = styled.h1`
-  font-size: 2em;
-  font-weight: bold;
-  color: var(--text);
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--black);
   margin-bottom: 1.5rem;
 `;
 
@@ -72,7 +72,7 @@ export const LineText = styled.span`
 `;
 
 export const SignUpContainer = styled.div`
-  text-align: start;
+  text-align: center;
 `;
 
 export const SignUpButton = styled(Link)`

@@ -17,14 +17,14 @@ export const StyledButton = styled.button<{
   border: ${(props) =>
     props.buttonType === 'outline'
       ? props.variant === 'secondary'
-        ? 'solid 1px var(--purple)'
-        : 'solid 1px var(--orange)'
+        ? 'solid 1px var(--blue-500)'
+        : 'solid 1px var(--caramel-800)'
       : 'none'};
   background-color: ${(props) =>
     props.buttonType === 'solid'
       ? props.variant === 'secondary'
-        ? 'var(--purple)'
-        : 'var(--orange)'
+        ? 'var(--blue-500)'
+        : 'var(--caramel-400)'
       : 'transparent'};
 
   color: ${(props) =>
@@ -33,8 +33,8 @@ export const StyledButton = styled.button<{
         ? 'var(--white)'
         : 'var(--black)'
       : props.variant === 'secondary'
-      ? 'var(--purple)'
-      : 'var(--orange)'};
+      ? 'var(--blue-500)'
+      : 'var(--caramel-800)'};
 
   outline: none;
 
@@ -42,7 +42,7 @@ export const StyledButton = styled.button<{
     border: 1.5px solid
       ${(props) =>
         props.variant === 'secondary'
-          ? 'var(--light-purple)'
-          : 'var(--light-orange)'};
+          ? 'var(--blue-800)'
+          : 'var(--caramel-800)'};
   }
 `;

@@ -1,10 +1,10 @@
 const { StatusCodes } = require('http-status-codes')
 const { User, Project } = require('../../models')
-const { refugeesRepository } = require('../../repositories')
+const { devsRepository } = require('../../repositories')
 const { messages } = require('../../utils')
 
 module.exports.get = async (id) => {
-  const refugee = await refugeesRepository.getAll({
+  const dev = await devsRepository.getAll({
     where: {
       userId: id
     },
@@ -15,15 +15,15 @@ module.exports.get = async (id) => {
     },
     {
       model: Project,
-      attributes: { exclude: ['deletedAt', 'RefugeeId', 'UserId', 'CategoryId'] }
+      attributes: { exclude: ['deletedAt', 'DevId', 'UserId', 'CategoryId'] }
     }]
   })
 
-  if (!refugee) {
+  if (!dev) {
     throw Object.assign(new Error(messages.notFound('user')), {
       status: StatusCodes.NOT_FOUND
     })
   }
 
-  return refugee
+  return dev
 }

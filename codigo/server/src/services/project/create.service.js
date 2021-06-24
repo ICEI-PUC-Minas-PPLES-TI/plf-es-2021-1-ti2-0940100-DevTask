@@ -1,12 +1,12 @@
 const yup = require('yup')
 const { StatusCodes } = require('http-status-codes')
-const { refugeesRepository, projectsRepository, categoriesRepository, imagesRepository } = require('../../repositories')
+const { devsRepository, projectsRepository, categoriesRepository, imagesRepository } = require('../../repositories')
 const { messages } = require('../../utils')
 
 module.exports.create = async (id, body) => {
-  const refugee = await refugeesRepository.get({ userId: id })
+  const dev = await devsRepository.get({ userId: id })
 
-  if (!refugee) {
+  if (!dev) {
     throw Object.assign(new Error(messages.notFound('user')), {
       status: StatusCodes.NOT_FOUND
     })
@@ -43,7 +43,7 @@ module.exports.create = async (id, body) => {
 
   return await projectsRepository.create({
     userId: id,
-    refugeeId: refugee.id,
+    devId: dev.id,
     ...validated
   })
 }

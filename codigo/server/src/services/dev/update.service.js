@@ -2,14 +2,14 @@ const yup = require('yup')
 const { StatusCodes } = require('http-status-codes')
 const { User } = require('../../models')
 const { messages } = require('../../utils')
-const { refugeesRepository } = require('../../repositories')
+const { devsRepository } = require('../../repositories')
 
 module.exports.update = async (id, body) => {
   console.log(id)
-  const refugee = await refugeesRepository.get({ userId: id })
+  const dev = await devsRepository.get({ userId: id })
 
-  if (!refugee) {
-    throw Object.assign(new Error(messages.notFound('refugee')), {
+  if (!dev) {
+    throw Object.assign(new Error(messages.notFound('dev')), {
       status: StatusCodes.NOT_FOUND
     })
   }
@@ -22,15 +22,9 @@ module.exports.update = async (id, body) => {
   const schema = yup.object().shape({
     title: yup.string(),
     bio: yup.string(),
-    location: yup.string(),
-    languages: yup.string(),
-    contact: yup.string().email(),
-    job_modality: yup.string(),
-    work_experiences: yup.string().max(500),
     website: yup.string().matches(regexUrl.regex, regexUrl.msg),
     linkedin: yup.string().matches(regexUrl.regex, regexUrl.msg),
-    facebook: yup.string().matches(regexUrl.regex, regexUrl.msg),
-    instagram: yup.string().matches(regexUrl.regex, regexUrl.msg)
+    github: yup.string().matches(regexUrl.regex, regexUrl.msg)
   })
 
   const validated = await schema.validate(body, {
@@ -38,14 +32,14 @@ module.exports.update = async (id, body) => {
   })
 
   Object.keys(validated).forEach((key) => {
-    refugee.setDataValue(key, validated[key])
+    dev.setDataValue(key, validated[key])
   })
 
-  const refugeeUpdated = await refugeesRepository.update(refugee)
+  const devUpdated = await devsRepository.update(dev)
 
-  return await refugeesRepository.getAll({
+  return await devsRepository.getAll({
     where: {
-      id: refugeeUpdated.id
+      id: devUpdated.id
     },
     attributes: { exclude: ['deletedAt', 'UserId'] },
     include: [{

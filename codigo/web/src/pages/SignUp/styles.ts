@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import backgroundImage from '../../assets/images/Strip-Patterns.png';
+import backgroundImage from '../../assets/images/login.png';
 
 export const Wrapper = styled.div`
-  background-image: url(${backgroundImage}),
-    linear-gradient(128.75deg, #ff5c00 0%, #b600d8 77.96%);
+  background-image: url(${backgroundImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 `;
 
 export const Container = styled.div`

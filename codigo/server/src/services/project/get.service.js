@@ -1,5 +1,5 @@
 const { StatusCodes } = require('http-status-codes')
-const { User, Refugee, Category } = require('../../models')
+const { User, Dev, Category } = require('../../models')
 const { projectsRepository } = require('../../repositories')
 const { messages } = require('../../utils')
 
@@ -8,13 +8,13 @@ module.exports.get = async (id) => {
     where: {
       id: id
     },
-    attributes: { exclude: ['deletedAt', 'UserId', 'RefugeeId'] },
+    attributes: { exclude: ['deletedAt', 'UserId', 'DevId'] },
     include: [{
       model: User,
       attributes: ['id', 'fullName', 'firstName', 'email']
     },
     {
-      model: Refugee,
+      model: Dev,
       attributes: ['id', 'title']
     },
     {

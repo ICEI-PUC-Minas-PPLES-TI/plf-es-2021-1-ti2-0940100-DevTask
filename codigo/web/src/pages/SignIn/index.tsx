@@ -18,10 +18,17 @@ import {
   Card,
   Title,
   ForgotPassword,
+  FooterSection,
+  FooterContainer,
+  LineContainer,
+  Line,
+  LineText,
   SignUpContainer,
   SignUpButton,
 } from './styles';
 
+import { Navbar } from '../../components/Navbar';
+import { Footer } from '../../components/Footer';
 import { Modal } from '../../components/Modal';
 
 type SignInFormData = {
@@ -74,6 +81,7 @@ export const SignIn: React.FC = () => {
 
   return (
     <Wrapper>
+      <Navbar />
       <Container>
         <Helmet>
           <title>Entrar | DevTask</title>
@@ -84,7 +92,7 @@ export const SignIn: React.FC = () => {
         </Helmet>
 
         <Card>
-          <Title>Login</Title>
+          <Title>Entrar</Title>
 
           <form onSubmit={handleSubmit(handleSignIn)}>
             <Input
@@ -113,7 +121,7 @@ export const SignIn: React.FC = () => {
 
             <Button
               buttonType="solid"
-              variant="secundary"
+              variant="primary"
               text="Entrar"
               type="submit"
               isLoading={isSubmitting}
@@ -121,12 +129,24 @@ export const SignIn: React.FC = () => {
               style={{ marginTop: '2rem' }}
             />
           </form>
+
+          <LineContainer>
+            <Line />
+            <LineText>ou</LineText>
+            <Line />
+          </LineContainer>
+
           <SignUpContainer>
-            Ainda não possui uma conta?&nbsp;
-            <SignUpButton to="/register">Cadastre-se</SignUpButton>
+            <SignUpButton to="/register">Criar minha conta</SignUpButton>
           </SignUpContainer>
         </Card>
       </Container>
+
+      <FooterSection>
+        <FooterContainer>
+          <Footer />
+        </FooterContainer>
+      </FooterSection>
 
       <Modal
         modalIsOpen={showModal}

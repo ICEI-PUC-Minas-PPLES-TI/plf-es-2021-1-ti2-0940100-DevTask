@@ -1,11 +1,11 @@
 const { Op } = require('sequelize')
-const { refugeesRepository } = require('../../repositories')
+const { devsRepository } = require('../../repositories')
 const { User } = require('../../models')
 
 module.exports.list = async (query) => {
   const search = query.search ? query.search : ''
 
-  const { count, rows } = await refugeesRepository.list({
+  const { count, rows } = await devsRepository.list({
     include: [
       {
         model: User,

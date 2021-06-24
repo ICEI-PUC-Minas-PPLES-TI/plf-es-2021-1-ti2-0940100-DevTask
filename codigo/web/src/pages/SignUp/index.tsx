@@ -10,9 +10,12 @@ import { useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
+import { Navbar } from '../../components/Navbar';
 import {
   Wrapper,
   Container,
+  FooterSection,
+  FooterContainer,
   Card,
   Title,
   Text,
@@ -20,6 +23,7 @@ import {
   SignInButton,
 } from './styles';
 import { api } from '../../services/api';
+import { Footer } from '../../components/Footer';
 
 type SignUpFormData = {
   name: string;
@@ -92,9 +96,10 @@ export const SignUp: React.FC = () => {
 
   return (
     <Wrapper>
+      <Navbar />
       <Container>
         <Helmet>
-          <title>Cadastrar | Devtask</title>
+          <title>Cadastrar | DevTask</title>
           <meta
             name="description"
             content="Cadastre-se na plataforma para divulgar seu portifólio, vagas e ficar cada vez menos distante do mercado de trabalho."
@@ -190,6 +195,12 @@ export const SignUp: React.FC = () => {
           )}
         </Card>
       </Container>
+
+      <FooterSection>
+        <FooterContainer>
+          <Footer />
+        </FooterContainer>
+      </FooterSection>
     </Wrapper>
   );
 };

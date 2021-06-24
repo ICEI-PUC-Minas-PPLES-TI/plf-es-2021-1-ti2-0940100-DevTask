@@ -18,11 +18,11 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
       },
-      refugee_id: {
+      dev_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: 'refugees',
+          model: 'devs',
           key: 'id'
         },
         onUpdate: 'CASCADE',

@@ -8,10 +8,6 @@
     "dev": "nodemon src/app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ioasys-Camp-2021/auth-test.git"
-  },
   "keywords": [
     "auth",
     "jwt",
@@ -19,10 +15,6 @@
   ],
   "author": "Ana Clara Fonseca Campos",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ioasys-Camp-2021/auth-test/issues"
-  },
-  "homepage": "https://github.com/Ioasys-Camp-2021/auth-test#readme",
   "dependencies": {
     "aws-sdk": "^2.918.0",
     "bcrypt": "^5.0.1",

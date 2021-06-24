@@ -13,8 +13,17 @@ import { toast } from 'react-toastify';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
-import { Wrapper, Container, Card, Title } from './styles';
+import {
+  Wrapper,
+  Container,
+  Card,
+  Title,
+  FooterSection,
+  FooterContainer,
+} from './styles';
 
+import { Navbar } from '../../components/Navbar';
+import { Footer } from '../../components/Footer';
 import { api } from '../../services/api';
 
 type ResetPasswordFormData = {
@@ -76,9 +85,10 @@ export const ResetPassword: React.FC = () => {
 
   return (
     <Wrapper>
+      <Navbar />
       <Container>
         <Helmet>
-          <title>Recuperar Senha | Adapto</title>
+          <title>Recuperar Senha | DevTask</title>
           <meta
             name="description"
             content="Recupere sua senha de forma simples e fácil."
@@ -121,6 +131,12 @@ export const ResetPassword: React.FC = () => {
           </form>
         </Card>
       </Container>
+
+      <FooterSection>
+        <FooterContainer>
+          <Footer />
+        </FooterContainer>
+      </FooterSection>
     </Wrapper>
   );
 };

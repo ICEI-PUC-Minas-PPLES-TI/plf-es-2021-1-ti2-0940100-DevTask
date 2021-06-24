@@ -20,7 +20,7 @@ module.exports.list = async (query) => {
         }
       }
     }],
-    attributes: ['id', 'refugeeId', 'title', 'description', 'createdAt'],
+    attributes: ['id', 'devId', 'title', 'description', 'createdAt'],
     where: {
       [Op.or]: [
         {

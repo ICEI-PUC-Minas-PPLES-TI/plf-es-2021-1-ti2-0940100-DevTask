@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export const Home: React.FC = () => {
-  const a = 'aaa';
+import { Helmet } from 'react-helmet-async';
+
+export default function Home() {
   return (
-    <div id="page-landing">
-      <Link to="/login">${a}</Link>
+    <div className="wrapper">
+      <Helmet>
+        <title>Home | DevTask</title>
+        <meta
+          name="description"
+          content="Bem-vindo à DevTask, sua plataforma para conectar desenvolvedores e empresas."
+        />
+      </Helmet>
+      ...
     </div>
   );
-};
+}

@@ -12,9 +12,9 @@ export const Wrapper = styled.fieldset`
 export const Label = styled.label``;
 
 export const Container = styled.div<{ hasError: boolean }>`
-  background-color: var(--ipt-background);
+  background-color: transparent;
   border: 1.5px solid
-    ${(props) => (props.hasError ? 'var(--error-700)' : 'transparent')};
+    ${(props) => (props.hasError ? 'var(--error-700)' : '#bbbbbb')};
   border-radius: 16px;
   padding: 12px 16px;
   margin: 2px 0;
