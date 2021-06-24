@@ -8,7 +8,6 @@ export default createGlobalStyle`
   }
 
   :root {
-    --white: #FEFEFE;
     --black: #333333;
 
     --caramel-100: #EDCEB3;
@@ -29,6 +28,23 @@ export default createGlobalStyle`
     --warning-700: #FF9A00;
 
     --modal-background: rgba(0, 0, 0, 0.4);
+
+    --white: #FFFF;
+    --background: #E5E5E5;
+    --ipt-background: #EFF0F6;
+    --line: #C6C8D7;
+    --placeholder: #6E7191;
+    --icon: #A0A3BD;
+    --text: #14142B;
+    --purple: #B600D8;
+    --dark-purple: #8E00A8;
+    --light-purple: #C922E8;
+    --organge: #FF5C00;
+    --dark-organge: #D44D00;
+    --light-organge: #FF7E36;
+    --yellow: #FF9F0A;
+    --dark-yellow: #E88D00;
+    --light-yellow: #FFAA26;
   }
 
   body {

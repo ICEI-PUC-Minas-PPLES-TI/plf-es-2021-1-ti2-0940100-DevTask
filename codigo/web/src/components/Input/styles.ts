@@ -30,7 +30,7 @@ export const Container = styled.div<{ hasError: boolean }>`
 
   &:focus-within {
     border-color: ${(props) =>
-      props.hasError ? 'var(--error-700)' : 'var(--caramel-400)'};
+      props.hasError ? 'var(--error-700)' : 'var(--purple)'};
   }
 `;
 

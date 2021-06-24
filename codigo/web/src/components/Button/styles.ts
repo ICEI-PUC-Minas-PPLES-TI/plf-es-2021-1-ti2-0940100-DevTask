@@ -18,23 +18,23 @@ export const StyledButton = styled.button<{
     props.buttonType === 'outline'
       ? props.variant === 'secondary'
         ? 'solid 1px var(--blue-500)'
-        : 'solid 1px var(--caramel-800)'
+        : 'solid 1px var(--dark-purple)'
       : 'none'};
   background-color: ${(props) =>
     props.buttonType === 'solid'
       ? props.variant === 'secondary'
-        ? 'var(--blue-500)'
-        : 'var(--caramel-400)'
+        ? 'var(--caramel-400)'
+        : 'var(--purple)'
       : 'transparent'};
 
   color: ${(props) =>
     props.buttonType === 'solid'
       ? props.variant === 'secondary'
-        ? 'var(--white)'
-        : 'var(--black)'
+        ? 'var(--black)'
+        : 'var(--white)'
       : props.variant === 'secondary'
       ? 'var(--blue-500)'
-      : 'var(--caramel-800)'};
+      : 'var(--purple)'};
 
   outline: none;
 

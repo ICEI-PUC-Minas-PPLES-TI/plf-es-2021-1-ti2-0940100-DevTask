@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+
 import './styles.css';
+
 import logoImg from '../../assets/images/logo.svg';
 import homeImg from '../../assets/images/Saly-10.svg';
 
@@ -47,7 +49,7 @@ export default function Home() {
             <Link to="/register" className="cta">
               Criar conta
             </Link>
-            <Link to="/projects" className="cta cta-purple">
+            <Link to="/portfolio" className="cta cta-purple">
               Ver Projetos
             </Link>
           </div>

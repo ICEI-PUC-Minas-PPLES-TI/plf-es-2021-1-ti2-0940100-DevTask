@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/interactive-supports-focus */
 import React, { useState, useCallback } from 'react';
 
 import { Helmet } from 'react-helmet-async';
@@ -7,28 +9,16 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
+import logoImg from '../../assets/images/logo.svg';
+
 import { useAuth } from '../../contexts/auth';
 
-import {
-  Wrapper,
-  Container,
-  Card,
-  Title,
-  ForgotPassword,
-  FooterSection,
-  FooterContainer,
-  LineContainer,
-  Line,
-  LineText,
-  SignUpContainer,
-  SignUpButton,
-} from './styles';
+import './styles.css';
 
-import { Navbar } from '../../components/Navbar';
-import { Footer } from '../../components/Footer';
 import { Modal } from '../../components/Modal';
 
 type SignInFormData = {
@@ -80,19 +70,26 @@ export const SignIn: React.FC = () => {
   };
 
   return (
-    <Wrapper>
-      <Navbar />
-      <Container>
-        <Helmet>
-          <title>Entrar | DevTask</title>
-          <meta
-            name="description"
-            content="Faça login da plataforma e comece a usá-la para divulgar seus trabalhos ou suas vagas."
-          />
-        </Helmet>
+    <div className="wrapper-lines">
+      <Helmet>
+        <title>Entrar | DevTask</title>
+        <meta
+          name="description"
+          content="Faça login na plataforma e comece a usá-la para divulgar seus trabalhos ou suas vagas."
+        />
+      </Helmet>
 
-        <Card>
-          <Title>Entrar</Title>
+      <header className="header">
+        <div className="logo">
+          <Link to="/">
+            <img src={logoImg} alt="DevTask" />
+          </Link>
+        </div>
+      </header>
+
+      <div className="card-container">
+        <div className="card">
+          <div className="card-title">Login</div>
 
           <form onSubmit={handleSubmit(handleSignIn)}>
             <Input
@@ -115,9 +112,13 @@ export const SignIn: React.FC = () => {
               style={{ marginBottom: '0.4rem' }}
             />
 
-            <ForgotPassword type="button" onClick={handleForgotPassword}>
+            <div
+              className="forgot-pass"
+              role="button"
+              onClick={handleForgotPassword}
+            >
               Esqueci minha senha
-            </ForgotPassword>
+            </div>
 
             <Button
               buttonType="solid"
@@ -126,32 +127,19 @@ export const SignIn: React.FC = () => {
               type="submit"
               isLoading={isSubmitting}
               disabled={isSubmitting}
-              style={{ marginTop: '2rem' }}
+              style={{ marginTop: '0.7rem' }}
             />
           </form>
-
-          <LineContainer>
-            <Line />
-            <LineText>ou</LineText>
-            <Line />
-          </LineContainer>
-
-          <SignUpContainer>
-            <SignUpButton to="/register">Criar minha conta</SignUpButton>
-          </SignUpContainer>
-        </Card>
-      </Container>
-
-      <FooterSection>
-        <FooterContainer>
-          <Footer />
-        </FooterContainer>
-      </FooterSection>
+          <Link to="/register" className="register-acc">
+            Ainda não tem uma conta? <span>Cadastre-se</span>
+          </Link>
+        </div>
+      </div>
 
       <Modal
         modalIsOpen={showModal}
         toggleModalFunction={handleForgotPassword}
       />
-    </Wrapper>
+    </div>
   );
 };

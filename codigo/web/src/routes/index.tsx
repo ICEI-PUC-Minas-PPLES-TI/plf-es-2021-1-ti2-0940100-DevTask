@@ -30,7 +30,7 @@ const Routes: React.FC = () => (
       <Route path="/jobs" component={JobVacancies} isPublic />
       <Route path="/portfolio" component={Portfolio} isPublic />
 
-      <Route path="/refugee/profile/:id" component={RefugeeProfile} isPublic />
+      <Route path="/dev/profile/:id" component={RefugeeProfile} isPublic />
       <Route
         path="/business/profile/:id"
         component={BusinessProfile}

@@ -6,24 +6,14 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
-import { Navbar } from '../../components/Navbar';
-import {
-  Wrapper,
-  Container,
-  FooterSection,
-  FooterContainer,
-  Card,
-  Title,
-  Text,
-  SignInContainer,
-  SignInButton,
-} from './styles';
+import { Text } from './styles';
 import { api } from '../../services/api';
-import { Footer } from '../../components/Footer';
+
+import logoImg from '../../assets/images/logo.svg';
 
 type SignUpFormData = {
   name: string;
@@ -32,7 +22,7 @@ type SignUpFormData = {
   password: string;
 };
 
-const refugeeFormSchema = yup.object().shape({
+const devFormSchema = yup.object().shape({
   name: yup.string().required('Nome é um campo obrigatório'),
   email: yup
     .string()
@@ -60,9 +50,7 @@ export const SignUp: React.FC = () => {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<SignUpFormData>({
-    resolver: yupResolver(
-      type === 'refugee' ? refugeeFormSchema : businessFormSchema,
-    ),
+    resolver: yupResolver(type === 'dev' ? devFormSchema : businessFormSchema),
   });
 
   const handleSignUp: SubmitHandler<SignUpFormData> = async (values) => {
@@ -73,8 +61,8 @@ export const SignUp: React.FC = () => {
     };
 
     try {
-      if (type === 'refugee') {
-        await api.post('/refugee', data);
+      if (type === 'dev') {
+        await api.post('/dev', data);
       } else {
         await api.post('/enterprise', { ...data, cnpj: values.cnpj });
       }
@@ -95,21 +83,27 @@ export const SignUp: React.FC = () => {
   };
 
   return (
-    <Wrapper>
-      <Navbar />
-      <Container>
-        <Helmet>
-          <title>Cadastrar | DevTask</title>
-          <meta
-            name="description"
-            content="Cadastre-se na plataforma para divulgar seu portifólio, vagas e ficar cada vez menos distante do mercado de trabalho."
-          />
-        </Helmet>
+    <div className="wrapper-lines">
+      <Helmet>
+        <title>Cadastrar | DevTask</title>
+        <meta
+          name="description"
+          content="Cadastre-se na plataforma para divulgar seu portifólio, vagas e ficar cada vez menos distante do mercado de trabalho."
+        />
+      </Helmet>
+      <header className="header">
+        <div className="logo">
+          <Link to="/">
+            <img src={logoImg} alt="DevTask" />
+          </Link>
+        </div>
+      </header>
 
-        <Card>
+      <div className="card-container">
+        <div className="card">
           {type ? (
             <>
-              <Title>Criar conta!</Title>
+              <div className="card-title">Criar conta!</div>
 
               <form onSubmit={handleSubmit(handleSignUp)}>
                 <Input
@@ -158,17 +152,17 @@ export const SignUp: React.FC = () => {
                   type="submit"
                   isLoading={isSubmitting}
                   disabled={isSubmitting}
-                  style={{ marginTop: '2rem' }}
+                  style={{ marginTop: '0.7rem' }}
                 />
               </form>
 
-              <SignInContainer>
-                <SignInButton to="/login">Já tenho uma conta</SignInButton>
-              </SignInContainer>
+              <Link to="/login" className="register-acc">
+                Já tem uma conta? <span>Faça login</span>
+              </Link>
             </>
           ) : (
             <>
-              <Title>Olá!</Title>
+              <div className="card-title">Olá!</div>
 
               <Text>
                 Nos ajude a te indetificar para o seu cadastro ser continuado!
@@ -177,30 +171,24 @@ export const SignUp: React.FC = () => {
               <Button
                 buttonType="solid"
                 variant="primary"
-                text="Refugiado ou imigrante"
+                text="Desenvolvedor"
                 type="button"
                 style={{ marginTop: '3rem' }}
-                onClick={() => setType('refugee')}
+                onClick={() => setType('dev')}
               />
 
               <Button
                 buttonType="outline"
                 variant="primary"
-                text="Empresa"
+                text="Contratante"
                 type="button"
                 style={{ marginTop: '1rem' }}
                 onClick={() => setType('business')}
               />
             </>
           )}
-        </Card>
-      </Container>
-
-      <FooterSection>
-        <FooterContainer>
-          <Footer />
-        </FooterContainer>
-      </FooterSection>
-    </Wrapper>
+        </div>
+      </div>
+    </div>
   );
 };
