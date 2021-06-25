@@ -62,27 +62,22 @@ import { api } from '../../services/api';
 import { ProfileModal } from '../../components/ProfileModal';
 import { useAuth } from '../../contexts/auth';
 
-import linkedinIcon from '../../assets/icons/linkedinCaramel.svg';
-import instagramIcon from '../../assets/icons/instagramCaramel.svg';
-import facebookIcon from '../../assets/icons/facebookCaramel.svg';
-import websiteIcon from '../../assets/icons/webCaramel.svg';
+import linkedinIcon from '../../assets/icons/linkedin.svg';
+import githubIcon from '../../assets/icons/github.svg';
+import websiteIcon from '../../assets/icons/web.svg';
 import { WorkItem } from '../../components/WorkItem';
 
 type UserFormData = {
   fullName: string;
   title: string;
-
   bio: string;
   location: string;
   languages: string;
   jobModality: string;
   contact: string;
-
   workExperience: string;
-
   linkedin: string;
-  instagram: string;
-  facebook: string;
+  github: string;
   website: string;
 };
 
@@ -98,12 +93,11 @@ type UserData = {
   location: string;
   languages: string;
   contact: string;
-  job_modality: string;
-  work_experiences: string;
+  jobModality: string;
+  workExperiences: string;
   website: string;
   linkedin: string;
-  facebook: string;
-  instagram: string;
+  github: string;
   User: {
     firstName: string;
     id: number;
@@ -215,8 +209,7 @@ export const DevProfile: React.FC = () => {
         );
 
         setValue('linkedin', currentUser ? currentUser.linkedin : '');
-        setValue('instagram', currentUser ? currentUser.instagram : '');
-        setValue('facebook', currentUser ? currentUser.facebook : '');
+        setValue('github', currentUser ? currentUser.github : '');
         setValue('website', currentUser ? currentUser.website : '');
       }
     } catch (err) {
@@ -424,7 +417,7 @@ export const DevProfile: React.FC = () => {
                   <RowData>
                     <Work />{' '}
                     <DataText>
-                      {user?.job_modality ? user?.job_modality : 'Sem dados'}
+                      {user?.jobModality ? user?.jobModality : 'Sem dados'}
                     </DataText>
                   </RowData>
 
@@ -450,8 +443,8 @@ export const DevProfile: React.FC = () => {
                 <DataContainer>
                   <DataTitle>Experiência profissional</DataTitle>
                   <BigText>
-                    {user?.work_experiences
-                      ? user?.work_experiences
+                    {user?.workExperiences
+                      ? user?.workExperiences
                       : 'Sem dados cadastrados'}
                   </BigText>
                 </DataContainer>
@@ -495,22 +488,12 @@ export const DevProfile: React.FC = () => {
                   </InputContainer>
 
                   <InputContainer>
-                    <SocialMediaLogo src={instagramIcon} alt="Instagram" />
+                    <SocialMediaLogo src={githubIcon} alt="Github" />
                     <Input
                       type="text"
-                      placeholder="Instagram"
+                      placeholder="Github"
                       disabled={!editing}
-                      {...register('instagram')}
-                    />
-                  </InputContainer>
-
-                  <InputContainer>
-                    <SocialMediaLogo src={facebookIcon} alt="Facebook" />
-                    <Input
-                      type="text"
-                      placeholder="Facebook"
-                      disabled={!editing}
-                      {...register('facebook')}
+                      {...register('github')}
                     />
                   </InputContainer>
 
@@ -540,27 +523,18 @@ export const DevProfile: React.FC = () => {
                   </SocialMediaLink>
 
                   <SocialMediaLink
-                    href={user?.instagram}
-                    target="_blank"
-                    style={{ borderBottom: 'none' }}
-                  >
-                    <SocialMediaLogo src={instagramIcon} alt="Instagram" />
-                    Instagram
-                  </SocialMediaLink>
-
-                  <SocialMediaLink
-                    href={user?.facebook}
+                    href={user?.github}
                     target="_blank"
                     style={{
                       borderBottom: 'none',
                     }}
                   >
-                    <SocialMediaLogo src={facebookIcon} alt="Facebook" />
-                    Facebook
+                    <SocialMediaLogo src={githubIcon} alt="Github" />
+                    github
                   </SocialMediaLink>
 
                   <SocialMediaLink
-                    href={user?.facebook}
+                    href={user?.github}
                     target="_blank"
                     style={{
                       borderBottomLeftRadius: 16,

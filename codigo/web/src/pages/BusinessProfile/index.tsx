@@ -55,7 +55,7 @@ import { JobProfileItem } from '../../components/JobProfileItem';
 import { api } from '../../services/api';
 import { useAuth } from '../../contexts/auth';
 
-import websiteIcon from '../../assets/icons/webCaramel.svg';
+import websiteIcon from '../../assets/icons/web.svg';
 import { JobModal } from '../../components/JobModal';
 
 type BusinessFormData = {
@@ -273,7 +273,7 @@ export const BusinessProfile: React.FC = () => {
       <Navbar solid />
 
       <Helmet>
-        <title>Perfil | Adapto</title>
+        <title>Perfil | DevTask</title>
         <meta
           name="description"
           content="Perfil de uma empresa. Entre e conheça sobre essa empresa e suas vagas, uma delas pode ser do seu interesse."

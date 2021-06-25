@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import backgroundImage from '../../assets/images/login.png';
-
 export const Wrapper = styled.div`
-  background-image: url(${backgroundImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

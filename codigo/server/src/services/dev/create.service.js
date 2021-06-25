@@ -14,6 +14,11 @@ module.exports.create = async (body) => {
   const schema = yup.object().shape({
     title: yup.string(),
     bio: yup.string(),
+    location: yup.string(),
+    languages: yup.string(),
+    contact: yup.string().email(),
+    jobModality: yup.string(),
+    workExperiences: yup.string().max(500),
     website: yup.string().matches(regexUrl.regex, regexUrl.msg),
     linkedin: yup.string().matches(regexUrl.regex, regexUrl.msg),
     github: yup.string().matches(regexUrl.regex, regexUrl.msg)

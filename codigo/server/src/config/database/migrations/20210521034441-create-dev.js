@@ -24,6 +24,21 @@ module.exports = {
       bio: {
         type: Sequelize.STRING
       },
+      location: {
+        type: Sequelize.STRING
+      },
+      languages: {
+        type: Sequelize.STRING
+      },
+      contact: {
+        type: Sequelize.STRING
+      },
+      job_modality: {
+        type: Sequelize.STRING
+      },
+      work_experiences: {
+        type: Sequelize.STRING
+      },
       github: {
         type: Sequelize.STRING
       },

@@ -35,7 +35,7 @@ export const Footer: React.FC = () => (
     <FooterItemWrapper>
       <FooterTitle>Contato</FooterTitle>
 
-      <FooterText>contato@adapto.com</FooterText>
+      <FooterText>contato@devtask.com</FooterText>
       <FooterText>+55 0000-0000</FooterText>
     </FooterItemWrapper>
 

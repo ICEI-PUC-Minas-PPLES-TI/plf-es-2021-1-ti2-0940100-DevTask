@@ -10,6 +10,17 @@ Dev.init(
     },
     title: DataTypes.STRING,
     bio: DataTypes.STRING,
+    location: DataTypes.STRING,
+    languages: DataTypes.STRING,
+    contact: DataTypes.STRING,
+    jobModality: {
+      type: DataTypes.STRING,
+      field: 'job_modality'
+    },
+    workExperiences: {
+      type: DataTypes.STRING,
+      field: 'work_experiences'
+    },
     github: DataTypes.STRING,
     website: DataTypes.STRING,
     linkedin: DataTypes.STRING

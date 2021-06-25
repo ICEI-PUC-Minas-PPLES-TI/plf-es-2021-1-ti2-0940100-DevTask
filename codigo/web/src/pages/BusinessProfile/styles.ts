@@ -10,8 +10,6 @@ import {
 import { FaTrash } from 'react-icons/fa';
 import { BsBuilding } from 'react-icons/bs';
 
-import backgroundImage from '../../assets/images/background.png';
-
 export const Wrapper = styled.div`
   background-color: #f3f3f3;
 `;
@@ -34,12 +32,20 @@ export const BackgroundImage = styled.header`
   height: 368px;
   background-color: #d6d6d6;
 
-  background-image: url(${backgroundImage});
+  background: linear-gradient(
+    128.75deg,
+    rgba(255, 92, 0, 0.9) 0%,
+    rgba(182, 0, 216, 0.9) 77.96%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   position: relative;
+
+  @media (max-width: 907px) {
+    height: 268px;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -51,10 +57,12 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
 
   @media (max-width: 907px) {
+    bottom: -150px;
+  }
+  @media (max-width: 600px) {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    bottom: -12rem;
   }
 `;
 
@@ -63,7 +71,7 @@ export const ProfileContainer = styled.div``;
 export const ProfileImage = styled.div`
   width: 222px;
   height: 222px;
-  border-radius: 8px;
+  border-radius: 50%;
 
   background-color: #d6d6d6;
 
@@ -76,11 +84,18 @@ export const ProfileImage = styled.div`
   &:hover {
     cursor: pointer;
   }
+  @media (max-width: 907px) {
+    width: 162px;
+    height: 162px;
+  }
 `;
 
 export const NoPhoto = styled(BsBuilding)`
-  font-size: 7rem;
-  color: #999999;
+  font-size: 9rem;
+  color: var(--icon);
+  @media (max-width: 907px) {
+    font-size: 5rem;
+  }
 `;
 
 export const ContentContainer = styled(Container)`
@@ -122,12 +137,15 @@ export const NameContainer = styled.div`
 export const Name = styled.h1`
   font-weight: 500;
   font-size: 1.8rem;
+  @media (max-width: 907px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const EditInfoButton = styled.button`
   margin-left: 1rem;
   border: none;
-  background-color: var(--caramel-800);
+  background-color: var(--icon);
   font-size: 0;
   padding: 0.5rem;
   border-radius: 50%;
@@ -141,25 +159,25 @@ export const EditIcon = styled(MdEdit)`
 export const ChatBubble = styled(MdChatBubble)`
   font-size: 1.5rem;
   margin-right: 0.8rem;
-  color: var(--caramel-800);
+  color: var(--yellow);
 `;
 
 export const Mail = styled(MdMail)`
   font-size: 1.5rem;
   margin-right: 0.8rem;
-  color: var(--caramel-800);
+  color: var(--yellow);
 `;
 
 export const Work = styled(MdWork)`
   font-size: 1.5rem;
   margin-right: 0.8rem;
-  color: var(--caramel-800);
+  color: var(--yellow);
 `;
 
 export const LocationOn = styled(MdLocationOn)`
   font-size: 1.5rem;
   margin-right: 0.8rem;
-  color: var(--caramel-800);
+  color: var(--yellow);
 `;
 
 export const Function = styled.span`
@@ -186,9 +204,9 @@ export const TabItem = styled.span<{ active?: boolean }>`
   background-color: red;
   margin-right: 1rem;
   font-weight: 500;
-  color: ${(props) => (props.active ? 'var(--white)' : 'var(--blue-800)')};
+  color: ${(props) => (props.active ? 'var(--white)' : 'var(--dark-purple)')};
   background-color: ${(props) =>
-    props.active ? 'var(--blue-500)' : 'transparent'};
+    props.active ? 'var(--purple)' : 'transparent'};
 
   &:hover {
     cursor: pointer;
