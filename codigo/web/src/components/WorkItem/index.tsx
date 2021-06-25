@@ -4,7 +4,7 @@ import { Container, Details, Title, Category, Description } from './styles';
 
 type Work = {
   id: number;
-  refugeeId: number;
+  devId: number;
   title: string;
   description: string;
   User: {

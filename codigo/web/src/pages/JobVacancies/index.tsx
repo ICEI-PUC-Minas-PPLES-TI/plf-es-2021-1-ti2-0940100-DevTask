@@ -75,7 +75,7 @@ export const JobVacancies: React.FC = () => {
   return (
     <Wrapper>
       <Helmet>
-        <title>Portifólio | Adapto</title>
+        <title>Portifólio | DevTask</title>
         <meta
           name="description"
           content="Conheça as vagas ofertadas pelas empresas cadastradas. Encontre aquela que faz mais sentido com o seu contexto e entre em contato com a empresa."
@@ -87,7 +87,7 @@ export const JobVacancies: React.FC = () => {
         <Title>
           Vagas para
           <br />
-          refugiados
+          desenvolvedores
         </Title>
       </Header>
 

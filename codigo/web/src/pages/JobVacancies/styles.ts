@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import headerImage from '../../assets/images/jobs.png';
-
 export const Wrapper = styled.div`
   background-color: #f3f3f3;
 `;
@@ -10,7 +8,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
 
   display: flex;
   flex-direction: column;
@@ -22,9 +20,13 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 
-  background-image: url(${headerImage});
+  background: linear-gradient(
+    180deg,
+    rgba(255, 92, 0, 0.335) -8.5%,
+    rgba(182, 0, 216, 0) 92.92%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +39,7 @@ export const Header = styled.header`
 export const Title = styled.h1`
   color: var(--blue-800);
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   line-height: 5rem;
 

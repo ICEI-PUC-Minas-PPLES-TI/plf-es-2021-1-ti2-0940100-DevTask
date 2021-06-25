@@ -25,7 +25,7 @@ import {
 
 import { useAuth } from '../../contexts/auth';
 
-import adaptoLogo from '../../assets/images/adapto-logo.svg';
+import adaptoLogo from '../../assets/images/logo-devtask2.svg';
 
 type NavbarProps = {
   solid?: boolean;
@@ -77,7 +77,6 @@ export const Navbar: React.FC<NavbarProps> = ({ solid = false }) => {
               <Logo src={adaptoLogo} alt="Adapto e Incluso" />
             </Link>
 
-            <NavLink to="/about">Sobre nós</NavLink>
             <NavLink to="/portfolio">Portifólio</NavLink>
             <NavLink to="/jobs">Vagas</NavLink>
           </NavLeft>

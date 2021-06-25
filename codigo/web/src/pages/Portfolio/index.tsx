@@ -19,38 +19,33 @@ import { Navbar } from '../../components/Navbar';
 import { api } from '../../services/api';
 import { PortfolioItem } from '../../components/PortfolioItem';
 
-type UserData = {
+type ProjectData = {
   id: number;
-  userId: number;
+  devId: number;
   title: string;
-  bio: string;
-  location: string;
-  languages: string;
-  contact: string;
-  job_modality: string;
-  work_experiences: string;
-  website: string;
-  linkedin: string;
-  facebook: string;
-  instagram: string;
+  description: string;
   User: {
-    firstName: string;
     fullName: string;
+    id: number;
+  };
+  Category: {
+    title: string;
     id: number;
   };
 };
 
 export const Portfolio: React.FC = () => {
-  const [users, setUsers] = useState<UserData[]>([]);
+  const [projects, setProjects] = useState<ProjectData[]>([]);
+
   const [error, setError] = useState('');
 
-  const loadUsers = async () => {
+  const loadProject = async () => {
     try {
-      const response = await api.get('/dev');
+      const response = await api.get('/project');
 
       if (response.data.data) {
         setError('');
-        setUsers(response.data.data);
+        setProjects(response.data.data);
       } else {
         setError('Nenhum portifólio foi cadastrado no sistema.');
       }
@@ -61,7 +56,7 @@ export const Portfolio: React.FC = () => {
   };
 
   useEffect(() => {
-    loadUsers();
+    loadProject();
   }, []);
 
   return (
@@ -77,9 +72,9 @@ export const Portfolio: React.FC = () => {
 
       <Header>
         <Title>
-          Portifólio dos
+          Projetos dos
           <br />
-          refugiados
+          desenvolvedores
         </Title>
       </Header>
 
@@ -89,8 +84,8 @@ export const Portfolio: React.FC = () => {
         </ErrorContainer>
       ) : (
         <Container>
-          {users.map((user) => (
-            <PortfolioItem user={user} key={user.id} />
+          {projects.map((project) => (
+            <PortfolioItem project={project} key={project.id} />
           ))}
         </Container>
       )}

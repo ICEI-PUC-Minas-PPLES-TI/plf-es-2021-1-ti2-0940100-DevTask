@@ -114,7 +114,7 @@ type UserData = {
 
 type WorkParams = {
   id: number;
-  refugeeId: number;
+  devId: number;
   title: string;
   description: string;
   User: {
@@ -129,7 +129,7 @@ type WorkParams = {
 
 const userFormSchema = yup.object().shape({});
 
-export const RefugeeProfile: React.FC = () => {
+export const DevProfile: React.FC = () => {
   const { id } = useParams<ParamsProps>();
   const [showModal, setShowModal] = useState(false);
 
@@ -249,7 +249,7 @@ export const RefugeeProfile: React.FC = () => {
     };
 
     try {
-      await api.put('/refugee', data);
+      await api.put('/dev', data);
 
       setEditing(false);
 

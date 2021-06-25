@@ -48,7 +48,7 @@ export const Logo = styled.img`
 
 export const NavLink = styled(Link)`
   font-weight: 500;
-  color: var(--blue-800);
+  color: var(--placeholder);
   margin-right: 2.5rem;
 
   @media (max-width: 990px) {
@@ -74,7 +74,7 @@ export const MenuButton = styled.button`
 
 export const MenuIcon = styled(FiMenu)`
   font-size: 1.8rem;
-  color: var(--caramel-800);
+  color: var(--dark-purple);
 `;
 
 export const SidebarWrapper = styled.div`
@@ -136,7 +136,7 @@ export const SidebarCloseButton = styled(BsX)`
 export const SidebarLink = styled(Link)`
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--blue-800);
+  color: var(--placeholder);
   margin-bottom: 0.5rem;
 `;
 
@@ -150,11 +150,11 @@ export const SmallContainer = styled.div`
 export const LoginButton = styled(Link)`
   width: 140px;
   height: 48px;
-  border-radius: 1rem;
-  background-color: transparent;
+  border-radius: 30px;
+  background-color: var(--yellow);
 
-  color: var(--caramel-800);
-  border: 1px solid var(--caramel-800);
+  color: var(--white);
+  border: none;
 
   font-size: 1.1rem;
   font-weight: 500;
@@ -164,7 +164,7 @@ export const LoginButton = styled(Link)`
   justify-content: center;
 
   &:focus {
-    border: 1px solid var(--caramel-800);
+    border: 1px solid var(--dark-yellow);
   }
 
   @media (max-width: 990px) {
@@ -175,11 +175,11 @@ export const LoginButton = styled(Link)`
 export const SignOutButton = styled.button`
   width: 140px;
   height: 48px;
-  border-radius: 1rem;
-  background-color: transparent;
+  border-radius: 30px;
+  background-color: var(--yellow);
 
-  color: var(--caramel-800);
-  border: 1px solid var(--caramel-800);
+  color: var(--white);
+  border: none;
 
   font-size: 1.1rem;
   font-weight: 500;
@@ -189,7 +189,7 @@ export const SignOutButton = styled.button`
   justify-content: center;
 
   &:focus {
-    border: 1px solid var(--caramel-800);
+    border: 1px solid var(--dark-yellow);
   }
 
   @media (max-width: 990px) {
@@ -200,11 +200,11 @@ export const SignOutButton = styled.button`
 export const SidebarLoginButton = styled(Link)`
   width: 140px;
   height: 48px;
-  border-radius: 1rem;
-  background-color: transparent;
+  border-radius: 30px;
+  background-color: var(--yellow);
 
-  color: var(--caramel-800);
-  border: 1px solid var(--caramel-800);
+  color: var(--white);
+  border: none;
 
   font-size: 1.1rem;
   font-weight: 500;
@@ -214,7 +214,7 @@ export const SidebarLoginButton = styled(Link)`
   justify-content: center;
 
   &:focus {
-    border: 1px solid var(--caramel-800);
+    border: 1px solid var(--dark-yellow);
   }
 `;
 
@@ -222,10 +222,11 @@ export const SidebarSignOutButton = styled.button`
   width: 140px;
   height: 48px;
   border-radius: 1rem;
-  background-color: transparent;
+  border-radius: 30px;
+  background-color: var(--yellow);
 
-  color: var(--caramel-800);
-  border: 1px solid var(--caramel-800);
+  color: var(--white);
+  border: none;
 
   font-size: 1.1rem;
   font-weight: 500;

@@ -46,7 +46,7 @@ export const AuthProvider: React.FC = ({ children }) => {
       id: response.data.id,
       email: response.data.email,
       fullName: response.data.fullName,
-      role: response.data.role === 1 ? 'refugee' : 'business',
+      role: response.data.role === 1 ? 'dev' : 'business',
     };
     const { token } = response.data;
 

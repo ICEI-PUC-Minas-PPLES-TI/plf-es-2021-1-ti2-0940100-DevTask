@@ -5,18 +5,12 @@ import {
   FooterItemWrapper,
   FooterImage,
   FooterContent,
-  FooterCopyright,
   FooterTitle,
   FooterLink,
   FooterText,
-  SocialMediaLink,
 } from './styles';
 
-import linkedinImg from '../../assets/icons/linkedin.svg';
-import instagramImg from '../../assets/icons/instagram.svg';
-import facebookImg from '../../assets/icons/facebook.svg';
-
-import adaptoLogo from '../../assets/images/adapto-logo.svg';
+import adaptoLogo from '../../assets/images/logo-devtask2.svg';
 
 export const Footer: React.FC = () => (
   <FooterWrapper>
@@ -24,17 +18,14 @@ export const Footer: React.FC = () => (
       <FooterImage src={adaptoLogo} />
 
       <FooterContent>
-        Uma ação voluntária que ajuda refugiados e imigrantes.
+        Projeto desenvolvido por alunos de Engenharia de Software na Puc Minas
       </FooterContent>
-
-      <FooterCopyright>© Copyright Adapto</FooterCopyright>
     </FooterItemWrapper>
 
     <FooterItemWrapper>
       <FooterTitle>Feature</FooterTitle>
 
       <FooterLink to="/">Home</FooterLink>
-      <FooterLink to="/about">Sobre nós</FooterLink>
       <FooterLink to="/portfolio">Portifólio</FooterLink>
       <FooterLink to="/jobs">Vagas</FooterLink>
       <FooterLink to="/register">Criar conta</FooterLink>
@@ -49,22 +40,10 @@ export const Footer: React.FC = () => (
     </FooterItemWrapper>
 
     <FooterItemWrapper>
-      <FooterTitle>Nossas redes sociais</FooterTitle>
+      <FooterTitle>Alunos</FooterTitle>
 
-      <SocialMediaLink href="https://www.linkedin.com/feed/" target="_blank">
-        <img src={linkedinImg} alt="LinkedIn" />
-        adapto-e-incluso
-      </SocialMediaLink>
-
-      <SocialMediaLink href="https://www.instagram.com/" target="_blank">
-        <img src={instagramImg} alt="Instagram" />
-        @adaptoeincluso
-      </SocialMediaLink>
-
-      <SocialMediaLink href="https://www.facebook.com/" target="_blank">
-        <img src={facebookImg} alt="Facebook" />
-        @adaptoeincluso
-      </SocialMediaLink>
+      <FooterText>Ana Clara Fonseca Campos</FooterText>
+      <FooterText>João Pedro Mayrink</FooterText>
     </FooterItemWrapper>
   </FooterWrapper>
 );

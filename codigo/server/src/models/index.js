@@ -31,6 +31,8 @@ Job.belongsTo(Category)
 Job.belongsTo(Enterprise)
 
 Image.belongsTo(User)
+Category.hasHook(Image)
+Image.belongsTo(Category)
 
 const sequelize = new Sequelize(
   config.database,

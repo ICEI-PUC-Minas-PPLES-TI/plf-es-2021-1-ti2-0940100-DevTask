@@ -11,44 +11,42 @@ import {
   Bio,
 } from './styles';
 
-type UserData = {
+type ProjectData = {
   id: number;
-  userId: number;
+  devId: number;
   title: string;
-  bio: string;
-  location: string;
-  languages: string;
-  contact: string;
-  job_modality: string;
-  work_experiences: string;
-  website: string;
-  linkedin: string;
-  facebook: string;
-  instagram: string;
+  description: string;
   User: {
-    firstName: string;
     fullName: string;
+    id: number;
+  };
+  Category: {
+    title: string;
     id: number;
   };
 };
 
 type PorfolioItemProps = {
-  user: UserData;
+  project: ProjectData;
 };
 
-export const PortfolioItem: React.FC<PorfolioItemProps> = ({ user }) => (
-  <Container to={`/refugee/profile/${user.userId}`}>
+export const PortfolioItem: React.FC<PorfolioItemProps> = ({ project }) => (
+  <Container to={`/dev/profile/${project.User.id}`}>
     <DetailContainer>
       <ProfileImage>
         <NoPhoto />
       </ProfileImage>
 
       <Details>
-        <Name>{user.User.fullName ? user.User.fullName : 'Sem dados'}</Name>
-        <Title>{user.title ? user.title : 'Sem dados'}</Title>
+        <Name>{project.title ? project.title : 'Sem dados'}</Name>
+        <Title>
+          {project.Category.title ? project.Category.title : 'Sem dados'}
+        </Title>
       </Details>
     </DetailContainer>
 
-    <Bio>{user.bio ? user.bio : 'Sem dados para exibir'}</Bio>
+    <Bio>
+      {project.User.fullName ? project.User.fullName : 'Sem dados para exibir'}
+    </Bio>
   </Container>
 );
