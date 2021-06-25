@@ -134,17 +134,16 @@ A plataforma será composta de quatro processos para atingir seus objetivos e en
 <img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
 
 ### 3.3.1 Processo 2 – Cadastro de Cliente
-<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
+<img src="imagens/process02.png" alt="Exemplo de um Modelo BPMN do PROCESSO 2" title="Modelo BPMN do Processo 2."/>
 
 ### 3.3.2 Processo 3 – Cadastro de Desenvolvedor
-<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
+<img src="imagens/process03.png" alt="Exemplo de um Modelo BPMN do PROCESSO 3" title="Modelo BPMN do Processo 3."/>
 
 ### 3.3.3 Processo 4 –  Cadastro de Portifolio do Desenvolvedor
-<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
-
+<img src="imagens/process04.png" alt="Exemplo de um Modelo BPMN do PROCESSO 4" title="Modelo BPMN do Processo 4."/>
 
 ### 3.3.4 Processo 5 – Cadastro de Oportunidades de trabalhos
-<img src="imagens/process01.png" alt="Exemplo de um Modelo BPMN do PROCESSO 1" title="Modelo BPMN do Processo 1."/>
+<img src="imagens/process05.png" alt="Exemplo de um Modelo BPMN do PROCESSO 5" title="Modelo BPMN do Processo 5."/>
 
 ## 4. Projeto da Solução
 
@@ -153,10 +152,66 @@ A plataforma será composta de quatro processos para atingir seus objetivos e en
 Apresenta-se detalhadamente os campos a serem preenchidos para a realização das etapas de cada processo, apresentados a seguir.
 
 #### Processo 1 – Login e Autenticação
-#### Processo 2 – Cadastro de Desenvolvedor
-#### Processo 3 – Cadastro de Cliente
+
+##### Login
+|PARAM|TIPO|OBRIGATORIEDADE|
+|--|--|--|
+|**email**| string | required |
+|**password**| string | required |
+
+##### Logout
+|PARAM|TIPO|OBRIGATORIEDADE|
+|--|--|--|
+|**Authentication**| string | required |
+
+#### Processo 2 – Cadastro de Cliente
+
+|PARAM|TIPO|RESTRIÇÕES|OBRIGATORIEDADE|
+|--|--|--|--|
+|**fullName**| string | -- | obrigatório |
+|**email**| string | email, único	obrigatório
+|**password**| string | mínimo 8 letras | obrigatório |
+|**cnpj**| string | minimo e máximo de 14 letras | obrigatório |
+|**bio**| string | -- | opcional |
+|**contact**| string | padrão email | opcional |
+|**location**| string | -- | opcional |
+|**website**| string | padrão url | opcional |
+
+#### Processo 3 – Cadastro de Desenvolvedor
+
+|PARAM|TIPO|RESTRIÇÕES|OBRIGATORIEDADE|
+|--|--|--|--|
+|**fullName**| string | -- | obrigatório |
+|**email**| string | email, único	obrigatório
+|**password**| string | mínimo 8 letras | obrigatório |
+|**title**| string | -- | opcional |
+|**bio**| string | -- | opcional |
+|**contact**| string | padrão email | opcional |
+|**location**| string | -- | opcional |
+|**jobModality**| string | -- | opcional |
+|**workExperiences**| string | máximo 500 caracteres | opcional |
+|**website**| string | padrão url | opcional |
+|**linkedin**| string | padrão url | opcional |
+|**facebook**| string | padrão url | opcional |
+|**instagram**| string | padrão url | opcional |
+
 #### Processo 4 – Cadastro de Portifolio
+|PARAM|TIPO|RESTRIÇÕES|OBRIGATORIEDADE|
+|--|--|--|--|
+|**imageId**| number | associação com usuário | opcional |
+|**categoryId**| number | existir na lista |obrigatório|
+|**title**| string | -- | obrigatório |
+|**description**| string | -- | opcional |
+
 #### Processo 5 – Cadastro de Oportunidades de trabalhos
+|PARAM|TIPO|RESTRIÇÕES|OBRIGATORIEDADE|
+|--|--|--|--|
+|**categoryId**| number | existir na lista |obrigatório|
+|**title**| string | -- | obrigatório |
+|**description**| string | -- | opcional |
+|**jobModality**| string | -- | obrigatório |
+|**location**| string | -- | opcional |
+|**isRemote**| boolean | -- | obrigatório |
 
 ### 4.2. Tecnologias
 
