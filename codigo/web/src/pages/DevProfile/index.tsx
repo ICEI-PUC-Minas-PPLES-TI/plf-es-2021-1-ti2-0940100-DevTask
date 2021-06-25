@@ -185,8 +185,8 @@ export const DevProfile: React.FC = () => {
       const response = await api.get(`/dev/${id}`);
 
       if (response.data.length === 0) {
-        setError('Não foi possível encontrar esse refugiado.');
-        toast.error('Refugiado não encontrado.');
+        setError('Não foi possível encontrar esse desenvolvedores.');
+        toast.error('Desenvolvedor não encontrado.');
       } else {
         setError('');
 
@@ -213,8 +213,8 @@ export const DevProfile: React.FC = () => {
         setValue('website', currentUser ? currentUser.website : '');
       }
     } catch (err) {
-      setError('Não foi possível encontrar esse refugiado.');
-      toast.error('Falha ao buscar os dados desse refugiado.');
+      setError('Não foi possível encontrar esse desenvolvedor.');
+      toast.error('Falha ao buscar os dados desse desenvolvedor.');
     }
   };
 
@@ -259,10 +259,10 @@ export const DevProfile: React.FC = () => {
       <Navbar solid />
 
       <Helmet>
-        <title>Perfil | Adapto</title>
+        <title>Perfil | DevTask</title>
         <meta
           name="description"
-          content="Perfil de um refugiado. Entre e conheça sobre essa pessoa, suas experiências, trabalhos e maneiras de entrar em contato."
+          content="Perfil de um desenvolvedor. Entre e conheça sobre essa pessoa, suas experiências, trabalhos e maneiras de entrar em contato."
         />
       </Helmet>
 

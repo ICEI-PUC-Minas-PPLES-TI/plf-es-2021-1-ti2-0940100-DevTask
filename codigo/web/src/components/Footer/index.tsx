@@ -10,12 +10,12 @@ import {
   FooterText,
 } from './styles';
 
-import adaptoLogo from '../../assets/images/logo-devtask2.svg';
+import devtaskLogo from '../../assets/images/logo-devtask2.svg';
 
 export const Footer: React.FC = () => (
   <FooterWrapper>
     <FooterItemWrapper>
-      <FooterImage src={adaptoLogo} />
+      <FooterImage src={devtaskLogo} />
 
       <FooterContent>
         Projeto desenvolvido por alunos de Engenharia de Software na Puc Minas

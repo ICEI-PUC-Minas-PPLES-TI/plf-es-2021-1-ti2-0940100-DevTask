@@ -50,8 +50,8 @@ export const Portfolio: React.FC = () => {
         setError('Nenhum portifólio foi cadastrado no sistema.');
       }
     } catch (err) {
-      setError('Não foi possível carregar o portifólio dos refugiados.');
-      toast.error('Falha ao carregar os refugiados.');
+      setError('Não foi possível carregar o portifólio dos desenvolvedores.');
+      toast.error('Falha ao carregar os desenvolvedores.');
     }
   };
 
@@ -65,7 +65,7 @@ export const Portfolio: React.FC = () => {
         <title>Portifólio | DevTask</title>
         <meta
           name="description"
-          content="Conheça o portifólio dos refugiados cadastrados. Encontre aquele com a realidade mais adequada a da sua empresa e entre em contato com ele."
+          content="Conheça o portifólio dos desenvolvedores cadastrados. Encontre aquele com a realidade mais adequada a da sua empresa e entre em contato com ele."
         />
       </Helmet>
       <Navbar />

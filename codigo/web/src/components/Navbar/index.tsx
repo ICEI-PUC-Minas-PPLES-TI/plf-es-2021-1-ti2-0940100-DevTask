@@ -25,7 +25,7 @@ import {
 
 import { useAuth } from '../../contexts/auth';
 
-import adaptoLogo from '../../assets/images/logo-devtask2.svg';
+import devtaskLogo from '../../assets/images/logo-devtask2.svg';
 
 type NavbarProps = {
   solid?: boolean;
@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ solid = false }) => {
         <NavContainer>
           <NavLeft>
             <Link to="/">
-              <Logo src={adaptoLogo} alt="Adapto e Incluso" />
+              <Logo src={devtaskLogo} alt="DevTask" />
             </Link>
 
             <NavLink to="/portfolio">Portifólio</NavLink>
