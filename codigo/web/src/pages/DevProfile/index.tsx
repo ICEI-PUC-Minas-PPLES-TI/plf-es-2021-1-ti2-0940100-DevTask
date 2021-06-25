@@ -200,12 +200,12 @@ export const DevProfile: React.FC = () => {
         setValue('bio', currentUser ? currentUser.bio : '');
         setValue('location', currentUser ? currentUser.location : '');
         setValue('languages', currentUser ? currentUser.languages : '');
-        setValue('jobModality', currentUser ? currentUser.job_modality : '');
+        setValue('jobModality', currentUser ? currentUser.jobModality : '');
         setValue('contact', currentUser ? currentUser.contact : '');
 
         setValue(
           'workExperience',
-          currentUser ? currentUser.work_experiences : '',
+          currentUser ? currentUser.workExperiences : '',
         );
 
         setValue('linkedin', currentUser ? currentUser.linkedin : '');
@@ -232,9 +232,9 @@ export const DevProfile: React.FC = () => {
       bio: values.bio ? values.bio : '',
       location: values.location ? values.location : '',
       languages: values.languages ? values.languages : '',
-      job_modality: values.jobModality ? values.jobModality : '',
+      jobModality: values.jobModality ? values.jobModality : '',
       contact: values.contact ? values.contact : '',
-      work_experiences: values.workExperience ? values.workExperience : '',
+      workExperiences: values.workExperience ? values.workExperience : '',
       linkedin: values.linkedin ? values.linkedin : '',
       instagram: values.instagram ? values.instagram : '',
       facebook: values.facebook ? values.facebook : '',
