@@ -6,8 +6,6 @@ DevTask é uma plataforma de desenvolvedores *freelancers*, no modo *marketplace
 
 * Ana Clara Fonseca Campos
 * Joao Pedro Mayrink de Jesus
-* Jose Vitor da Silva Sousa
-* Marlene Vasconcelos Moraes de Oliveira
 
 ## Professores
 
