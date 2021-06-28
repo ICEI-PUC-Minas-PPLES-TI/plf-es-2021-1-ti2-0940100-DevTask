@@ -241,7 +241,7 @@ Apresenta-se detalhadamente os campos a serem preenchidos para a realização da
 
 Diagrama de Entidade e Relacionamento Conceitual
 
-![Diagrama de Entidade Relacionamento de Exemplo](imagens/DER-conceitual.png "Diagrama de Entidade Relacionamento Conceitual")
+![Diagrama de Entidade Relacionamento](imagens/DER - conceitual.png "Diagrama de Entidade Relacionamento Conceitual")
 
 
 Diagrama de Entidade e Relacionamento Lógico
