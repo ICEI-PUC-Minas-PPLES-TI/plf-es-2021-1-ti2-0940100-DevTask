@@ -257,11 +257,9 @@ Usar o seguinte modelo:
 
 | **Indicador** | **Objetivos** | **Descrição** | **Cálculo** | **Fonte dados** | **Perspectiva** |
 | --- | --- | --- | --- | --- | --- |
-| Percentual reclamações | Avaliar quantitativamente as reclamações | Percentual de reclamações em relação ao total atendimento |   | Tabela reclamações | Aprendizado e Crescimento |
-| Taxa de Requisições abertas | Melhorar a prestação de serviços medindo a porcentagem de requisições | Mede % de requisições atendidas na semana | \*100 | Tabela solicitações | Processos internos |
-| Taxa de entrega de material | Manter controle sobre os materiais que estão sendo entregues | Mede % de material entregue dentro do mês |   | Tabela Pedidos | Clientes |
-
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe **a ser proposto**
+| Percentual de tipo de usuário  | Avaliar o percentual de Empresas vs Devs | Percentual de usuários que representam empresas vs devs | Nº de empresas /  total de usuários e Nº de devs /  total de usuários  | Tabela Empresas e Tabela Devs | Avaliar a maior fonte de demanda |
+| Percentual de desenvolvedores por categoria | Avaliar a popularidade do serviço por área de atuação | Medir a porcentagem de desenvolvedores por área de atuação | nº de devs por área / nº total de devs | Tabela projetos | Avaliar quais áreas possuem mais demanda |
+| Número de vagas por mês | Avaliar a popularidade do serviço | Percentual de vagas mensais | nº de vagas / 30 dias | Tabela Vagas | Avaliar se existe demanda de cargos |
 
 ## 7.Sistema desenvolvido
 
