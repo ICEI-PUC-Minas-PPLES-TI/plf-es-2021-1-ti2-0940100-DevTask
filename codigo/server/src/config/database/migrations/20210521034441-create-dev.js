@@ -43,7 +43,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       linkedin: {
-        type: Sequelize.STRING(11)
+        type: Sequelize.STRING
       },
       website: {
         type: Sequelize.STRING
