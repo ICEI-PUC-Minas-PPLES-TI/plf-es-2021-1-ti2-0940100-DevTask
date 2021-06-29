@@ -263,15 +263,23 @@ Usar o seguinte modelo:
 
 ## 7.Sistema desenvolvido
 
-Faça aqui uma breve descrição do software e coloque as principais telas com uma explicação de como usar cada uma.
+DevTask é um software que conecta desenvolvedores e empresas que buscam esses serviços.
+
+#### Processo 1 – Login e Autenticação
+#### Processo 2 – Cadastro de Cliente
+#### Processo 3 – Cadastro de Desenvolvedor
+#### Processo 4 – Cadastro de Portifolio
+#### Processo 5 – Cadastro de Oportunidades de trabalhos
 
 ## 8. Avaliação
 
-Faça aqui sobre a avaliação do software. Indique se ele atendeu as expectativas e ele é viável. Para não ficar subjetivo, o ideal é fazer um questionário e pedir ao usuário do processo que faça a avaliação
+1. De 0 a 5, como você avalia a sua experiência como usuário?
+2. Você conseguiu encontrar vagas que se enquadravam no seu perfil?
+3. Você conseguiu encontrar projetos de desenvolvedores interessantes?
 
 ## 9. Conclusão
 
-Apresente aqui a conclusão do seu trabalho. Discussão dos resultados obtidos no trabalho, onde se verifica as observações pessoais de cada aluno. Poderá também apresentar sugestões de novas linhas de estudo.
+Infelizmente, não conseguimos atingir todos os objetivos que tínhamos no planejamento inicialmente. Entretanto, obtivemos ótimos resultados conforme nosso contexto de trabalho. Apenas com dois integrantes, nosso time conseguiu fazer front e back funcionais contando com um UI/UX estrategiado para dar ao usuário a melhor experiência possível, já que nosso público tende a ser mais critico ao funcionamento do website por se tratarem de desenvolvedores. 
 
 # REFERÊNCIAS
 
@@ -294,8 +302,6 @@ Apresente aqui a conclusão do seu trabalho. Discussão dos resultados obtidos n
 **[1.9]** - VARELLA, C. **Emprego em alta para "devs".** Disponível em: <https://economia.uol.com.br/reportagens-especiais/mercado-de-trabalho-busca-desenvolvedores-ti/#cover>. Acesso em 11 mar. 2021
 
 # APÊNDICES
-
-**Colocar link:**
 
 Do código;
 
