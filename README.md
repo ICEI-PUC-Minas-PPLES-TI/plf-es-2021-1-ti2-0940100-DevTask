@@ -19,14 +19,14 @@ DevTask é uma plataforma de desenvolvedores *freelancers*, no modo *marketplace
 
     1. Rode o seguinte comando no terminal para instalar todos os pacotes necessários:
 
-        ``yarn``  ou ``npm install``
+``yarn``  ou ``npm install``
 
     2. Crie um banco de dados usando postgreSQL
     3. Crie um arquivo .env e preencha ele conforme o arquivo .env.example
     4. Rode os comandos a seguir para preencher o banco de dados com as tabelas e itens necessários
 
-        ``npx sequelize-cli db:migrate``
-        ``npx sequelize-cli db:seed:all``
+``npx sequelize-cli db:migrate``
+``npx sequelize-cli db:seed:all``
 
     5.   Teste a API usando postman de acordo com a coleção a seguir:
         https://www.getpostman.com/collections/c2a276e60b9b121f6a06
@@ -37,11 +37,11 @@ DevTask é uma plataforma de desenvolvedores *freelancers*, no modo *marketplace
 
     1. Rode o seguinte comando no terminal para instalar todos os pacotes necessários:
 
-        ``yarn``  ou ``npm install``
+``yarn``  ou ``npm install``
 
     2. Rode o comando a seguir para iniciar:
-    
-        ``yarn start``  ou ``npx start``
+
+``yarn start``  ou ``npx start``
 
 ## Histórico de versões
 
