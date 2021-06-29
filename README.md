@@ -48,7 +48,7 @@ DevTask é uma plataforma de desenvolvedores *freelancers*, no modo *marketplace
 
         yarn start
         ou
-        npx sart
+        npm start
 
 
 ## Histórico de versões
